@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Create_Renewal_Opportunity</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create Renewal Opportunity</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR($Site.Prefix + &apos;/apex/ia_crm__ContractRenewal?id=&apos; + IF( NOT( ISNULL(Contract.ia_crm__Intacct_ContractId__c) ) , Contract.ia_crm__Intacct_ContractId__c, Contract.Id ) + &apos;&amp;object=Contract&apos;)}</url>
+</WebLink>

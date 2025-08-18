@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Functions</fullName>
+    <active>true</active>
+    <description>Require notes on missing functionality when field is set to &quot;Other&quot;</description>
+    <errorConditionFormula>AND(INCLUDES(Missing_Functionality__c, &quot;Other&quot;),ISBLANK(Missing_Function_Description__c))</errorConditionFormula>
+    <errorDisplayField>Missing_Function_Description__c</errorDisplayField>
+    <errorMessage>Please describe the missing functionality, or remove &quot;Other&quot; from the selection list.</errorMessage>
+</ValidationRule>

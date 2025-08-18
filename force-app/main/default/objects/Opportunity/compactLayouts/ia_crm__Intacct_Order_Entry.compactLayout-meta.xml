@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Order_Entry</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>OwnerId</fields>
+    <fields>CloseDate</fields>
+    <fields>Amount</fields>
+    <label>Intacct Order Entry</label>
+</CompactLayout>

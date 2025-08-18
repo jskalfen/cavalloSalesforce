@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Create_Contract_record</fullName>
+    <availability>online</availability>
+    <description>Create contract record from Opportunity.</description>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Create Contract</masterLabel>
+    <openType>replace</openType>
+    <page>ia_crm__CreateContractFromOpportunity</page>
+    <protected>false</protected>
+</WebLink>

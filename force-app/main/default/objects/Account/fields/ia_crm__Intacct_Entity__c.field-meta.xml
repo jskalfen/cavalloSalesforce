@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Entity__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Only for M-console</description>
+    <label>Intacct Entity</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Entity</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Top Level</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Hidden__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>ia_crm__Intacct_Entity__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts_del</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

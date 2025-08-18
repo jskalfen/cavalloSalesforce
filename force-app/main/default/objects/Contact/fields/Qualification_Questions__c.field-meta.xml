@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification_Questions__c</fullName>
+    <defaultValue>&quot;https://docs.google.com/document/d/1k6YOokUPsJHiW5a1MMU2P86CIospEx7hpZW3uMxyiZE/edit&quot;</defaultValue>
+    <label>Qualification Questions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

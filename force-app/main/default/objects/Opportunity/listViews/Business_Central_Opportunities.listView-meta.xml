@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Central_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Country__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Opportunity_Status__c</columns>
+    <columns>SQL__c</columns>
+    <columns>SAL__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>Subtype__c</columns>
+    <columns>Opportunity_Source_Global__c</columns>
+    <columns>Opportunity_SubSource_Global__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Champion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>0123u000000FTXC</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Create,Qualify,Discover,Structure,Review,Present,Nurture,Closed Won,Closed Lost</value>
+    </filters>
+    <label>Business Central Opportunities</label>
+</ListView>

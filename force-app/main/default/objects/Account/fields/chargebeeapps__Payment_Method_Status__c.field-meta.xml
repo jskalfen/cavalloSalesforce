@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>chargebeeapps__Payment_Method_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Payment Method Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>valid</fullName>
+                <default>false</default>
+                <label>VALID</label>
+            </value>
+            <value>
+                <fullName>expiring</fullName>
+                <default>false</default>
+                <label>EXPIRING</label>
+            </value>
+            <value>
+                <fullName>expired</fullName>
+                <default>false</default>
+                <label>EXPIRED</label>
+            </value>
+            <value>
+                <fullName>invalid</fullName>
+                <default>false</default>
+                <label>INVALID</label>
+            </value>
+            <value>
+                <fullName>pending_verification</fullName>
+                <default>false</default>
+                <label>PENDING_VERIFICATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

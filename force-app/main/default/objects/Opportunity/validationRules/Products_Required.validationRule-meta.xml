@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNULL(Products__c)  
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; RecordType.DeveloperName = &quot;New_Business&quot;
+&amp;&amp; NOT(ISPICKVAL(StageName, &quot;Qualified/Discovery&quot;))
+&amp;&amp; NOT(ISPICKVAL(Type, &quot;Expansion - Services only&quot;))
+&amp;&amp; NOT(ISPICKVAL(Type, &quot;Renewal&quot;))
+&amp;&amp; $Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorDisplayField>Products__c</errorDisplayField>
+    <errorMessage>Products required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_Original_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>AC Original Opportunity</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Analytics Cloud Opportunities</relationshipLabel>
+    <relationshipName>Analytics_Cloud_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

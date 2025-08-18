@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Field used for both Contract workflow and Order entry transactions.</inlineHelpText>
+    <label>Intacct Location</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Hidden__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Entity_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Top level</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Intacct_Entity__c.ia_crm__Status__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>ia_crm__Intacct_Entity__c</referenceTo>
+    <relationshipLabel>Opportunity Product (Intacct Location)</relationshipLabel>
+    <relationshipName>Opportunity_Product1</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

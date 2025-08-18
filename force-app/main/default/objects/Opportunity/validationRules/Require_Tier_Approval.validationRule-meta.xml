@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Tier_Approval</fullName>
+    <active>false</active>
+    <description>Tier/Transition Approval must be checked prior to Proposal stage</description>
+    <errorConditionFormula>AND(Tier_Transition_Approved__c = false,
+     OR(RecordType.DeveloperName = &apos;Cloud&apos;, RecordType.DeveloperName = &apos;Custom&apos;, RecordType.DeveloperName = &apos;Desktop&apos;),
+    NOT(ISPICKVAL(StageName, &apos;Qualification&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;RFQ&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Sandbox&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Qualification&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Discovery&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Demo&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Trialing&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Scoping&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;On Hold&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Closed Lost&apos;))
+   )</errorConditionFormula>
+    <errorMessage>Tier/Transition Approval required before proposal.</errorMessage>
+</ValidationRule>

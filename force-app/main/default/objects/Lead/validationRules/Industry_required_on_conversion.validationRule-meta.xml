@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_required_on_conversion</fullName>
+    <active>false</active>
+    <description>Requires the industry field when Lead is converted</description>
+    <errorConditionFormula>AND(IsConverted &amp;&amp; ISPICKVAL(Industry, &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Industry</errorDisplayField>
+    <errorMessage>Please select an Industry</errorMessage>
+</ValidationRule>

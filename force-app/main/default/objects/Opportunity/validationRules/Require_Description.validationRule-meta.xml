@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Description</fullName>
+    <active>true</active>
+    <description>If &quot;Discount Applied&quot; is checked, Discount Description must be populated</description>
+    <errorConditionFormula>AND(Discount_Applied__c = true,  ISBLANK(Discount_Description__c))</errorConditionFormula>
+    <errorDisplayField>Discount_Applied__c</errorDisplayField>
+    <errorMessage>Discount Description required while discount is applied</errorMessage>
+</ValidationRule>

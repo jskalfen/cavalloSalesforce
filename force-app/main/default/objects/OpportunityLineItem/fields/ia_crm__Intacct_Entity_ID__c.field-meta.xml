@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Entity_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( Opportunity.RecordType.DeveloperName = &apos;Contract&apos;, IF( ISPICKVAL( ia_crm__Intacct_Location__r.ia_crm__Entity_Type__c , &apos;Entity&apos;), ia_crm__Intacct_Location__r.ia_crm__Intacct_Entity_ID__c , &apos;&apos;), IF( ISPICKVAL( ia_crm__Intacct_Entity__r.ia_crm__Entity_Type__c , &apos;Entity&apos;), ia_crm__Intacct_Entity__r.ia_crm__Intacct_Entity_ID__c , &apos;&apos;))</formula>
+    <label>Intacct Entity ID</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Method__c</fullName>
+    <label>Billing Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Time and Materials</fullName>
+                <default>true</default>
+                <label>Time and Materials</label>
+            </value>
+            <value>
+                <fullName>Fixed Rate</fullName>
+                <default>false</default>
+                <label>Fixed Rate</label>
+            </value>
+            <value>
+                <fullName>Not-To-Exceed</fullName>
+                <default>false</default>
+                <label>Not-To-Exceed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

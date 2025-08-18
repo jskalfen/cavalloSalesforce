@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Renewal_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Renewal Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND ((4 AND 5) OR (6 AND 7) OR (8 AND 9))</booleanFilter>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Hidden__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Status__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Transaction_type__c</field>
+            <operation>notEqual</operation>
+            <value>Sales transaction</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ia_crm__Renewal_contract_term_type__c</field>
+            <operation>equals</operation>
+            <value>Evergreen</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Transaction_type__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.ia_crm__Renewal_contract_term_type__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ia_crm__Renewal_contract_term_type__c</field>
+            <operation>equals</operation>
+            <value>Termed</value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Transaction_type__c</field>
+            <operation>notEqual</operation>
+            <value>Evergreen</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ia_crm__Renewal_contract_term_type__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </filterItems>
+        <filterItems>
+            <field>ia_crm__Renewal_Template__c.ia_crm__Transaction_type__c</field>
+            <operation>notEqual</operation>
+            <value>Sales transaction, Evergreen</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>ia_crm__Renewal_Template__c</referenceTo>
+    <relationshipLabel>Contracts</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

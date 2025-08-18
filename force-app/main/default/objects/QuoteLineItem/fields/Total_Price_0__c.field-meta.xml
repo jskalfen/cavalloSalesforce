@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Price_0__c</fullName>
+    <description>Must return as text value to work with GetAccept functionality</description>
+    <externalId>false</externalId>
+    <formula>IF( Total_Price_Custom__c &gt; 0, &quot;TRUE&quot;, &quot;FALSE&quot;)</formula>
+    <label>Total Price &gt; 0?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

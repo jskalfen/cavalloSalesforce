@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Program_YTD_Total_Opps__c</fullName>
+    <label>YTD # Total Opps</label>
+    <summaryFilterItems>
+        <field>Opportunity.CreatedDate</field>
+        <operation>greaterOrEqual</operation>
+        <value>7/1/2021, 12:00 AM</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.CreatedDate</field>
+        <operation>lessOrEqual</operation>
+        <value>6/30/2021, 12:00 AM</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

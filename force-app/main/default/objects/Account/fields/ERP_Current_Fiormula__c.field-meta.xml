@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Current_Fiormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( ERP__c , &quot;Acumatica&quot; ), &quot;Acumatica &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Do not know&quot; ), &quot;Do not know &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Epicor&quot; ), &quot;Epicor &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;IBM&quot; ), &quot;IBM &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Infor&quot; ), &quot;Infor &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Microsoft Dynamics 365 Business Central&quot; ), &quot;Microsoft Dynamics 365 Business Central &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Microsoft Dynamics GP&quot; ), &quot;Microsoft Dynamics GP &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;MSFT - F&amp;O (Finance &amp; Operations) (AX)&quot; ), &quot;MSFT - F&amp;O (Finance &amp; Operations) (AX) &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;MSFT - NAV (Navision)&quot; ), &quot;MSFT - NAV (Navision) &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;MSFT - SL (Solomon)&quot; ), &quot;MSFT - SL (Solomon) &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Oracle - E-Business Suite (EBS)&quot; ), &quot;Oracle - E-Business Suite (EBS) &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Oracle - Fusion&quot; ), &quot;Oracle - Fusion &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Oracle - Netsuite&quot; ), &quot;Oracle - Netsuite &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Other&quot; ), &quot;Other &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Quickbooks&quot; ), &quot;Quickbooks &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Quickbooks Online&quot; ), &quot;Quickbooks Online &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - Intacct&quot; ), &quot;Sage - Intacct &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - Sage 100&quot; ), &quot;Sage - Sage 100 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - Sage 200&quot; ), &quot;Sage - Sage 200 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - Sage 300&quot; ), &quot;Sage - Sage 300 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - Sage 50&quot; ), &quot;Sage - Sage 50 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Sage - X3&quot; ), &quot;Sage - X3 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Salesforce&quot; ), &quot;Salesforce &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;SAP - B1&quot; ), &quot;SAP - B1 &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;SAP - Othe&quot; ), &quot;Acumatica &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Syspro&quot; ), &quot;Syspro &quot;,null ) &amp;
+IF ( INCLUDES ( ERP__c , &quot;Workday&quot; ), &quot;Workday &quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ERP Current</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

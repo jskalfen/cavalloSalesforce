@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Flat_Fixed_amount_frequency</fullName>
+    <active>false</active>
+    <description>If &apos;Flat/Fixed amount frequency&apos; = &apos;One Time&apos; or &apos;Include with every invoice&apos;, then the Start Date and End Date should be required.</description>
+    <errorConditionFormula>IF(Opportunity.RecordType.DeveloperName = &apos;Contract&apos;,
+IF(OR(ISPICKVAL(ia_crm__Contract_Line_Save_Cancel_He__c, &apos;One-time&apos;), ISPICKVAL(ia_crm__Contract_Line_Save_Cancel_He__c, &apos;Include with every invoice&apos;)),IF(OR(ISBLANK( ia_crm__Start_Date__c ),ISBLANK( ia_crm__End_Date__c )), true, false), false), false)</errorConditionFormula>
+    <errorDisplayField>ia_crm__Contract_Line_Save_Cancel_He__c</errorDisplayField>
+    <errorMessage>If &apos;Flat/Fixed amount frequency&apos; = &apos;One Time&apos; or &apos;Include with every invoice&apos; the Start Date and End Date are required.</errorMessage>
+</ValidationRule>

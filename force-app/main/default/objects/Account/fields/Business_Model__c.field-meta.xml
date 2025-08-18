@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Model__c</fullName>
+    <inlineHelpText>Find models here: https://drive.google.com/u/1/open?id=1sqiiLkolyEi52KPJRudgt15TZUvYdGiw</inlineHelpText>
+    <label>Business Model</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brand Builders</fullName>
+                <default>false</default>
+                <label>Brand Builders</label>
+            </value>
+            <value>
+                <fullName>Catalog Creators</fullName>
+                <default>false</default>
+                <label>Catalog Creators</label>
+            </value>
+            <value>
+                <fullName>Product Producers</fullName>
+                <default>false</default>
+                <label>Product Producers</label>
+            </value>
+            <value>
+                <fullName>Service Centered</fullName>
+                <default>false</default>
+                <label>Service Centered</label>
+            </value>
+            <value>
+                <fullName>Project Planners</fullName>
+                <default>false</default>
+                <label>Project Planners</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

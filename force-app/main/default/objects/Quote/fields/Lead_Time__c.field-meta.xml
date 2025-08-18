@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Time__c</fullName>
+    <inlineHelpText>Used as the &quot;Lead Time&quot; field on the top of the Quote</inlineHelpText>
+    <label>Lead Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Continuation of Project</fullName>
+                <default>false</default>
+                <label>Continuation of Project</label>
+            </value>
+            <value>
+                <fullName>1-2 Days</fullName>
+                <default>false</default>
+                <label>1-2 Days</label>
+            </value>
+            <value>
+                <fullName>2 weeks</fullName>
+                <default>false</default>
+                <label>2 Weeks</label>
+            </value>
+            <value>
+                <fullName>4 weeks</fullName>
+                <default>false</default>
+                <label>4 Weeks</label>
+            </value>
+            <value>
+                <fullName>6 weeks</fullName>
+                <default>false</default>
+                <label>6 Weeks</label>
+            </value>
+            <value>
+                <fullName>8 weeks</fullName>
+                <default>false</default>
+                <label>8 Weeks</label>
+            </value>
+            <value>
+                <fullName>10 weeks</fullName>
+                <default>false</default>
+                <label>10 Weeks</label>
+            </value>
+            <value>
+                <fullName>12 weeks</fullName>
+                <default>false</default>
+                <label>12 Weeks</label>
+            </value>
+            <value>
+                <fullName>14 weeks</fullName>
+                <default>false</default>
+                <label>14 weeks</label>
+            </value>
+            <value>
+                <fullName>16 weeks</fullName>
+                <default>false</default>
+                <label>16 Weeks</label>
+            </value>
+            <value>
+                <fullName>18 weeks</fullName>
+                <default>false</default>
+                <label>18 weeks</label>
+            </value>
+            <value>
+                <fullName>20 weeks</fullName>
+                <default>false</default>
+                <label>20 Weeks</label>
+            </value>
+            <value>
+                <fullName>22 Weeks</fullName>
+                <default>false</default>
+                <label>22 Weeks</label>
+            </value>
+            <value>
+                <fullName>24 Weeks</fullName>
+                <default>false</default>
+                <label>24 weeks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

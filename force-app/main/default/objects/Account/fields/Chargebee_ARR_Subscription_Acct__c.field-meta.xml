@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebee_ARR_Subscription_Acct__c</fullName>
+    <description>Chargebee ARR Subscription Acct</description>
+    <label>Chargebee ARR Subscription Acct</label>
+    <summarizedField>chargebeeapps__CB_Subscription__c.chargebeeapps__MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>chargebeeapps__CB_Subscription__c.chargebeeapps__Plan_Id__c</field>
+        <operation>contains</operation>
+        <value>SALESPAD-SUBSCRIPTION-FOR-GP,SALESPAD-SPLA,CAVALLO-FOR-BC</value>
+    </summaryFilterItems>
+    <summaryForeignKey>chargebeeapps__CB_Subscription__c.chargebeeapps__Company__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

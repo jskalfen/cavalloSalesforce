@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dynamics_GP_Version__c</fullName>
+    <label>GP Environment/Access Info</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+                <label>Don&apos;t Know</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2018 R2</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2018 R2</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2018</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2018</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2016 R2</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2016 R2</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2016</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2016</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2015 R2</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2015 R2</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2015 RTM</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2015 RTM</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2013 R2</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2013 R2</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2013</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2013</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2010 R2</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2010 R2</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 2010</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 2010</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 10.0</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 10.0</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP 9.0</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP 9.0</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

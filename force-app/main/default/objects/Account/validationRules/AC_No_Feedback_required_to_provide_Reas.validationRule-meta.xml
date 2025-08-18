@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_No_Feedback_required_to_provide_Reas</fullName>
+    <active>true</active>
+    <description>When AC feedback is NO then user should provide the reason for No - SE - 2/9/2022</description>
+    <errorConditionFormula>AND(ISPICKVAL( AC_Interest__c , &apos;No&apos;) ,  TEXT(AC_Not_Interested_Reason__c ) = &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>AC_Not_Interested_Reason__c</errorDisplayField>
+    <errorMessage>AC Not Interested Reason is required</errorMessage>
+</ValidationRule>

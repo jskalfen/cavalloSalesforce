@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contains_Software_Products__c</fullName>
+    <label>Contains Software Products</label>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Family__c</field>
+        <operation>equals</operation>
+        <value>CLOUD_PRODUCTS, DESKTOP_ENHANCEMENT, DESKTOP_PRODUCTS, DESKTOP_SPLA, DESKTOP_SUBSCRIPTION, DISTRIBUTION_CLOUD, INTELLIGENCE, SALESPAD_SUBSCRIPTION, ANALYTICS CLOUD</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

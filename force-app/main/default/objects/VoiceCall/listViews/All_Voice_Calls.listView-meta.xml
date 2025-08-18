@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Voice_Calls</fullName>
+    <columns>CallStartDateTime</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>CallType</columns>
+    <columns>Name</columns>
+    <columns>CallDisposition</columns>
+    <columns>CreatedBy</columns>
+    <columns>RelatedRecord</columns>
+    <columns>ToPhoneNumber</columns>
+    <columns>CallDurationInSeconds</columns>
+    <columns>Id</columns>
+    <columns>VendorCallKey</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner</field>
+        <operation>contains</operation>
+        <value>skeo,bbuck,dzwie</value>
+    </filters>
+    <label>All Voice Calls</label>
+</ListView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Entity_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>false</errorConditionFormula>
+    <errorDisplayField>ia_crm__Intacct_Location__c</errorDisplayField>
+    <errorMessage>Default Intacct Location for Products should be the same like Intacct Entity or it should be a sub-location of the Intacct Entity.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BSA_required_after_Discovery_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Custom&apos;
+&amp;&amp; BSA__c = &apos;&apos;
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; 
+    (
+								TEXT(StageName) = &apos;Estimation&apos; 
+				    || TEXT(StageName) = &apos;Proposal&apos; 
+				    || TEXT(StageName) = &apos;Nurture&apos; 
+				    || TEXT(StageName) = &apos;Closed Won&apos;
+    )</errorConditionFormula>
+    <errorDisplayField>BSA__c</errorDisplayField>
+    <errorMessage>CDEV Product Owner is required</errorMessage>
+</ValidationRule>

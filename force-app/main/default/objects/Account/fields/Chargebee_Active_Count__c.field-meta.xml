@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebee_Active_Count__c</fullName>
+    <label>Chargebee Active Count</label>
+    <summaryFilterItems>
+        <field>chargebeeapps__CB_Subscription__c.chargebeeapps__Subscription_status__c</field>
+        <operation>equals</operation>
+        <value>ACTIVE</value>
+    </summaryFilterItems>
+    <summaryForeignKey>chargebeeapps__CB_Subscription__c.chargebeeapps__Company__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

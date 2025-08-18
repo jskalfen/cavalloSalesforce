@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Status_Change_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(Opportunity.RecordType.DeveloperName = &apos;Cloud&apos;,Opportunity.RecordType.DeveloperName = &apos;Business Central&apos;),
+    ISCHANGED(Status),
+    OR(
+        (TEXT( PRIORVALUE(Status)) = &quot;Draft&quot;),
+        (TEXT( PRIORVALUE(Status)) = &quot;Needs Review&quot;),
+								(TEXT( PRIORVALUE(Status)) = &quot;In Review&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot change the status until the Quote is Approved</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>chargebeeapps__Create_Quote</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Create Quote</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/chargebeeapps__SyncCustomerPage?id={!Opportunity.AccountId}&amp;isPreview=true&amp;cancelUrl=%2F{!Opportunity.Id}&amp;successUrl=%2Fapex%2Fchargebeeapps__ChooseOpportunityType%3Faction=create_quote%26id={!Opportunity.Id}</url>
+</WebLink>

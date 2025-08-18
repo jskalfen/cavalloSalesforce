@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Process__c</fullName>
+    <description>What is the company&apos;s decision-making process? How is it made and followed through?</description>
+    <inlineHelpText>What is the company&apos;s decision-making process? How is it made and followed through?</inlineHelpText>
+    <label>Decision Process</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

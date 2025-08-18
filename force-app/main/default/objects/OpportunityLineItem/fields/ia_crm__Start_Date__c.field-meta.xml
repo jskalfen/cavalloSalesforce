@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Start_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The Opportunity Product Start Date must be after Contract Start Date.</inlineHelpText>
+    <label>Start Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

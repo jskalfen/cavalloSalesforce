@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Quote_Grade__c</fullName>
+    <description>Calculates a quote grade based on the number of quotes created and the number signed.
+
+WHEN Quotes_Created &gt;= 5 AND  Quote_Signed_Percent &lt; .31 THEN &apos;F&apos;
+WHEN Quotes_Created = 4 AND  Quote_Signed_Percent = 0 THEN &apos;F&apos;
+WHEN Quotes_Created &lt;= 2 AND  Quote_Signed_Percent = 100 THEN &apos;B+&apos;
+WHEN Quotes_Created &lt;= 2 THEN &apos;INC&apos;
+WHEN Quote_Signed_Percent &gt;= .70 THEN &apos;A&apos;
+WHEN Quote_Signed_Percent &gt;= .50 THEN &apos;B&apos;
+WHEN Quote_Signed_Percent &gt;= .30 THEN &apos;C&apos;
+ELSE &apos;D&apos;</description>
+    <externalId>false</externalId>
+    <formula>If( Quotes_Created__c  = 0 &amp;&amp; Quotes_Signed__c  = 0 ,&apos;F&apos;,
+IF(Quotes_Created__c  &gt;= 5 &amp;&amp; (Quotes_Signed__c / Quotes_Created__c)  &lt; 0.31,  &apos;F&apos;,
+  If( Quotes_Created__c  = 4 &amp;&amp; (Quotes_Signed__c / Quotes_Created__c) = 0 , &apos;F&apos;, 
+   If( Quotes_Created__c  &lt;= 2 &amp;&amp; (Quotes_Signed__c / Quotes_Created__c) = 1 ,&apos;B+&apos;,
+    If( Quotes_Created__c  &lt;= 2 ,&apos;INC&apos;,
+     If(  (Quotes_Signed__c / Quotes_Created__c)  &gt;= 0.70 ,&apos;A&apos;,
+      If( (Quotes_Signed__c / Quotes_Created__c) &gt;= 0.50 ,&apos;B&apos;,
+       If( (Quotes_Signed__c / Quotes_Created__c) &gt;= 0.30 ,&apos;C&apos;, &apos;D&apos; 
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom Quote Grade</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

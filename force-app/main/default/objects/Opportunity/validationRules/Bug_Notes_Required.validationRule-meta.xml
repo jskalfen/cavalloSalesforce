@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bug_Notes_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Bug__c = TRUE
+&amp;&amp; ISBLANK(Bug_Notes__c)</errorConditionFormula>
+    <errorDisplayField>Bug_Notes__c</errorDisplayField>
+    <errorMessage>Bug Notes required</errorMessage>
+</ValidationRule>

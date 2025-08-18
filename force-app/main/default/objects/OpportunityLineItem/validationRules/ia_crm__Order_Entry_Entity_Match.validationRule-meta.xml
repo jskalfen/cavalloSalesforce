@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Order_Entry_Entity_Match</fullName>
+    <active>false</active>
+    <description>On Order Entry opportunities the Intacct Entity should match the Opportunity Intacct Entity or be a sublocation for it.</description>
+    <errorConditionFormula>IF(Opportunity.RecordType.DeveloperName = &apos;OrderEntry&apos;,
+IF(!ISBLANK( Opportunity.ia_crm__Intacct_Location__c ), IF(OR( ia_crm__Intacct_Entity__c = Opportunity.ia_crm__Intacct_Location__c, ia_crm__Intacct_Entity__r.ia_crm__Top_Entity__c = Opportunity.ia_crm__Intacct_Location__c, ISBLANK(ia_crm__Intacct_Entity__c)), false, true), false), false)</errorConditionFormula>
+    <errorDisplayField>ia_crm__Intacct_Entity__c</errorDisplayField>
+    <errorMessage>The Intacct Entity from the Opportunity Product should match the Opportunity Intacct Entity or be a sublocation for it.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_New_ARR__c</fullName>
+    <formula>IF( Has_Reseller_Opp__c = False,  Account.Total_ARR__c + ARR__c , Account.Total_ARR__c + Related_Reseller_Opp__r.ARR__c  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OLD_Estimated New ARR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

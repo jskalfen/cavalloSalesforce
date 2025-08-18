@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mutually_Agreed_Close_Plan__c</fullName>
+    <label>Mutually Agreed Close Plan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closed plan agreed in writing</fullName>
+                <default>false</default>
+                <label>Closed plan agreed in writing</label>
+            </value>
+            <value>
+                <fullName>Verbal agreement on payment timing</fullName>
+                <default>false</default>
+                <label>Verbal agreement on payment timing</label>
+            </value>
+            <value>
+                <fullName>No verbal or written commitment</fullName>
+                <default>false</default>
+                <label>No verbal or written commitment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

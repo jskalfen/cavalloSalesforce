@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Contract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Select if paying for the full year upfront</inlineHelpText>
+    <label>Annual Contract</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

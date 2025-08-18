@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARR__c</fullName>
+    <description>HT - Sercante - 04/01/2021 - Rollup that totals the Price of all products in the Desktop Enhancement products on the opportunity.</description>
+    <label>DEPRECATE Total ARR (Opp)</label>
+    <summarizedField>OpportunityLineItem.List_Price_Total__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Family__c</field>
+        <operation>equals</operation>
+        <value>CLOUD_PRODUCTS, DESKTOP_ENHANCEMENT, DESKTOP_SPLA, DESKTOP_SUBSCRIPTION, DISTRIBUTION_CLOUD, INTELLIGENCE, SALESPAD_SUBSCRIPTION, CAVALLO_FOR_BC</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

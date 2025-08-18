@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Roles_Loaded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Using the CONTACT ROLES RELATED LIST, make sure that you have identified the following contact roles:
+ - Decision Maker
+ - Project Lead
+ - Power User(s)
+ - End User(s), if known</inlineHelpText>
+    <label>Contact Roles Loaded</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

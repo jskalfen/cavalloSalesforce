@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_ARR_Amount__c</fullName>
+    <label>OLD_ARR Amount Rollup (This Year)</label>
+    <summarizedField>Opportunity.ARR__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Reseller</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.CloseDate</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2021</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.CloseDate</field>
+        <operation>lessOrEqual</operation>
+        <value>12/31/2021</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

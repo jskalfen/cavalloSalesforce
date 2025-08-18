@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__If_Usage_Exceeds_The_Committed_Quantity__c</fullName>
+    <deprecated>false</deprecated>
+    <label>If Usage Exceeds The Committed Quantity</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bill overage</fullName>
+                <default>false</default>
+                <label>Bill overage</label>
+            </value>
+            <value>
+                <fullName>Don’t allow overage</fullName>
+                <default>false</default>
+                <label>Don’t allow overage</label>
+            </value>
+            <value>
+                <fullName>Do nothing</fullName>
+                <default>false</default>
+                <label>Do nothing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

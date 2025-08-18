@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task__c</fullName>
+    <label>Task</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Dashboard Report</fullName>
+                <default>false</default>
+                <label>Dashboard Report</label>
+            </value>
+            <value>
+                <fullName>Data Transfer</fullName>
+                <default>false</default>
+                <label>Data Transfer</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Existing Plugin or Form</fullName>
+                <default>false</default>
+                <label>Existing Plugin or Form</label>
+            </value>
+            <value>
+                <fullName>Misc</fullName>
+                <default>false</default>
+                <label>Misc</label>
+            </value>
+            <value>
+                <fullName>New Form</fullName>
+                <default>false</default>
+                <label>New Form</label>
+            </value>
+            <value>
+                <fullName>New Module</fullName>
+                <default>false</default>
+                <label>New Module</label>
+            </value>
+            <value>
+                <fullName>New Plugin</fullName>
+                <default>false</default>
+                <label>New Plugin</label>
+            </value>
+            <value>
+                <fullName>Printed Form</fullName>
+                <default>false</default>
+                <label>Printed Form</label>
+            </value>
+            <value>
+                <fullName>Quick Report</fullName>
+                <default>false</default>
+                <label>Quick Report</label>
+            </value>
+            <value>
+                <fullName>Script</fullName>
+                <default>false</default>
+                <label>Script</label>
+            </value>
+            <value>
+                <fullName>SQL</fullName>
+                <default>false</default>
+                <label>SQL</label>
+            </value>
+            <value>
+                <fullName>SSRS</fullName>
+                <default>false</default>
+                <label>SSRS</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>UDF</fullName>
+                <default>false</default>
+                <label>UDF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

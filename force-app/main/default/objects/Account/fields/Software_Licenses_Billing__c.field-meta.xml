@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Software_Licenses_Billing__c</fullName>
+    <description>Renamed on 11/4/22 https://cavallo.atlassian.net/browse/REV-1005</description>
+    <label>Software Billing - GP</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>true</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Direct Billing (All the time)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direct Billing (All the time)</label>
+            </value>
+            <value>
+                <fullName>Direct Billing (deal by deal)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direct Billing (deal by deal)</label>
+            </value>
+            <value>
+                <fullName>Indirect Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Indirect Billing</label>
+            </value>
+            <value>
+                <fullName>Not sure yet</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not sure yet</label>
+            </value>
+            <value>
+                <fullName>Opp-by-opp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Opp-by-opp</label>
+            </value>
+            <value>
+                <fullName>Unsure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unsure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

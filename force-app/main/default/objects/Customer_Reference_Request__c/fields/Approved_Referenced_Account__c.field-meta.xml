@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Referenced_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Approved Referenced Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Customer Reference Requests (Approved Referenced Account)</relationshipLabel>
+    <relationshipName>Customer_Reference_Requests2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

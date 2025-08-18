@@ -1,0 +1,2751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner</fullName>
+    <active>false</active>
+    <businessProcess>Default Lead</businessProcess>
+    <label>Partner</label>
+    <picklistValues>
+        <picklist>Analytics__c</picklist>
+        <values>
+            <fullName>Alibab cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon Web Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cavallo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MicroStrategy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyramid Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qlik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce %28Tableau%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sisense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIBCO Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tableau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ThoughtSpot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellowfin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoho</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assigned_Partner__c</picklist>
+        <values>
+            <fullName>ACE Microtechnology%2C Inc-310</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AKA Enterprise Solutions%2C Inc%2E-494</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASI - Associates Solutions%2C Inc%2E-562</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATC Consulting Services-3637</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVM Consulting Inc %28Affordable-IT%29-2078</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accountability Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounting Computer Solutions-3672</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounting Technology Solutions%2C LLC-2858</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adirondack Data Systems %28ADS%29-418</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admiral Consulting Group-10037</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Business Networks Inc%2E %28Advanced Business Software Inc%2E%29-622</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Integrators-376</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha-Pure-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alta Vista Technology-2155</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altara - Main Headquarters %28West%29-4085447000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ameridyn %28Logical IT Solutions%29-1229</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amuse Mints-2914</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arctic Information Technology%2C Inc%2E-482</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argus Consulting Group-574</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armanino %28AMLLP%29-355</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AxentIT-3044</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axxon Consulting-390</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aztec Systems%2C Inc%2E-67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDO Canada LLP %28fka Etelligent Solutions Inc%2E%29-348</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDO Solutions %28BDO Dunwoody LLP%29-530</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BKD Technologies-454</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balance Point Technologies%2C Inc%2E-483</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BatchMaster Software-1642</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Moon Industries-889</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Consulting Services-410</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borek Business Solutions-473</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bortell Pty Ltd%2E-2637</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boyer %26 Associates%2C Inc%2E-474</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightpoint Infotech-3690</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brilliant Solutions Group%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BroadPoint Technologies Inc-128</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadway Enterprises-338</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Cents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Ready Solutions-647</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C Moore LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2E Bennett Building Supply%2C Inc%2E-723</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAL Business Solutions Inc%2E-332</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBIZ - MHM-334</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBIZ - Rootberg Business Services%2C Inc%2E-479</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONEXUSsg-1475</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadre-855</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Callow %26 Associates Management Consultants-131</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calsoft Systems-857</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargas Systems Inc-132</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpenter Paper Company-3741</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casari %26 Co%2E-1358</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Century Business Solutions-1748</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CivicSmart%2C Inc-3603</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CliftonLarsonAllen-475</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collins Computing Inc-63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Columbus IT-139</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Solutions SC-1750</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Transition Services %28CTSI%29-869</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corpex Computer Inc-879</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crestwood Associates-141</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crimsonwing Malta-2924</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultura Technologies %28formerly E-Markets%29-595</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Information Services %28CIS%29-875</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D1 Technology Partners %28SBS Group Nashvi-520</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DFC Consultants Ltd-145</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DK Weiss %26 Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Resolution-550</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davyn %28GIDK Consulting%29-1075</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dean Dorton Allen Ford PLLC-199</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delton CPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dennis Hands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dexpro Dynamics-563</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Di-Fi Solutions LLC-346</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Software Inc%2E-147</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directed Technologies%2C Inc%2E-1710</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dorado Solutions%2C Inc%2E-1488</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynamic Methods-318</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynamic Solutions Group%2C LLC-885</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynamics MCT Consulting Ltd-4067</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynamicsCloud-3513</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHTC Technology Solutions %28SBS Group%29-259</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EIS Business Solutions-10064</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elgen Manufacturing-3259</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encore Business Solutions Inc-149</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endeavour Solutions-626</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English Management Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equity Business Solutions%2C LLC-1164</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evan-Moor Educational Publishers-1698</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evertec Group%2C LLC%2E-3738</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evolv-IT-699</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Express Information Systems-567</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FMT Consultants-159</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falcons Nest Business Solutions-2304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fields Bookkeeping Services%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Business Solutions-619</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Solutions%2C Ltd%2E-591</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexible Solutions-10063</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frank Rimerman Consulting LLC-345</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GP-SMART SOLUCIONES DE NEGOCIO SC-2503</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPGuys%2Ecom-2053</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gametain Solutions%2C LLC-358</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestisoft-980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GraVoc Associates-792</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greenstone Consulting Group-2388</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gross Mendelsohn Technology Solutions Group-646</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Crafted Systems-539</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harwood Consulting%2C Inc%2E-1134</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland Business Systems %28Formerly Avastone Technologies%2C LLC%29-306</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Henderson%2C Grealis and Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoops%2C Inc%2E-373</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Houston Software-694</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBIS Inc-160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICB Consulting-614</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Icon SRL-2589</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation Specialists-496</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informed Systems%2C Inc%2E-533</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inscio-495</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Business Group %28IBG%29-337</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Systems Solutions-283</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrity Systems LLC-304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IntellPartners-1291</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intellispring Technologies Inc%2E-1038</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intellitec Solutions LLC-168</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InterDyn - Artis-325</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InterDyn BMI%2F A Columbus Company-158</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InterDyn BMI-130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet eBusiness Solutions %28IES%29-999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isis%2C Inc%2E-10094</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Island Business Solutions Inc%2E-342</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOVACO Solutions%2C Inc%2E-234</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joesoftware Inc%2E-2703</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JourneyTEAM - Any Business Systems%2C LLC-660</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JourneyTEAM - RDA%2C LLC-1099</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JourneyTEAM Nashville-1101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K and K Business Solutions%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KTL Solutions-447</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karen Peak CPA %28Firm%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keel and Company-691</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kent Accounting Systems%2C Inc%2E-880</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key2Act %28formerly WennSoft%29-106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kompass Integrated Solutions-630</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kopis%2C LLC-834</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kraft Enterprise Systems-461</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kreischer Miller-799</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%2E Kianoff %26 Associates%2C Inc%2E-521</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBMC Technologies LLC-174</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landis Computer-328</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaf Software Solutions%2C Inc%2E-1035</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louis Haskel CPA%2C PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M-Hance-3218</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ML IT Partners-2159</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MNV Software%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mac Endeavours LLC-227</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maner Costerisan-298</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Resource Partners-411</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Masterware-1649</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal Industries-2828</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mibar%2Enet-10077</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Force-401</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MilCom Business Solutions%2C Inc%2E-684</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moore Stephens%2C P%2EC%2E-528</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotium Technologies-205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netstandard Inc-238</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NexTec Group %28Ohio%29-3160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NexTec Group-310479770</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NextDyn LLC-374</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nezaj %26 Co CPAs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Njevity%2C Inc%2E-415</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nolan Business Solutions-1736</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuco Consultants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutritional Resources %28NRI- Healthwise%29-1306</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oehrlein and Oehrlein P%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Target Resources%2C LLC%2E-3787</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onza Solutions%2C Inc%2E %28BestTechsNW%29 - Out of Business Sold to Fine-1134</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opal Business Solutions-805</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDG Consultants-305</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PST Inc%2E-3600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PYA Solutions-239</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PacXa %28Formerly Century Computers%2C Inc%2E%29-681</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paradigm Technology Consulting%2C LLC-492</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paragon Software Solutions%2C Inc%2E-698</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perimeter Business Solutions-1012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinnacle of Indiana-586</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plain Solutions Ltd%2E-3004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Praxa%2C Ltd-651</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier Computing Technologies-189</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prophet Business Group Ltd%2E-389</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q Factor Consulting-1312</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QBIX Solutions-733</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QCI-685</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSM US LLP %28McGladrey%29-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rand Group Solutions%2C LLC-515</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rarey-Olson CPAs PLLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reagan Wireless-2174</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting Central %28Acquired by Encore%29-1268</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rimrock Corporation-590</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RoseASP-196</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run Business Solutions-538</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2 Technology%2C Inc%2E-707</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBS Group-1174</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDG Business Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDN Computer Consultants%2C LLC-457</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMB Suite %28formerly NextCorp Ltd%2E%29-662</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS Fllp CPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSi Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVA Consulting-207</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad%2C LLC%2E-300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sepulvado Consulting Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seven Star Foods-3746</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sherman %26 Associates Inc-1415</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sherwood Systems %28Div of Interdyn BMI%29-311</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sikich %28Formerly BCG Systems%2C Inc%2E%29-338</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sikich %28formerly Altico Advisors%29-406</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sikich%2C LLP-490</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Business Solutions%2C LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smith %26 Allen Consulting-1232</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socius Partners LLC-2818</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socius-357</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sockeye Business Solutions-663</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Solutions Group-456</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spring2 Technologies-397</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Springthrough Consulting%2C Inc%2E-304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Squire %26 Company-366</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stanley Stuart Yoffee and Hendrix-204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stratotec-415</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summit Group Software-486</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Susan Pruskin Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syvantis Technologies-763</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBS Automation Systems-817</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TD Carpenter %26 Assoc%2C-1989</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTD Enterprises LLC-581</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TYR-Tactical-3773</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taurus International Mfg%2C Inc-263</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Management Concepts %28TMC-LA%29-208</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tecnasa-1081</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telmar Computer Solutions-1317</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tensoft-736</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texo-381</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Anchor Group-1215</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Knaster Technology Group-213</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Resource Group-216</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The TM Group-111</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Worth Company-317</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tresidder Limited-10079</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TriBridge-321</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tridea Partners-599</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinsoft-10042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turnkey Technologies Inc-135</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UXC Eclipse-210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veracon Corporation-3995</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical Solutions-602</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vox Telecom-492</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WebSan Solutions-1248</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wipfli LLP-221</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wizards Group%2C US-2692</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your Accounting Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eVision Systems-633</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eXponential Consulting%2C LLC-10044</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iSolutions Partners-908</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ihatecomputer%2Ecom-3057</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lpit solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cloud_Subscription_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assessing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed To Create</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trialing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpaid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Class__c</picklist>
+        <values>
+            <fullName>Beta SB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End GP Tax Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End user QB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex end user 7th</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex end user GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex end user QB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead 7th</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead AX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead QB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Solomoan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR 7th</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR Dead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR QB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOZISF__ZoomInfo_Enrich_Status__c</picklist>
+        <values>
+            <fullName>Company Enrich Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enriched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No-Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EDI__c</picklist>
+        <values>
+            <fullName>BSI EDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TrueCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERP_Future__c</picklist>
+        <values>
+            <fullName>Acumatica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epicor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - F%26O %28Finance %26 Operations%29 %28AX%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - NAV %28Navision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - SL %28Solomon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT Dynamics CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics 365 Business Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics 365 F%26SCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netsuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle - E-Business Suite %28EBS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle - Fusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP - S%2F4HANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP B1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage Intacct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage X3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syspro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoho</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERP_Platform__c</picklist>
+        <values>
+            <fullName>Acumatica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epicor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - F%26O %28Finance %26 Operations%29 %28AX%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - NAV %28Navision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT - SL %28Solomon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSFT Dynamics CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics 365 Business Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics 365 F%26SCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Dynamics Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netsuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle - E-Business Suite %28EBS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle - Fusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP - S%2F4HANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP B1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage Intacct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sage X3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syspro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoho</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GSP_LeadDash__Opp_From_Converted_Lead__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GenderIdentity</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonbinary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hubspot_Lifecycle_Stage__c</picklist>
+        <values>
+            <fullName>Align</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kick Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Accepted Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technically Aware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Aware</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ICP__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Aerospace and Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture and Forestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civic%2C Non-Profit and Membership Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction and Building Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Product Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy and Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food and Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holding Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals and Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Manufacturing and Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure%2C Sports and Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining and Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals and Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schools and Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Costing__c</picklist>
+        <values>
+            <fullName>Fieldpoint Field Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KEY2ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>AppSource %28SPZA%29-INS %7C salespadllcdbacavallosolutions1644863490847%2Ecavallo_profit_scan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cavallo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source_Category__c</picklist>
+        <values>
+            <fullName>Inside Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Subsource__c</picklist>
+        <values>
+            <fullName>ABM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied AI for Distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calendly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cavallo Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliently</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - AM Expo 2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Accumatica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - CSNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - DUG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Directions EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Directions NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - GPUC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Innovia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Stoneridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Summit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - TM Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - Velosio ASPIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - WennSoft Synergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - acuConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSG Webinars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUG Forums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital ads %28Google%2C Bing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %2F Tradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event - Cavallo Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPUC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPUG Forums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GR Tech Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juhl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kayako</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key2Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key2Act - Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSDW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft AppSource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newsletter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nodus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PMPAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Podcast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSM Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller%2FVAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Respondent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Publications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar KwikTag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar PowerGP Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar SPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar%2F Virtual Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website RFQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Space Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo - Intent to Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo - Website Insights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mass_Upload__c</picklist>
+        <values>
+            <fullName>MDM Digital Summit Leads_07072021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summit Leads_10192021</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Multi_Channel_Manager__c</picklist>
+        <values>
+            <fullName>Channel Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellbrite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Number_of_SKUs__c</picklist>
+        <values>
+            <fullName>%3C 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 5%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2C000 - 4%2C999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101 - 499</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 - 999</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payments__c</picklist>
+        <values>
+            <fullName>Blue Moon Credit Card Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nodus CCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nodus Merchant Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nodus Payfabric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nodus Paylink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paypal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Persona__c</picklist>
+        <values>
+            <fullName>Executive Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Demo__c</picklist>
+        <values>
+            <fullName>AC Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad Demo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Line_s__c</picklist>
+        <values>
+            <fullName>Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Execution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intelligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pronouns</picklist>
+        <values>
+            <fullName>He%2FHim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>He%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FHer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>They%2FThem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_to_Marketing_Reason__c</picklist>
+        <values>
+            <fullName>Feature Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found Alternate Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Authority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Willing to Change Accounting Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too Small</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Volume__c</picklist>
+        <values>
+            <fullName>%241%2C000%2C001 - %245%2C000%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2410%2C000%2C001 - %2450%2C000%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%245%2C000%2C001 - %2410%2C000%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C %241%2C000%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E %2450%2C000%2C000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Automation__c</picklist>
+        <values>
+            <fullName>Avalara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thompson Reuters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warehouse_Management_System__c</picklist>
+        <values>
+            <fullName>3PL External WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Moon Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FasCor WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HighJump WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korber %28Accellos%29 - Warehouse Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manhattan WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panatrack WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QStock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savant WMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Willoware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Without Wire WMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eCommerce__c</picklist>
+        <values>
+            <fullName>3dCart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BigCommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce V3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Episerver Digital Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homegrown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM Digital Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K-eCommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NetSuite SuiteCommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle CX Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP Commerce Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPS Commerce %28not Cavallo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Commerce Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopify Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TrueCommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WooCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

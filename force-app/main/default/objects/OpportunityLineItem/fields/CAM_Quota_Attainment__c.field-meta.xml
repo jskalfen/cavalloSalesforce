@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAM_Quota_Attainment__c</fullName>
+    <formula>IF( CAM_Quota_Attainment_Override__c = False,  TotalPrice ,  Subscription_exception_Products__c + Sub_Products_Excluding_3_Products__c + Software_Products_Excluding_Subscription__c )</formula>
+    <label>CAM Quota Attainment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Level_Reasons__c</fullName>
+    <label>Health Level Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Migrating to another solution</fullName>
+                <default>false</default>
+                <label>Migrating to another solution</label>
+            </value>
+            <value>
+                <fullName>RFP-Request for Proposal</fullName>
+                <default>false</default>
+                <label>RFP-Request for Proposal</label>
+            </value>
+            <value>
+                <fullName>Product Issues - Features, Functionality, Direction</fullName>
+                <default>false</default>
+                <label>Product Issues - Features, Functionality, Direction</label>
+            </value>
+            <value>
+                <fullName>Financial Constraints</fullName>
+                <default>false</default>
+                <label>Financial Constraints</label>
+            </value>
+            <value>
+                <fullName>Value of Enhancement</fullName>
+                <default>false</default>
+                <label>Value of Enhancement</label>
+            </value>
+            <value>
+                <fullName>Increasing Adoption/Expanding Footprint</fullName>
+                <default>false</default>
+                <label>Increasing Adoption/Expanding Footprint</label>
+            </value>
+            <value>
+                <fullName>Merger</fullName>
+                <default>false</default>
+                <label>Merger</label>
+            </value>
+            <value>
+                <fullName>Positive Customer - Cavallo Relationship</fullName>
+                <default>false</default>
+                <label>Positive Customer - Cavallo Relationship</label>
+            </value>
+            <value>
+                <fullName>Negative Customer - Cavallo Relationship</fullName>
+                <default>false</default>
+                <label>Negative Customer - Cavallo Relationship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

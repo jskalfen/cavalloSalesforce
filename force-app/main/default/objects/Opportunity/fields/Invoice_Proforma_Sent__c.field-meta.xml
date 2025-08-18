@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Proforma_Sent__c</fullName>
+    <label>Invoice or proforma sent to customer?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Confirmed receipt of invoice</fullName>
+                <default>false</default>
+                <label>Confirmed receipt of invoice</label>
+            </value>
+            <value>
+                <fullName>Delivered but no confirmation of receipt</fullName>
+                <default>false</default>
+                <label>Delivered but no confirmation of receipt</label>
+            </value>
+            <value>
+                <fullName>Not delivered</fullName>
+                <default>false</default>
+                <label>Not delivered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

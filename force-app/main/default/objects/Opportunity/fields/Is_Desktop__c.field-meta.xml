@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Desktop__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(Product_Line_s__c, &quot;Desktop&quot;), &quot;Desktop&quot;, 
+    IF(INCLUDES(Product_Line_s__c, &quot;Cloud&quot;), &quot;Cloud&quot;, 
+    IF(CONTAINS(Name, &quot;Renewal&quot;), &quot;Enhancement&quot;, 
+    IF(INCLUDES(Product_Line_s__c, &quot;Custom&quot;), &quot;Desktop&quot;, &quot;Other&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

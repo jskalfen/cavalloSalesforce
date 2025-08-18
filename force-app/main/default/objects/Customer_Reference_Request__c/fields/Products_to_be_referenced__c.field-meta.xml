@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_to_be_referenced__c</fullName>
+    <label>Products to be referenced</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automation Agent</fullName>
+                <default>false</default>
+                <label>Automation Agent</label>
+            </value>
+            <value>
+                <fullName>DC Extended Warehouse</fullName>
+                <default>false</default>
+                <label>DC Extended Warehouse</label>
+            </value>
+            <value>
+                <fullName>Dispatch</fullName>
+                <default>false</default>
+                <label>Dispatch</label>
+            </value>
+            <value>
+                <fullName>EDI</fullName>
+                <default>false</default>
+                <label>EDI</label>
+            </value>
+            <value>
+                <fullName>Inventory Manager</fullName>
+                <default>false</default>
+                <label>Inventory Manager</label>
+            </value>
+            <value>
+                <fullName>Mfg Extended Pack</fullName>
+                <default>false</default>
+                <label>Mfg Extended Pack</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PaceJet</fullName>
+                <default>false</default>
+                <label>PaceJet</label>
+            </value>
+            <value>
+                <fullName>PayFabric</fullName>
+                <default>false</default>
+                <label>PayFabric</label>
+            </value>
+            <value>
+                <fullName>Returns Tracker</fullName>
+                <default>false</default>
+                <label>Returns Tracker</label>
+            </value>
+            <value>
+                <fullName>SalesPad</fullName>
+                <default>false</default>
+                <label>SalesPad</label>
+            </value>
+            <value>
+                <fullName>SalesPad Mobile</fullName>
+                <default>false</default>
+                <label>SalesPad Mobile</label>
+            </value>
+            <value>
+                <fullName>ShipCenter</fullName>
+                <default>false</default>
+                <label>ShipCenter</label>
+            </value>
+            <value>
+                <fullName>ShipTo</fullName>
+                <default>false</default>
+                <label>ShipTo</label>
+            </value>
+            <value>
+                <fullName>WebPortal</fullName>
+                <default>false</default>
+                <label>WebPortal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

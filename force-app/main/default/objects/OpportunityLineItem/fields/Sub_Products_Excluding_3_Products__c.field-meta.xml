@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Products_Excluding_3_Products__c</fullName>
+    <formula>IF( PricebookEntry.Product2.Sub_Exception_Products__c &lt;&gt; True  &amp;&amp;  (TEXT(Product_Family__c)  = &apos;SALESPAD_SUBSCRIPTION&apos;||TEXT(Product_Family__c)  = &apos;DESKTOP_SUBSCRIPTION&apos;),  List_Price_Total__c , NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sub Products Excluding 3 Products</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

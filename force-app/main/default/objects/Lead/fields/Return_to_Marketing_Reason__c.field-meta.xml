@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_to_Marketing_Reason__c</fullName>
+    <label>Return to Marketing Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Not Willing to Change Accounting Platform</fullName>
+                <default>false</default>
+                <label>Not Willing to Change Accounting Platform</label>
+            </value>
+            <value>
+                <fullName>Feature Missing</fullName>
+                <default>false</default>
+                <label>Feature Missing</label>
+            </value>
+            <value>
+                <fullName>Under Budget</fullName>
+                <default>false</default>
+                <label>Under Budget</label>
+            </value>
+            <value>
+                <fullName>Too Small</fullName>
+                <default>false</default>
+                <label>Too Small</label>
+            </value>
+            <value>
+                <fullName>Not Yet Ready</fullName>
+                <default>false</default>
+                <label>Not Yet Ready</label>
+            </value>
+            <value>
+                <fullName>No Authority</fullName>
+                <default>false</default>
+                <label>No Authority</label>
+            </value>
+            <value>
+                <fullName>Found Alternate Contact</fullName>
+                <default>false</default>
+                <label>Found Alternate Contact</label>
+            </value>
+            <value>
+                <fullName>Not a Target</fullName>
+                <default>false</default>
+                <label>Not a Target</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

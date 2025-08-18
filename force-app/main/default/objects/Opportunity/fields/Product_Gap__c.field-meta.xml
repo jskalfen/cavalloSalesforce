@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Gap__c</fullName>
+    <inlineHelpText>List any known gaps with our product from the Prospect, Customer, or Partner perspective that may impact the sale. Please be as objective and specific as possible.</inlineHelpText>
+    <label>Product Gap</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

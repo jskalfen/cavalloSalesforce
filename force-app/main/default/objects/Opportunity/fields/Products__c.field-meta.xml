@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products__c</fullName>
+    <label>Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>ERP__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Custom Fields</fullName>
+                <default>false</default>
+                <label>Custom Fields</label>
+            </value>
+            <value>
+                <fullName>Mission Control</fullName>
+                <default>false</default>
+                <label>Mission Control</label>
+            </value>
+            <value>
+                <fullName>Profit Analytics - Enterprise</fullName>
+                <default>false</default>
+                <label>Profit Analytics - Enterprise</label>
+            </value>
+            <value>
+                <fullName>Profit Analytics - Essentials</fullName>
+                <default>false</default>
+                <label>Profit Analytics - Essentials</label>
+            </value>
+            <value>
+                <fullName>Profit Analytics - Professional</fullName>
+                <default>false</default>
+                <label>Profit Analytics - Professional</label>
+            </value>
+            <value>
+                <fullName>Profit Scan - Essentials</fullName>
+                <default>false</default>
+                <label>Profit Scan - Essentials</label>
+            </value>
+            <value>
+                <fullName>Profit Scan - Professional</fullName>
+                <default>false</default>
+                <label>Profit Scan - Professional</label>
+            </value>
+            <value>
+                <fullName>SalesPad Concurrent</fullName>
+                <default>false</default>
+                <label>SalesPad Concurrent</label>
+            </value>
+            <value>
+                <fullName>SalesPad-GP</fullName>
+                <default>false</default>
+                <label>SalesPad-GP</label>
+            </value>
+            <value>
+                <fullName>Automation Agent</fullName>
+                <default>false</default>
+                <label>Automation Agent</label>
+            </value>
+            <value>
+                <fullName>Configurator</fullName>
+                <default>false</default>
+                <label>Configurator</label>
+            </value>
+            <value>
+                <fullName>Credit Card Processing</fullName>
+                <default>false</default>
+                <label>Credit Card Processing</label>
+            </value>
+            <value>
+                <fullName>Customer Portal - Enterprise</fullName>
+                <default>false</default>
+                <label>Customer Portal - Enterprise</label>
+            </value>
+            <value>
+                <fullName>Customer Portal - Essentials</fullName>
+                <default>false</default>
+                <label>Customer Portal - Essentials</label>
+            </value>
+            <value>
+                <fullName>Customer Portal - Professional</fullName>
+                <default>false</default>
+                <label>Customer Portal - Professional</label>
+            </value>
+            <value>
+                <fullName>Data Collection</fullName>
+                <default>false</default>
+                <label>Data Collection</label>
+            </value>
+            <value>
+                <fullName>Dispatch</fullName>
+                <default>false</default>
+                <label>Dispatch</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <fullName>PaceJet - Enterprise</fullName>
+                <default>false</default>
+                <label>PaceJet - Enterprise</label>
+            </value>
+            <value>
+                <fullName>PaceJet - Essentials</fullName>
+                <default>false</default>
+                <label>PaceJet - Essentials</label>
+            </value>
+            <value>
+                <fullName>SalesPad EDI</fullName>
+                <default>false</default>
+                <label>SalesPad EDI</label>
+            </value>
+            <value>
+                <fullName>SalesPad Inventory Manager</fullName>
+                <default>false</default>
+                <label>SalesPad Inventory Manager</label>
+            </value>
+            <value>
+                <fullName>SalesPad Reports &amp; Dashboards</fullName>
+                <default>false</default>
+                <label>SalesPad Reports &amp; Dashboards</label>
+            </value>
+            <value>
+                <fullName>SalesPad Returns Tracker</fullName>
+                <default>false</default>
+                <label>SalesPad Returns Tracker</label>
+            </value>
+            <value>
+                <fullName>SalesPad Web Portal - External Users</fullName>
+                <default>false</default>
+                <label>SalesPad Web Portal - External Users</label>
+            </value>
+            <value>
+                <fullName>SalesPad Web Portal - Internal Users</fullName>
+                <default>false</default>
+                <label>SalesPad Web Portal - Internal Users</label>
+            </value>
+            <value>
+                <fullName>ShipCenter</fullName>
+                <default>false</default>
+                <label>ShipCenter</label>
+            </value>
+            <value>
+                <fullName>Ship to GP</fullName>
+                <default>false</default>
+                <label>Ship to GP</label>
+            </value>
+            <value>
+                <fullName>Web API</fullName>
+                <default>false</default>
+                <label>Web API</label>
+            </value>
+            <value>
+                <fullName>Workflow for GP - Essentials</fullName>
+                <default>false</default>
+                <label>Workflow for GP - Essentials</label>
+            </value>
+            <value>
+                <fullName>Workflow for GP - Professional</fullName>
+                <default>false</default>
+                <label>Workflow for GP - Professional</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Tariff</fullName>
+                <default>false</default>
+                <label>Tariff</label>
+            </value>
+            <value>
+                <fullName>Bridge</fullName>
+                <default>false</default>
+                <label>Bridge</label>
+            </value>
+            <value>
+                <fullName>Process Analytics - Enterprise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Process Analytics - Enterprise</label>
+            </value>
+            <value>
+                <fullName>Process Analytics - Essentials</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Process Analytics - Essentials</label>
+            </value>
+            <value>
+                <fullName>Process Analytics - Professional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Process Analytics - Professional</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <controllingFieldValue>F&amp;SCM</controllingFieldValue>
+            <controllingFieldValue>Acumatica</controllingFieldValue>
+            <controllingFieldValue>Epicor</controllingFieldValue>
+            <controllingFieldValue>Infor</controllingFieldValue>
+            <valueName>Profit Analytics - Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <controllingFieldValue>F&amp;SCM</controllingFieldValue>
+            <controllingFieldValue>Acumatica</controllingFieldValue>
+            <controllingFieldValue>Epicor</controllingFieldValue>
+            <controllingFieldValue>Infor</controllingFieldValue>
+            <valueName>Profit Analytics - Essentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <controllingFieldValue>F&amp;SCM</controllingFieldValue>
+            <controllingFieldValue>Acumatica</controllingFieldValue>
+            <controllingFieldValue>Epicor</controllingFieldValue>
+            <controllingFieldValue>Infor</controllingFieldValue>
+            <valueName>Profit Analytics - Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Profit Scan - Essentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Profit Scan - Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Concurrent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad-GP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Automation Agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Configurator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Credit Card Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Customer Portal - Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Customer Portal - Essentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Customer Portal - Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Data Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Dispatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>PaceJet - Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>PaceJet - Essentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad EDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Inventory Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Reports &amp; Dashboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Returns Tracker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Web Portal - External Users</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>SalesPad Web Portal - Internal Users</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>ShipCenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Ship to GP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Web API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Workflow for GP - Essentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <valueName>Workflow for GP - Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>None</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GP</controllingFieldValue>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Tariff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Custom Fields</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BC</controllingFieldValue>
+            <valueName>Mission Control</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

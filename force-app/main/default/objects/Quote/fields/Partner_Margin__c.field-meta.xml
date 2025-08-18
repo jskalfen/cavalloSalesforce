@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Margin__c</fullName>
+    <formula>Opportunity.Is_Coupon_Applied__c</formula>
+    <label>Partner Margin</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

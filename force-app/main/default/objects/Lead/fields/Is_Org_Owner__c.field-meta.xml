@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Org_Owner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Checked if this person is the org owner, the person who originally set up the account and therefore has the billing info and gets most of the in app messaging and emails throughout the trial.  Primary contact.</inlineHelpText>
+    <label>Is Org Owner</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

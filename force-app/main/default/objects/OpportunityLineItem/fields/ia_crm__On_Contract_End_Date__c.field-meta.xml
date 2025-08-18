@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__On_Contract_End_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <label>On Contract End Date</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bill unused quantity</fullName>
+                <default>false</default>
+                <label>Bill unused quantity</label>
+            </value>
+            <value>
+                <fullName>Cancel unused quantity</fullName>
+                <default>false</default>
+                <label>Cancel unused quantity</label>
+            </value>
+            <value>
+                <fullName>Do nothing</fullName>
+                <default>false</default>
+                <label>Do nothing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Which_products_shown_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Analytics Cloud&quot; ), &quot;Analytics Cloud;&quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Automation Agent&quot; ), &quot;Automation Agent; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Binary Stream MEM&quot; ), &quot;Binary Stream MEM; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Returns Tracker&quot; ), &quot;Returns Tracker; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;CRM Module&quot; ), &quot;CRM Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Customer &amp; Order Manager&quot; ), &quot;Customer &amp; Order Manager; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Customer Portal - Ext&quot; ), &quot;Customer Portal - Ext; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Customer Portal - Int&quot; ), &quot;Customer Portal - Int; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Equipment Module&quot; ), &quot;Equipment Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;FedEx/UPS Connector&quot; ), &quot;FedEx/UPS Connector; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Inventory Manager&quot; ), &quot;Inventory Manager; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Kwiktag&quot; ), &quot;Kwiktag; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Magento&quot; ), &quot;Magento; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;PaceJet&quot; ), &quot;PaceJet; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Pricing Module&quot; ), &quot;Pricing Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Shipping Module&quot; ), &quot;Shipping Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Purchasing Module&quot; ), &quot;Purchasing Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Shopify&quot; ), &quot;Shopify; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Shipping Module&quot; ), &quot;Shipping Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Purchasing Module&quot; ), &quot;Purchasing Module; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Square&quot; ), &quot;Square; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;DataCollection&quot; ), &quot;DataCollection; &quot;,null )&amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Dispatch&quot; ), &quot;Dispatch; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Distribution Cloud&quot; ), &quot;Distribution Cloud; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;EDI&quot; ), &quot;EDI; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Manufacturing/Configurator&quot; ), &quot;Manufacturing/Configurator; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Other&quot; ), &quot;Other; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;PayFabric&quot; ), &quot;PayFabric; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;SalesPad&quot; ), &quot;SalesPad;&quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;SalesPad Mobile&quot; ), &quot;SalesPad Mobile;&quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Thomson Reuters&quot; ), &quot;Thomson Reuters; &quot;,null ) &amp;
+IF ( INCLUDES ( Which_products_will_need_to_be_shown__c , &quot;Workflow &amp; Profit Manager&quot; ), &quot;Workflow &amp; Profit Manager; &quot;,null )</formula>
+    <label>Which products shown Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Partner__c</fullName>
+    <inlineHelpText>The is the partner that gets credit for this deal - either as a strategic partner or as a referral partner.  Check their account record to see what level they are at and what they receive.</inlineHelpText>
+    <label>Assigned Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accountability Tax</fullName>
+                <default>false</default>
+                <label>Accountability Tax</label>
+            </value>
+            <value>
+                <fullName>Accounting Computer Solutions-3672</fullName>
+                <default>false</default>
+                <label>Accounting Computer Solutions-3672</label>
+            </value>
+            <value>
+                <fullName>Accounting Technology Solutions, LLC-2858</fullName>
+                <default>false</default>
+                <label>Accounting Technology Solutions, LLC-2858</label>
+            </value>
+            <value>
+                <fullName>ACE Microtechnology, Inc-310</fullName>
+                <default>false</default>
+                <label>ACE Microtechnology, Inc-310</label>
+            </value>
+            <value>
+                <fullName>Adirondack Data Systems (ADS)-418</fullName>
+                <default>false</default>
+                <label>Adirondack Data Systems (ADS)-418</label>
+            </value>
+            <value>
+                <fullName>Admiral Consulting Group-10037</fullName>
+                <default>false</default>
+                <label>Admiral Consulting Group-10037</label>
+            </value>
+            <value>
+                <fullName>Advanced Business Networks Inc. (Advanced Business Software Inc.)-622</fullName>
+                <default>false</default>
+                <label>Advanced Business Networks Inc. (Advanced Business Software Inc.)-622</label>
+            </value>
+            <value>
+                <fullName>Advanced Integrators-376</fullName>
+                <default>false</default>
+                <label>Advanced Integrators-376</label>
+            </value>
+            <value>
+                <fullName>AKA Enterprise Solutions, Inc.-494</fullName>
+                <default>false</default>
+                <label>AKA Enterprise Solutions, Inc.-494</label>
+            </value>
+            <value>
+                <fullName>Alpha-Pure-1</fullName>
+                <default>false</default>
+                <label>Alpha-Pure-1</label>
+            </value>
+            <value>
+                <fullName>Altara - Main Headquarters (West)-4085447000</fullName>
+                <default>false</default>
+                <label>Altara - Main Headquarters (West)-4085447000</label>
+            </value>
+            <value>
+                <fullName>Alta Vista Technology-2155</fullName>
+                <default>false</default>
+                <label>Alta Vista Technology-2155</label>
+            </value>
+            <value>
+                <fullName>Ameridyn (Logical IT Solutions)-1229</fullName>
+                <default>false</default>
+                <label>Ameridyn (Logical IT Solutions)-1229</label>
+            </value>
+            <value>
+                <fullName>Amuse Mints-2914</fullName>
+                <default>false</default>
+                <label>Amuse Mints-2914</label>
+            </value>
+            <value>
+                <fullName>Arctic Information Technology, Inc.-482</fullName>
+                <default>false</default>
+                <label>Arctic Information Technology, Inc.-482</label>
+            </value>
+            <value>
+                <fullName>Argus Consulting Group-574</fullName>
+                <default>false</default>
+                <label>Argus Consulting Group-574</label>
+            </value>
+            <value>
+                <fullName>Armanino (AMLLP)-355</fullName>
+                <default>false</default>
+                <label>Armanino (AMLLP)-355</label>
+            </value>
+            <value>
+                <fullName>ASI - Associates Solutions, Inc.-562</fullName>
+                <default>false</default>
+                <label>ASI - Associates Solutions, Inc.-562</label>
+            </value>
+            <value>
+                <fullName>ATC Consulting Services-3637</fullName>
+                <default>false</default>
+                <label>ATC Consulting Services-3637</label>
+            </value>
+            <value>
+                <fullName>AVM Consulting Inc (Affordable-IT)-2078</fullName>
+                <default>false</default>
+                <label>AVM Consulting Inc (Affordable-IT)-2078</label>
+            </value>
+            <value>
+                <fullName>AxentIT-3044</fullName>
+                <default>false</default>
+                <label>AxentIT-3044</label>
+            </value>
+            <value>
+                <fullName>Axxon Consulting Chile</fullName>
+                <default>false</default>
+                <label>Axxon Consulting Chile</label>
+            </value>
+            <value>
+                <fullName>Aztec Systems, Inc.-67</fullName>
+                <default>false</default>
+                <label>Aztec Systems, Inc.-67</label>
+            </value>
+            <value>
+                <fullName>Balance Point Technologies, Inc.-483</fullName>
+                <default>false</default>
+                <label>Balance Point Technologies, Inc.-483</label>
+            </value>
+            <value>
+                <fullName>BatchMaster Software-1642</fullName>
+                <default>false</default>
+                <label>BatchMaster Software-1642</label>
+            </value>
+            <value>
+                <fullName>BDO Canada LLP (fka Etelligent Solutions Inc.)-348</fullName>
+                <default>false</default>
+                <label>BDO Canada LLP (fka Etelligent Solutions Inc.)-348</label>
+            </value>
+            <value>
+                <fullName>BDO Solutions (BDO Dunwoody LLP)-530</fullName>
+                <default>false</default>
+                <label>BDO Solutions (BDO Dunwoody LLP)-530</label>
+            </value>
+            <value>
+                <fullName>BKD Technologies-454</fullName>
+                <default>false</default>
+                <label>BKD Technologies-454</label>
+            </value>
+            <value>
+                <fullName>Blue Moon Industries-889</fullName>
+                <default>false</default>
+                <label>Blue Moon Industries-889</label>
+            </value>
+            <value>
+                <fullName>Bond Consulting Services-410</fullName>
+                <default>false</default>
+                <label>Bond Consulting Services-410</label>
+            </value>
+            <value>
+                <fullName>Borek Business Solutions-473</fullName>
+                <default>false</default>
+                <label>Borek Business Solutions-473</label>
+            </value>
+            <value>
+                <fullName>Bortell Pty Ltd.-2637</fullName>
+                <default>false</default>
+                <label>Bortell Pty Ltd.-2637</label>
+            </value>
+            <value>
+                <fullName>Boyer &amp; Associates, Inc.-474</fullName>
+                <default>false</default>
+                <label>Boyer &amp; Associates, Inc.-474</label>
+            </value>
+            <value>
+                <fullName>Brightpoint Infotech-3690</fullName>
+                <default>false</default>
+                <label>Brightpoint Infotech-3690</label>
+            </value>
+            <value>
+                <fullName>Brilliant Solutions Group, Inc</fullName>
+                <default>false</default>
+                <label>Brilliant Solutions Group, Inc</label>
+            </value>
+            <value>
+                <fullName>BroadPoint Technologies Inc-128</fullName>
+                <default>false</default>
+                <label>BroadPoint Technologies Inc-128</label>
+            </value>
+            <value>
+                <fullName>Broadway Enterprises-338</fullName>
+                <default>false</default>
+                <label>Broadway Enterprises-338</label>
+            </value>
+            <value>
+                <fullName>Business Cents</fullName>
+                <default>false</default>
+                <label>Business Cents</label>
+            </value>
+            <value>
+                <fullName>Business Pipeline</fullName>
+                <default>false</default>
+                <label>Business Pipeline</label>
+            </value>
+            <value>
+                <fullName>Business Ready Solutions-647</fullName>
+                <default>false</default>
+                <label>Business Ready Solutions-647</label>
+            </value>
+            <value>
+                <fullName>C. Bennett Building Supply, Inc.-723</fullName>
+                <default>false</default>
+                <label>C. Bennett Building Supply, Inc.-723</label>
+            </value>
+            <value>
+                <fullName>Cadre-855</fullName>
+                <default>false</default>
+                <label>Cadre-855</label>
+            </value>
+            <value>
+                <fullName>CAL Business Solutions Inc.-332</fullName>
+                <default>false</default>
+                <label>CAL Business Solutions Inc.-332</label>
+            </value>
+            <value>
+                <fullName>Callow &amp; Associates Management Consultants-131</fullName>
+                <default>false</default>
+                <label>Callow &amp; Associates Management Consultants-131</label>
+            </value>
+            <value>
+                <fullName>Calsoft Systems-857</fullName>
+                <default>false</default>
+                <label>Calsoft Systems-857</label>
+            </value>
+            <value>
+                <fullName>Cargas Systems Inc-132</fullName>
+                <default>false</default>
+                <label>Cargas Systems Inc-132</label>
+            </value>
+            <value>
+                <fullName>Carpenter Paper Company-3741</fullName>
+                <default>false</default>
+                <label>Carpenter Paper Company-3741</label>
+            </value>
+            <value>
+                <fullName>Casari &amp; Co.-1358</fullName>
+                <default>false</default>
+                <label>Casari &amp; Co.-1358</label>
+            </value>
+            <value>
+                <fullName>CBIZ - MHM-334</fullName>
+                <default>false</default>
+                <label>CBIZ - MHM-334</label>
+            </value>
+            <value>
+                <fullName>CBIZ - Rootberg Business Services, Inc.-479</fullName>
+                <default>false</default>
+                <label>CBIZ - Rootberg Business Services, Inc.-479</label>
+            </value>
+            <value>
+                <fullName>Century Business Solutions-1748</fullName>
+                <default>false</default>
+                <label>Century Business Solutions-1748</label>
+            </value>
+            <value>
+                <fullName>CivicSmart, Inc-3603</fullName>
+                <default>false</default>
+                <label>CivicSmart, Inc-3603</label>
+            </value>
+            <value>
+                <fullName>CliftonLarsonAllen-475</fullName>
+                <default>false</default>
+                <label>CliftonLarsonAllen-475</label>
+            </value>
+            <value>
+                <fullName>C Moore LLC</fullName>
+                <default>false</default>
+                <label>C Moore LLC</label>
+            </value>
+            <value>
+                <fullName>Collins Computing Inc-63</fullName>
+                <default>false</default>
+                <label>Collins Computing Inc-63</label>
+            </value>
+            <value>
+                <fullName>Columbus IT-139</fullName>
+                <default>false</default>
+                <label>Columbus IT-139</label>
+            </value>
+            <value>
+                <fullName>Computer Solutions SC-1750</fullName>
+                <default>false</default>
+                <label>Computer Solutions SC-1750</label>
+            </value>
+            <value>
+                <fullName>Computer Transition Services (CTSI)-869</fullName>
+                <default>false</default>
+                <label>Computer Transition Services (CTSI)-869</label>
+            </value>
+            <value>
+                <fullName>CONEXUSsg-1475</fullName>
+                <default>false</default>
+                <label>CONEXUSsg-1475</label>
+            </value>
+            <value>
+                <fullName>Corpex Computer Inc-879</fullName>
+                <default>false</default>
+                <label>Corpex Computer Inc-879</label>
+            </value>
+            <value>
+                <fullName>Crestwood Associates</fullName>
+                <default>false</default>
+                <label>Crestwood Associates</label>
+            </value>
+            <value>
+                <fullName>Crimsonwing Malta-2924</fullName>
+                <default>false</default>
+                <label>Crimsonwing Malta-2924</label>
+            </value>
+            <value>
+                <fullName>Cultura Technologies (formerly E-Markets)-595</fullName>
+                <default>false</default>
+                <label>Cultura Technologies (formerly E-Markets)-595</label>
+            </value>
+            <value>
+                <fullName>Custom Information Services</fullName>
+                <default>false</default>
+                <label>Custom Information Services</label>
+            </value>
+            <value>
+                <fullName>D1 Technology Partners (SBS Group Nashvi-520</fullName>
+                <default>false</default>
+                <label>D1 Technology Partners (SBS Group Nashvi-520</label>
+            </value>
+            <value>
+                <fullName>Data Resolution-550</fullName>
+                <default>false</default>
+                <label>Data Resolution-550</label>
+            </value>
+            <value>
+                <fullName>Davyn (GIDK Consulting)-1075</fullName>
+                <default>false</default>
+                <label>Davyn (GIDK Consulting)-1075</label>
+            </value>
+            <value>
+                <fullName>Dean Dorton Allen Ford PLLC-199</fullName>
+                <default>false</default>
+                <label>Dean Dorton Allen Ford PLLC-199</label>
+            </value>
+            <value>
+                <fullName>Delton CPA</fullName>
+                <default>false</default>
+                <label>Delton CPA</label>
+            </value>
+            <value>
+                <fullName>Dennis Hands</fullName>
+                <default>false</default>
+                <label>Dennis Hands</label>
+            </value>
+            <value>
+                <fullName>Dexpro Dynamics-563</fullName>
+                <default>false</default>
+                <label>Dexpro Dynamics-563</label>
+            </value>
+            <value>
+                <fullName>DFC Consultants Ltd-145</fullName>
+                <default>false</default>
+                <label>DFC Consultants Ltd-145</label>
+            </value>
+            <value>
+                <fullName>Diamond Software Inc.-147</fullName>
+                <default>false</default>
+                <label>Diamond Software Inc.-147</label>
+            </value>
+            <value>
+                <fullName>Di-Fi Solutions LLC-346</fullName>
+                <default>false</default>
+                <label>Di-Fi Solutions LLC-346</label>
+            </value>
+            <value>
+                <fullName>Directed Technologies, Inc.-1710</fullName>
+                <default>false</default>
+                <label>Directed Technologies, Inc.-1710</label>
+            </value>
+            <value>
+                <fullName>DK Weiss &amp; Associates</fullName>
+                <default>false</default>
+                <label>DK Weiss &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>Dorado Solutions, Inc.-1488</fullName>
+                <default>false</default>
+                <label>Dorado Solutions, Inc.-1488</label>
+            </value>
+            <value>
+                <fullName>Dynamic Methods-318</fullName>
+                <default>false</default>
+                <label>Dynamic Methods-318</label>
+            </value>
+            <value>
+                <fullName>DynamicsCloud-3513</fullName>
+                <default>false</default>
+                <label>DynamicsCloud-3513</label>
+            </value>
+            <value>
+                <fullName>Dynamics MCT Consulting Ltd-4067</fullName>
+                <default>false</default>
+                <label>Dynamics MCT Consulting Ltd-4067</label>
+            </value>
+            <value>
+                <fullName>Dynamic Solutions Group, LLC-885</fullName>
+                <default>false</default>
+                <label>Dynamic Solutions Group, LLC-885</label>
+            </value>
+            <value>
+                <fullName>Echelbarger, Himebaugh, Tamm &amp; Co., P.C. (EHTC)</fullName>
+                <default>false</default>
+                <label>Echelbarger, Himebaugh, Tamm &amp; Co., P.C. (EHTC)</label>
+            </value>
+            <value>
+                <fullName>EIS Business Solutions-10064</fullName>
+                <default>false</default>
+                <label>EIS Business Solutions-10064</label>
+            </value>
+            <value>
+                <fullName>Elgen Manufacturing-3259</fullName>
+                <default>false</default>
+                <label>Elgen Manufacturing-3259</label>
+            </value>
+            <value>
+                <fullName>Encore Business Solutions Inc-149</fullName>
+                <default>false</default>
+                <label>Encore Business Solutions Inc-149</label>
+            </value>
+            <value>
+                <fullName>Endeavour Solutions-626</fullName>
+                <default>false</default>
+                <label>Endeavour Solutions-626</label>
+            </value>
+            <value>
+                <fullName>English Management Solutions</fullName>
+                <default>false</default>
+                <label>English Management Solutions</label>
+            </value>
+            <value>
+                <fullName>Equity Business Solutions, LLC-1164</fullName>
+                <default>false</default>
+                <label>Equity Business Solutions, LLC-1164</label>
+            </value>
+            <value>
+                <fullName>Evan-Moor Educational Publishers-1698</fullName>
+                <default>false</default>
+                <label>Evan-Moor Educational Publishers-1698</label>
+            </value>
+            <value>
+                <fullName>Evertec Group, LLC.-3738</fullName>
+                <default>false</default>
+                <label>Evertec Group, LLC.-3738</label>
+            </value>
+            <value>
+                <fullName>eVision Systems-633</fullName>
+                <default>false</default>
+                <label>eVision Systems-633</label>
+            </value>
+            <value>
+                <fullName>Evolv-IT-699</fullName>
+                <default>false</default>
+                <label>Evolv-IT-699</label>
+            </value>
+            <value>
+                <fullName>eXponential Consulting, LLC-10044</fullName>
+                <default>false</default>
+                <label>eXponential Consulting, LLC-10044</label>
+            </value>
+            <value>
+                <fullName>Express Information Systems-567</fullName>
+                <default>false</default>
+                <label>Express Information Systems-567</label>
+            </value>
+            <value>
+                <fullName>Falcons Nest Business Solutions-2304</fullName>
+                <default>false</default>
+                <label>Falcons Nest Business Solutions-2304</label>
+            </value>
+            <value>
+                <fullName>Fields Bookkeeping Services, Inc.</fullName>
+                <default>false</default>
+                <label>Fields Bookkeeping Services, Inc.</label>
+            </value>
+            <value>
+                <fullName>Fine Business Solutions</fullName>
+                <default>false</default>
+                <label>Fine Business Solutions</label>
+            </value>
+            <value>
+                <fullName>Fine Solutions, Ltd.-591</fullName>
+                <default>false</default>
+                <label>Fine Solutions, Ltd.-591</label>
+            </value>
+            <value>
+                <fullName>Flexible Solutions-10063</fullName>
+                <default>false</default>
+                <label>Flexible Solutions-10063</label>
+            </value>
+            <value>
+                <fullName>FMT Consultants-159</fullName>
+                <default>false</default>
+                <label>FMT Consultants-159</label>
+            </value>
+            <value>
+                <fullName>Frank Rimerman Consulting LLC-345</fullName>
+                <default>false</default>
+                <label>Frank Rimerman Consulting LLC-345</label>
+            </value>
+            <value>
+                <fullName>Gametain Solutions, LLC-358</fullName>
+                <default>false</default>
+                <label>Gametain Solutions, LLC-358</label>
+            </value>
+            <value>
+                <fullName>Gestisoft</fullName>
+                <default>false</default>
+                <label>Gestisoft</label>
+            </value>
+            <value>
+                <fullName>GPGuys.com-2053</fullName>
+                <default>false</default>
+                <label>GPGuys.com-2053</label>
+            </value>
+            <value>
+                <fullName>GP-SMART SOLUCIONES DE NEGOCIO SC-2503</fullName>
+                <default>false</default>
+                <label>GP-SMART SOLUCIONES DE NEGOCIO SC-2503</label>
+            </value>
+            <value>
+                <fullName>GraVoc Associates-792</fullName>
+                <default>false</default>
+                <label>GraVoc Associates-792</label>
+            </value>
+            <value>
+                <fullName>Greenstone Consulting Group-2388</fullName>
+                <default>false</default>
+                <label>Greenstone Consulting Group-2388</label>
+            </value>
+            <value>
+                <fullName>Gross Mendelsohn Technology Solutions Group-646</fullName>
+                <default>false</default>
+                <label>Gross Mendelsohn Technology Solutions Group-646</label>
+            </value>
+            <value>
+                <fullName>Hand Crafted Systems-539</fullName>
+                <default>false</default>
+                <label>Hand Crafted Systems-539</label>
+            </value>
+            <value>
+                <fullName>Harwood Consulting, Inc.-1134</fullName>
+                <default>false</default>
+                <label>Harwood Consulting, Inc.-1134</label>
+            </value>
+            <value>
+                <fullName>Heartland Business Systems (Formerly Avastone Technologies, LLC)-306</fullName>
+                <default>false</default>
+                <label>Heartland Business Systems (Formerly Avastone Technologies, LLC)-306</label>
+            </value>
+            <value>
+                <fullName>Henderson, Grealis and Associates</fullName>
+                <default>false</default>
+                <label>Henderson, Grealis and Associates</label>
+            </value>
+            <value>
+                <fullName>Hoops, Inc.-373</fullName>
+                <default>false</default>
+                <label>Hoops, Inc.-373</label>
+            </value>
+            <value>
+                <fullName>Houston Software-694</fullName>
+                <default>false</default>
+                <label>Houston Software-694</label>
+            </value>
+            <value>
+                <fullName>IBIS Inc-160</fullName>
+                <default>false</default>
+                <label>IBIS Inc-160</label>
+            </value>
+            <value>
+                <fullName>ICB Consulting-614</fullName>
+                <default>false</default>
+                <label>ICB Consulting-614</label>
+            </value>
+            <value>
+                <fullName>Icon SRL-2589</fullName>
+                <default>false</default>
+                <label>Icon SRL-2589</label>
+            </value>
+            <value>
+                <fullName>ihatecomputer.com-3057</fullName>
+                <default>false</default>
+                <label>ihatecomputer.com-3057</label>
+            </value>
+            <value>
+                <fullName>Implementation Specialists-496</fullName>
+                <default>false</default>
+                <label>Implementation Specialists-496</label>
+            </value>
+            <value>
+                <fullName>Informed Systems, Inc.-533</fullName>
+                <default>false</default>
+                <label>Informed Systems, Inc.-533</label>
+            </value>
+            <value>
+                <fullName>Inscio-495</fullName>
+                <default>false</default>
+                <label>Inscio-495</label>
+            </value>
+            <value>
+                <fullName>Integrated Business Group (IBG)-337</fullName>
+                <default>false</default>
+                <label>Integrated Business Group (IBG)-337</label>
+            </value>
+            <value>
+                <fullName>Integrated Systems Solutions-283</fullName>
+                <default>false</default>
+                <label>Integrated Systems Solutions-283</label>
+            </value>
+            <value>
+                <fullName>Integrity Systems LLC-304</fullName>
+                <default>false</default>
+                <label>Integrity Systems LLC-304</label>
+            </value>
+            <value>
+                <fullName>Intellispring Technologies Inc.-1038</fullName>
+                <default>false</default>
+                <label>Intellispring Technologies Inc.-1038</label>
+            </value>
+            <value>
+                <fullName>Intellitec Solutions LLC-168</fullName>
+                <default>false</default>
+                <label>Intellitec Solutions LLC-168</label>
+            </value>
+            <value>
+                <fullName>IntellPartners-1291</fullName>
+                <default>false</default>
+                <label>IntellPartners-1291</label>
+            </value>
+            <value>
+                <fullName>InterDyn - Artis-325</fullName>
+                <default>false</default>
+                <label>InterDyn - Artis-325</label>
+            </value>
+            <value>
+                <fullName>InterDyn BMI/ A Columbus Company-158</fullName>
+                <default>false</default>
+                <label>InterDyn BMI/ A Columbus Company-158</label>
+            </value>
+            <value>
+                <fullName>InterDyn BMI-130</fullName>
+                <default>false</default>
+                <label>InterDyn BMI-130</label>
+            </value>
+            <value>
+                <fullName>Internet eBusiness Solutions (IES)-999</fullName>
+                <default>false</default>
+                <label>Internet eBusiness Solutions (IES)-999</label>
+            </value>
+            <value>
+                <fullName>Isis, Inc.-10094</fullName>
+                <default>false</default>
+                <label>Isis, Inc.-10094</label>
+            </value>
+            <value>
+                <fullName>Island Business Solutions Inc.-342</fullName>
+                <default>false</default>
+                <label>Island Business Solutions Inc.-342</label>
+            </value>
+            <value>
+                <fullName>iSolutions Partners-908</fullName>
+                <default>false</default>
+                <label>iSolutions Partners-908</label>
+            </value>
+            <value>
+                <fullName>Joesoftware Inc.-2703</fullName>
+                <default>false</default>
+                <label>Joesoftware Inc.-2703</label>
+            </value>
+            <value>
+                <fullName>JourneyTEAM - Any Business Systems, LLC-660</fullName>
+                <default>false</default>
+                <label>JourneyTEAM - Any Business Systems, LLC-660</label>
+            </value>
+            <value>
+                <fullName>JourneyTEAM Nashville-1101</fullName>
+                <default>false</default>
+                <label>JourneyTEAM Nashville-1101</label>
+            </value>
+            <value>
+                <fullName>JourneyTEAM - RDA, LLC-1099</fullName>
+                <default>false</default>
+                <label>JourneyTEAM - RDA, LLC-1099</label>
+            </value>
+            <value>
+                <fullName>JOVACO Solutions, Inc.-234</fullName>
+                <default>false</default>
+                <label>JOVACO Solutions, Inc.-234</label>
+            </value>
+            <value>
+                <fullName>K and K Business Solutions, Inc</fullName>
+                <default>false</default>
+                <label>K and K Business Solutions, Inc</label>
+            </value>
+            <value>
+                <fullName>Karen Peak CPA (Firm)</fullName>
+                <default>false</default>
+                <label>Karen Peak CPA (Firm)</label>
+            </value>
+            <value>
+                <fullName>Keel and Company-691</fullName>
+                <default>false</default>
+                <label>Keel and Company-691</label>
+            </value>
+            <value>
+                <fullName>Kent Accounting Systems, Inc.-880</fullName>
+                <default>false</default>
+                <label>Kent Accounting Systems, Inc.-880</label>
+            </value>
+            <value>
+                <fullName>Key2Act (formerly WennSoft)-106</fullName>
+                <default>false</default>
+                <label>Key2Act (formerly WennSoft)-106</label>
+            </value>
+            <value>
+                <fullName>Kompass Integrated Solutions-630</fullName>
+                <default>false</default>
+                <label>Kompass Integrated Solutions-630</label>
+            </value>
+            <value>
+                <fullName>Kopis, LLC-834</fullName>
+                <default>false</default>
+                <label>Kopis, LLC-834</label>
+            </value>
+            <value>
+                <fullName>Kraft Enterprise Systems-461</fullName>
+                <default>false</default>
+                <label>Kraft Enterprise Systems-461</label>
+            </value>
+            <value>
+                <fullName>Kreischer Miller-799</fullName>
+                <default>false</default>
+                <label>Kreischer Miller-799</label>
+            </value>
+            <value>
+                <fullName>KTL Solutions-447</fullName>
+                <default>false</default>
+                <label>KTL Solutions-447</label>
+            </value>
+            <value>
+                <fullName>L. Kianoff &amp; Associates, Inc.-521</fullName>
+                <default>false</default>
+                <label>L. Kianoff &amp; Associates, Inc.-521</label>
+            </value>
+            <value>
+                <fullName>Landis Computer-328</fullName>
+                <default>false</default>
+                <label>Landis Computer-328</label>
+            </value>
+            <value>
+                <fullName>LBMC Technologies LLC-174</fullName>
+                <default>false</default>
+                <label>LBMC Technologies LLC-174</label>
+            </value>
+            <value>
+                <fullName>Leaf Software Solutions, Inc.-1035</fullName>
+                <default>false</default>
+                <label>Leaf Software Solutions, Inc.-1035</label>
+            </value>
+            <value>
+                <fullName>Louis Haskel CPA, PA</fullName>
+                <default>false</default>
+                <label>Louis Haskel CPA, PA</label>
+            </value>
+            <value>
+                <fullName>lpit solutions</fullName>
+                <default>false</default>
+                <label>lpit solutions</label>
+            </value>
+            <value>
+                <fullName>Mac Endeavours LLC-227</fullName>
+                <default>false</default>
+                <label>Mac Endeavours LLC-227</label>
+            </value>
+            <value>
+                <fullName>Maner Costerisan-298</fullName>
+                <default>false</default>
+                <label>Maner Costerisan-298</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Resource Partners-411</fullName>
+                <default>false</default>
+                <label>Manufacturing Resource Partners-411</label>
+            </value>
+            <value>
+                <fullName>Masterware-1649</fullName>
+                <default>false</default>
+                <label>Masterware-1649</label>
+            </value>
+            <value>
+                <fullName>Metal Industries-2828</fullName>
+                <default>false</default>
+                <label>Metal Industries-2828</label>
+            </value>
+            <value>
+                <fullName>M-Hance-3218</fullName>
+                <default>false</default>
+                <label>M-Hance-3218</label>
+            </value>
+            <value>
+                <fullName>Mibar.net-10077</fullName>
+                <default>false</default>
+                <label>Mibar.net-10077</label>
+            </value>
+            <value>
+                <fullName>Micro Force-401</fullName>
+                <default>false</default>
+                <label>Micro Force-401</label>
+            </value>
+            <value>
+                <fullName>MilCom Business Solutions, Inc.-684</fullName>
+                <default>false</default>
+                <label>MilCom Business Solutions, Inc.-684</label>
+            </value>
+            <value>
+                <fullName>ML IT Partners-2159</fullName>
+                <default>false</default>
+                <label>ML IT Partners-2159</label>
+            </value>
+            <value>
+                <fullName>MNV Software, LLC</fullName>
+                <default>false</default>
+                <label>MNV Software, LLC</label>
+            </value>
+            <value>
+                <fullName>Money Fit</fullName>
+                <default>false</default>
+                <label>Money Fit</label>
+            </value>
+            <value>
+                <fullName>Moore Stephens, P.C.-528</fullName>
+                <default>false</default>
+                <label>Moore Stephens, P.C.-528</label>
+            </value>
+            <value>
+                <fullName>Negotium Technologies-205</fullName>
+                <default>false</default>
+                <label>Negotium Technologies-205</label>
+            </value>
+            <value>
+                <fullName>Netstandard Inc-238</fullName>
+                <default>false</default>
+                <label>Netstandard Inc-238</label>
+            </value>
+            <value>
+                <fullName>NextDyn LLC-374</fullName>
+                <default>false</default>
+                <label>NextDyn LLC-374</label>
+            </value>
+            <value>
+                <fullName>NexTec Group (Ohio)-3160</fullName>
+                <default>false</default>
+                <label>NexTec Group (Ohio)-3160</label>
+            </value>
+            <value>
+                <fullName>NexTec Group-310479770</fullName>
+                <default>false</default>
+                <label>NexTec Group-310479770</label>
+            </value>
+            <value>
+                <fullName>Nezaj &amp; Co CPAs</fullName>
+                <default>false</default>
+                <label>Nezaj &amp; Co CPAs</label>
+            </value>
+            <value>
+                <fullName>Njevity, Inc.-415</fullName>
+                <default>false</default>
+                <label>Njevity, Inc.-415</label>
+            </value>
+            <value>
+                <fullName>Nolan Business Solutions-1736</fullName>
+                <default>false</default>
+                <label>Nolan Business Solutions-1736</label>
+            </value>
+            <value>
+                <fullName>Nuco Consultants</fullName>
+                <default>false</default>
+                <label>Nuco Consultants</label>
+            </value>
+            <value>
+                <fullName>Nutritional Resources (NRI- Healthwise)-1306</fullName>
+                <default>false</default>
+                <label>Nutritional Resources (NRI- Healthwise)-1306</label>
+            </value>
+            <value>
+                <fullName>Oehrlein and Oehrlein P.C.</fullName>
+                <default>false</default>
+                <label>Oehrlein and Oehrlein P.C.</label>
+            </value>
+            <value>
+                <fullName>On Target Resources, LLC.-3787</fullName>
+                <default>false</default>
+                <label>On Target Resources, LLC.-3787</label>
+            </value>
+            <value>
+                <fullName>Onza Solutions, Inc. (BestTechsNW) - Out of Business Sold to Fine-1134</fullName>
+                <default>false</default>
+                <label>Onza Solutions, Inc. (BestTechsNW) - Out of Business Sold to Fine-1134</label>
+            </value>
+            <value>
+                <fullName>Opal Business Solutions-805</fullName>
+                <default>false</default>
+                <label>Opal Business Solutions-805</label>
+            </value>
+            <value>
+                <fullName>PacXa (Formerly Century Computers, Inc.)-681</fullName>
+                <default>false</default>
+                <label>PacXa (Formerly Century Computers, Inc.)-681</label>
+            </value>
+            <value>
+                <fullName>Paradigm Technology Consulting, LLC-492</fullName>
+                <default>false</default>
+                <label>Paradigm Technology Consulting, LLC-492</label>
+            </value>
+            <value>
+                <fullName>Paragon Software Solutions, Inc.-698</fullName>
+                <default>false</default>
+                <label>Paragon Software Solutions, Inc.-698</label>
+            </value>
+            <value>
+                <fullName>PDG Consultants-305</fullName>
+                <default>false</default>
+                <label>PDG Consultants-305</label>
+            </value>
+            <value>
+                <fullName>Perimeter Business Solutions-1012</fullName>
+                <default>false</default>
+                <label>Perimeter Business Solutions-1012</label>
+            </value>
+            <value>
+                <fullName>Pinnacle of Indiana-586</fullName>
+                <default>false</default>
+                <label>Pinnacle of Indiana-586</label>
+            </value>
+            <value>
+                <fullName>Plain Solutions Ltd.-3004</fullName>
+                <default>false</default>
+                <label>Plain Solutions Ltd.-3004</label>
+            </value>
+            <value>
+                <fullName>Praxa, Ltd-651</fullName>
+                <default>false</default>
+                <label>Praxa, Ltd-651</label>
+            </value>
+            <value>
+                <fullName>Premier Computing Technologies-189</fullName>
+                <default>false</default>
+                <label>Premier Computing Technologies-189</label>
+            </value>
+            <value>
+                <fullName>Prophet Business Group Ltd.-389</fullName>
+                <default>false</default>
+                <label>Prophet Business Group Ltd.-389</label>
+            </value>
+            <value>
+                <fullName>PST Inc.-3600</fullName>
+                <default>false</default>
+                <label>PST Inc.-3600</label>
+            </value>
+            <value>
+                <fullName>PYA Solutions-239</fullName>
+                <default>false</default>
+                <label>PYA Solutions-239</label>
+            </value>
+            <value>
+                <fullName>QBIX Solutions-733</fullName>
+                <default>false</default>
+                <label>QBIX Solutions-733</label>
+            </value>
+            <value>
+                <fullName>QCI-685</fullName>
+                <default>false</default>
+                <label>QCI-685</label>
+            </value>
+            <value>
+                <fullName>Q Factor Consulting-1312</fullName>
+                <default>false</default>
+                <label>Q Factor Consulting-1312</label>
+            </value>
+            <value>
+                <fullName>Rand Group Solutions, LLC-515</fullName>
+                <default>false</default>
+                <label>Rand Group Solutions, LLC-515</label>
+            </value>
+            <value>
+                <fullName>Rarey-Olson CPAs PLLC</fullName>
+                <default>false</default>
+                <label>Rarey-Olson CPAs PLLC</label>
+            </value>
+            <value>
+                <fullName>Reagan Wireless-2174</fullName>
+                <default>false</default>
+                <label>Reagan Wireless-2174</label>
+            </value>
+            <value>
+                <fullName>Reporting Central (Acquired by Encore)-1268</fullName>
+                <default>false</default>
+                <label>Reporting Central (Acquired by Encore)-1268</label>
+            </value>
+            <value>
+                <fullName>Rimrock Corporation-590</fullName>
+                <default>false</default>
+                <label>Rimrock Corporation-590</label>
+            </value>
+            <value>
+                <fullName>RoseASP-196</fullName>
+                <default>false</default>
+                <label>RoseASP-196</label>
+            </value>
+            <value>
+                <fullName>RSM US LLP (McGladrey)-4</fullName>
+                <default>false</default>
+                <label>RSM US LLP (McGladrey)-4</label>
+            </value>
+            <value>
+                <fullName>Run Business Solutions-538</fullName>
+                <default>false</default>
+                <label>Run Business Solutions-538</label>
+            </value>
+            <value>
+                <fullName>S2 Technology, Inc.-707</fullName>
+                <default>false</default>
+                <label>S2 Technology, Inc.-707</label>
+            </value>
+            <value>
+                <fullName>SalesPad, LLC.-300</fullName>
+                <default>false</default>
+                <label>SalesPad, LLC.-300</label>
+            </value>
+            <value>
+                <fullName>SBS Group-1174</fullName>
+                <default>false</default>
+                <label>SBS Group-1174</label>
+            </value>
+            <value>
+                <fullName>SDG Business Solutions</fullName>
+                <default>false</default>
+                <label>SDG Business Solutions</label>
+            </value>
+            <value>
+                <fullName>SDN Computer Consultants, LLC-457</fullName>
+                <default>false</default>
+                <label>SDN Computer Consultants, LLC-457</label>
+            </value>
+            <value>
+                <fullName>Sepulvado Consulting Group</fullName>
+                <default>false</default>
+                <label>Sepulvado Consulting Group</label>
+            </value>
+            <value>
+                <fullName>Seven Star Foods-3746</fullName>
+                <default>false</default>
+                <label>Seven Star Foods-3746</label>
+            </value>
+            <value>
+                <fullName>Sherman &amp; Associates Inc-1415</fullName>
+                <default>false</default>
+                <label>Sherman &amp; Associates Inc-1415</label>
+            </value>
+            <value>
+                <fullName>Sherwood Systems (Div of Interdyn BMI)-311</fullName>
+                <default>false</default>
+                <label>Sherwood Systems (Div of Interdyn BMI)-311</label>
+            </value>
+            <value>
+                <fullName>Sikich, LLP-490</fullName>
+                <default>false</default>
+                <label>Sikich, LLP-490</label>
+            </value>
+            <value>
+                <fullName>Sikich (formerly Altico Advisors)-406</fullName>
+                <default>false</default>
+                <label>Sikich (formerly Altico Advisors)-406</label>
+            </value>
+            <value>
+                <fullName>Sikich (Formerly BCG Systems, Inc.)-338</fullName>
+                <default>false</default>
+                <label>Sikich (Formerly BCG Systems, Inc.)-338</label>
+            </value>
+            <value>
+                <fullName>Small Business Solutions, LLC</fullName>
+                <default>false</default>
+                <label>Small Business Solutions, LLC</label>
+            </value>
+            <value>
+                <fullName>SMB Suite (formerly NextCorp Ltd.)-662</fullName>
+                <default>false</default>
+                <label>SMB Suite (formerly NextCorp Ltd.)-662</label>
+            </value>
+            <value>
+                <fullName>Smith &amp; Allen Consulting-1232</fullName>
+                <default>false</default>
+                <label>Smith &amp; Allen Consulting-1232</label>
+            </value>
+            <value>
+                <fullName>Socius-357</fullName>
+                <default>false</default>
+                <label>Socius-357</label>
+            </value>
+            <value>
+                <fullName>Socius Partners LLC-2818</fullName>
+                <default>false</default>
+                <label>Socius Partners LLC-2818</label>
+            </value>
+            <value>
+                <fullName>Sockeye Business Solutions-663</fullName>
+                <default>false</default>
+                <label>Sockeye Business Solutions-663</label>
+            </value>
+            <value>
+                <fullName>Software Solutions Group-456</fullName>
+                <default>false</default>
+                <label>Software Solutions Group-456</label>
+            </value>
+            <value>
+                <fullName>Spring2 Technologies-397</fullName>
+                <default>false</default>
+                <label>Spring2 Technologies-397</label>
+            </value>
+            <value>
+                <fullName>Springthrough Consulting, Inc.-304</fullName>
+                <default>false</default>
+                <label>Springthrough Consulting, Inc.-304</label>
+            </value>
+            <value>
+                <fullName>Squire &amp; Company-366</fullName>
+                <default>false</default>
+                <label>Squire &amp; Company-366</label>
+            </value>
+            <value>
+                <fullName>SS Fllp CPA</fullName>
+                <default>false</default>
+                <label>SS Fllp CPA</label>
+            </value>
+            <value>
+                <fullName>SSi Consulting</fullName>
+                <default>false</default>
+                <label>SSi Consulting</label>
+            </value>
+            <value>
+                <fullName>Stanley Stuart Yoffee and Hendrix-204</fullName>
+                <default>false</default>
+                <label>Stanley Stuart Yoffee and Hendrix-204</label>
+            </value>
+            <value>
+                <fullName>Stratotec-415</fullName>
+                <default>false</default>
+                <label>Stratotec-415</label>
+            </value>
+            <value>
+                <fullName>Summit Group Software-486</fullName>
+                <default>false</default>
+                <label>Summit Group Software-486</label>
+            </value>
+            <value>
+                <fullName>Susan Pruskin Consulting</fullName>
+                <default>false</default>
+                <label>Susan Pruskin Consulting</label>
+            </value>
+            <value>
+                <fullName>SVA Consulting-207</fullName>
+                <default>false</default>
+                <label>SVA Consulting-207</label>
+            </value>
+            <value>
+                <fullName>Syvantis Technologies-763</fullName>
+                <default>false</default>
+                <label>Syvantis Technologies-763</label>
+            </value>
+            <value>
+                <fullName>Taurus International Mfg, Inc-263</fullName>
+                <default>false</default>
+                <label>Taurus International Mfg, Inc-263</label>
+            </value>
+            <value>
+                <fullName>TBS Automation Systems-817</fullName>
+                <default>false</default>
+                <label>TBS Automation Systems-817</label>
+            </value>
+            <value>
+                <fullName>TD Carpenter &amp; Assoc,-1989</fullName>
+                <default>false</default>
+                <label>TD Carpenter &amp; Assoc,-1989</label>
+            </value>
+            <value>
+                <fullName>Technology Management Concepts (TMC-LA)-208</fullName>
+                <default>false</default>
+                <label>Technology Management Concepts (TMC-LA)-208</label>
+            </value>
+            <value>
+                <fullName>Tecnasa-1081</fullName>
+                <default>false</default>
+                <label>Tecnasa-1081</label>
+            </value>
+            <value>
+                <fullName>Telmar Computer Solutions-1317</fullName>
+                <default>false</default>
+                <label>Telmar Computer Solutions-1317</label>
+            </value>
+            <value>
+                <fullName>Tensoft-736</fullName>
+                <default>false</default>
+                <label>Tensoft-736</label>
+            </value>
+            <value>
+                <fullName>Texo-381</fullName>
+                <default>false</default>
+                <label>Texo-381</label>
+            </value>
+            <value>
+                <fullName>The Anchor Group-1215</fullName>
+                <default>false</default>
+                <label>The Anchor Group-1215</label>
+            </value>
+            <value>
+                <fullName>The Knaster Technology Group-213</fullName>
+                <default>false</default>
+                <label>The Knaster Technology Group-213</label>
+            </value>
+            <value>
+                <fullName>The Resource Group-216</fullName>
+                <default>false</default>
+                <label>The Resource Group-216</label>
+            </value>
+            <value>
+                <fullName>The TM Group-111</fullName>
+                <default>false</default>
+                <label>The TM Group-111</label>
+            </value>
+            <value>
+                <fullName>The Worth Company-317</fullName>
+                <default>false</default>
+                <label>The Worth Company-317</label>
+            </value>
+            <value>
+                <fullName>Tresidder Limited-10079</fullName>
+                <default>false</default>
+                <label>Tresidder Limited-10079</label>
+            </value>
+            <value>
+                <fullName>TriBridge-321</fullName>
+                <default>false</default>
+                <label>TriBridge-321</label>
+            </value>
+            <value>
+                <fullName>Tridea Partners-599</fullName>
+                <default>false</default>
+                <label>Tridea Partners-599</label>
+            </value>
+            <value>
+                <fullName>Trinsoft-10042</fullName>
+                <default>false</default>
+                <label>Trinsoft-10042</label>
+            </value>
+            <value>
+                <fullName>TTD Enterprises LLC-581</fullName>
+                <default>false</default>
+                <label>TTD Enterprises LLC-581</label>
+            </value>
+            <value>
+                <fullName>Turnkey Technologies Inc-135</fullName>
+                <default>false</default>
+                <label>Turnkey Technologies Inc-135</label>
+            </value>
+            <value>
+                <fullName>TYR-Tactical-3773</fullName>
+                <default>false</default>
+                <label>TYR-Tactical-3773</label>
+            </value>
+            <value>
+                <fullName>UXC Eclipse-210</fullName>
+                <default>false</default>
+                <label>UXC Eclipse-210</label>
+            </value>
+            <value>
+                <fullName>Veracon Corporation-3995</fullName>
+                <default>false</default>
+                <label>Veracon Corporation-3995</label>
+            </value>
+            <value>
+                <fullName>Vertical Solutions-602</fullName>
+                <default>false</default>
+                <label>Vertical Solutions-602</label>
+            </value>
+            <value>
+                <fullName>Vox Telecom-492</fullName>
+                <default>false</default>
+                <label>Vox Telecom-492</label>
+            </value>
+            <value>
+                <fullName>WebSan Solutions-1248</fullName>
+                <default>false</default>
+                <label>WebSan Solutions-1248</label>
+            </value>
+            <value>
+                <fullName>Wipfli LLP-221</fullName>
+                <default>false</default>
+                <label>Wipfli LLP-221</label>
+            </value>
+            <value>
+                <fullName>Wizards Group, US-2692</fullName>
+                <default>false</default>
+                <label>Wizards Group, US-2692</label>
+            </value>
+            <value>
+                <fullName>Your Accounting Department</fullName>
+                <default>false</default>
+                <label>Your Accounting Department</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

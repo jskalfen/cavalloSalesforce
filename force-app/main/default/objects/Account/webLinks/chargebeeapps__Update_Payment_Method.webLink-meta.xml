@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>chargebeeapps__Update_Payment_Method</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Update Payment Method</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR($Site.Prefix+&apos;/apex/chargebeeapps__CBRouter?action=update_payment_method&amp;immediate=true&amp;id=&apos;+Account.Id, null, null, false)}</url>
+</WebLink>

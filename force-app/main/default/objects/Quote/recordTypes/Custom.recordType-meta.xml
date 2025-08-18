@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom</fullName>
+    <active>true</active>
+    <description>Quote for Custom Development Services</description>
+    <label>Custom</label>
+    <picklistValues>
+        <picklist>Billing_Method__c</picklist>
+        <values>
+            <fullName>Fixed-Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time and Materials</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Discount_Years__c</picklist>
+        <values>
+            <fullName>1 Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Time__c</picklist>
+        <values>
+            <fullName>10 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuation of Project</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PM_Service__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved for Partner Margin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

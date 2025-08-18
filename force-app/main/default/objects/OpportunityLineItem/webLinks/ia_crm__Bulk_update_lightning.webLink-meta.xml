@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Bulk_update_lightning</fullName>
+    <availability>online</availability>
+    <description>This button must be used in lightning experience interface,  the functionality for selecting items from interface is disabled.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Bulk update</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!URLFOR($Site.Prefix + &apos;/apex/ia_crm__OpportunityProductsBulkUpdate?recordId=&apos; + Opportunity.Id + &apos;&amp;recordType=&apos; + Opportunity.RecordTypeId + &apos;&amp;hasOpportunityLine=&apos; +
+IF(Opportunity.HasOpportunityLineItem, &apos;true&apos;, &apos;false&apos;))}</url>
+</WebLink>

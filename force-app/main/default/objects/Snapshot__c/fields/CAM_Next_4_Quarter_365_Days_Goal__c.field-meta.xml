@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAM_Next_4_Quarter_365_Days_Goal__c</fullName>
+    <formula>IF(Fiscal_Year__c=&apos;2021&apos;,
+CASE(MONTH( Snapshopt_Created_Date2__c ),
+1, 729278,
+2, 729278,
+3, 729278,
+4, 740217,
+5, 740217,
+6, 740217,
+7, 751320,
+8, 751320,
+9, 751320,
+10, 762590,
+11, 762590,
+12, 762590,
+0),
+IF(Fiscal_Year__c=&apos;2022&apos;,
+CASE(MONTH( Snapshopt_Created_Date2__c ),
+1, 762590,
+2, 762590,
+3, 762590,
+4, 762590,
+5, 762590,
+6, 762590,
+7, 762590,
+8, 762590,
+9, 762590,
+10, 762590,
+11, 762590,
+12, 762590,
+0),0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CAM  Next 4 Quarter 365 Days Goal</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

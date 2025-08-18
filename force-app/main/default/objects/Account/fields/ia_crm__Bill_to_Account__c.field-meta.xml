@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Bill_to_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>For Standard/Direct business leave the field blank.
+For Reseller business, populate this with Reseller Account. The field gets defaulted on the Opportunities when creating them from the &apos;Create Contract Opportunity&apos; or &apos;Create Sales Opportunity&apos; buttons.</inlineHelpText>
+    <label>Bill to Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 4) OR (2 AND 3)</booleanFilter>
+        <filterItems>
+            <field>Account.ia_crm__Reseller_Type__c</field>
+            <operation>contains</operation>
+            <valueField>Account.Type</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Channel Partner / Reseller</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.ia_crm__Reseller_Type__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </filterItems>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

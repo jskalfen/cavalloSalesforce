@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Contract_Dates_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(Opportunity.RecordType.DeveloperName = &apos;Contract&apos;,
+IF(!ISBLANK(Opportunity.ContractId), 
+OR( 
+IF(AND(!(AND(ia_crm__Start_Date__c &gt;= Opportunity.Contract.StartDate, ia_crm__Start_Date__c &lt;= Opportunity.Contract.EndDate)), !ISBLANK(ia_crm__Start_Date__c)) , true, false), 
+IF(AND(!(AND(ia_crm__End_Date__c &gt;= Opportunity.Contract.StartDate, ia_crm__End_Date__c &lt;= Opportunity.Contract.EndDate)), !ISBLANK(ia_crm__End_Date__c)) , true, false), 
+IF(ISPICKVAL( ia_crm__Contract_Line_Save_Cancel_He__c , &apos;Use billing template&apos;), 
+OR( 
+IF(!(AND(ia_crm__Billing_Start_Date__c &gt;= Opportunity.Contract.StartDate, ia_crm__Billing_Start_Date__c &lt;= Opportunity.Contract.EndDate)) , true, false), 
+IF(!(AND(ia_crm__Billing_End_Date__c &gt;= Opportunity.Contract.StartDate, ia_crm__Billing_End_Date__c &lt;= Opportunity.Contract.EndDate)) , true, false) 
+), false) 
+), false), false)</errorConditionFormula>
+    <errorMessage>If the Opportunity has a Contract associated with it dates must be within the Start Date and End Date of the Contract.</errorMessage>
+</ValidationRule>

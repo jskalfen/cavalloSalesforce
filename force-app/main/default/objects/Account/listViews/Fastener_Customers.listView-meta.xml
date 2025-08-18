@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fastener_Customers</fullName>
+    <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8) AND 9</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Account_Status__c</columns>
+    <columns>NAICS_Code__c</columns>
+    <columns>ACCOUNT.SIC</columns>
+    <columns>SIC_DESC</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.SIC</field>
+        <operation>equals</operation>
+        <value>3965</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.SIC</field>
+        <operation>equals</operation>
+        <value>3089</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.SIC</field>
+        <operation>equals</operation>
+        <value>5072</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.SIC</field>
+        <operation>equals</operation>
+        <value>3452</value>
+    </filters>
+    <filters>
+        <field>NAICS_Code__c</field>
+        <operation>equals</operation>
+        <value>332722</value>
+    </filters>
+    <filters>
+        <field>NAICS_Code__c</field>
+        <operation>equals</operation>
+        <value>339993</value>
+    </filters>
+    <filters>
+        <field>NAICS_Code__c</field>
+        <operation>equals</operation>
+        <value>423710</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Fasten</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>End User</value>
+    </filters>
+    <label>Fastener Customers</label>
+</ListView>

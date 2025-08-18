@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Transaction__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Intacct Transaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales Invoice</fullName>
+                <default>false</default>
+                <label>Sales Invoice</label>
+            </value>
+            <value>
+                <fullName>Sales Order</fullName>
+                <default>false</default>
+                <label>Sales Order</label>
+            </value>
+            <value>
+                <fullName>Sales Quote</fullName>
+                <default>false</default>
+                <label>Sales Quote</label>
+            </value>
+            <value>
+                <fullName>Sales Credit Memo</fullName>
+                <default>false</default>
+                <label>Sales Credit Memo</label>
+            </value>
+            <value>
+                <fullName>Shipper</fullName>
+                <default>false</default>
+                <label>Shipper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES( Account__r.ERP__c , &quot;Acumatica&quot;), &quot;Acumatica; &quot;,&quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Epicor&quot;), &quot;Epicor; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;IBM&quot;), &quot;IBM; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Infor&quot;), &quot;Infor; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Epicor&quot;), &quot;Epicor; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Intuit - Quickbooks&quot;), &quot;Intuit - Quickbooks; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;MSFT - GP (Great Plains)&quot;), &quot;MSFT - GP (Great Plains); &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;MSFT -Finance &amp; Operations (AX)&quot;), &quot;MSFT -Finance &amp; Operations (AX); &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;MSFT - Dynamics BC (Business Central)&quot;), &quot;MSFT - Dynamics BC (Business Central); &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Oracle - E-Business Suite (EBS)&quot;), &quot;Oracle - E-Business Suite (EBS); &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Oracle - Fusion&quot;), &quot;Oracle - Fusion; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Oracle - Netsuite&quot;), &quot;Oracle - Netsuite; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - Intacct&quot;), &quot;Sage - Intacct; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - Sage 100&quot;), &quot;Sage - Sage 100; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - Sage 200&quot;), &quot;Sage - Sage 200; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - Sage 300&quot;), &quot;Sage - Sage 300; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - Sage 50&quot;), &quot;Sage - Sage 50; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Sage - X3&quot;), &quot;Sage - X3; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Salesforce&quot;), &quot;Salesforce; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;SAP - B1&quot;), &quot;SAP - B1; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Syspro&quot;), &quot;Syspro; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Workday&quot;), &quot;Workday; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Other&quot;), &quot;Other; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Account__r.ERP__c, &quot;Do not know&quot;), &quot;Do not know; &quot;, &quot;&quot;)</formula>
+    <label>ERP</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

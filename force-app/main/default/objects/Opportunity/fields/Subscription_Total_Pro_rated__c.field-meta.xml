@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Total_Pro_rated__c</fullName>
+    <description>Rollup of Subscription total price (Pro-rated). - SE (5/27)</description>
+    <label>Subscription Total (Opp-Billing)</label>
+    <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Family__c</field>
+        <operation>equals</operation>
+        <value>DESKTOP_SUBSCRIPTION, SALESPAD_SUBSCRIPTION, DISTRIBUTION_CLOUD, INTELLIGENCE, ANALYTICS CLOUD, SUBSCRIPTION_DISCOUNT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

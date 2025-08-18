@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prorated_Sales_Price_Subscription__c</fullName>
+    <formula>IF( TEXT(PricebookEntry.Product2.Family) = &quot;SALESPAD_SUBSCRIPTION&quot; || TEXT(PricebookEntry.Product2.Family) = &quot;DESKTOP_SUBSCRIPTION&quot; || TEXT(PricebookEntry.Product2.Family) = &quot;INTELLIGENCE&quot;, (UnitPrice /365)* Quote.Contract_Terms__c , UnitPrice )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prorated Sales Price(Subscription)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

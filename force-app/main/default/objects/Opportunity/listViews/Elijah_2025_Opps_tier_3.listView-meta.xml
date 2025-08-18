@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Elijah_2025_Opps_tier_3</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>chargebeeapps__CB_Subscription_Id__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Renewal_Forecast__c</columns>
+    <columns>Original_Amount__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Expiration_Date__c</columns>
+    <columns>Current_Progress__c</columns>
+    <columns>PS_Tier__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>Renewal 2025:</value>
+    </filters>
+    <filters>
+        <field>Original_Amount__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Elijah 2025 Opps tier 3</label>
+</ListView>

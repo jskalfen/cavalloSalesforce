@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hubspot_Lifecycle_Stage__c</fullName>
+    <inlineHelpText>This field manages how we market to contacts. For example, someone marked as a LEAD in this field will receive our LEAD emails. The fields should be straight forward, with the exception of partners. They are known as &quot;Evangelists&quot;.</inlineHelpText>
+    <label>Hubspot Lifecycle Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Marketing Qualified Lead</fullName>
+                <default>false</default>
+                <label>Marketing Qualified Lead</label>
+            </value>
+            <value>
+                <fullName>Partner Qualified Lead</fullName>
+                <default>false</default>
+                <label>Partner Qualified Lead</label>
+            </value>
+            <value>
+                <fullName>Sales Accepted Lead</fullName>
+                <default>false</default>
+                <label>Sales Accepted Lead</label>
+            </value>
+            <value>
+                <fullName>Value Aware</fullName>
+                <default>false</default>
+                <label>Value Aware</label>
+            </value>
+            <value>
+                <fullName>Technically Aware</fullName>
+                <default>false</default>
+                <label>Technically Aware</label>
+            </value>
+            <value>
+                <fullName>Commit</fullName>
+                <default>false</default>
+                <label>Commit</label>
+            </value>
+            <value>
+                <fullName>Align</fullName>
+                <default>false</default>
+                <label>Align</label>
+            </value>
+            <value>
+                <fullName>Prove</fullName>
+                <default>false</default>
+                <label>Prove</label>
+            </value>
+            <value>
+                <fullName>Kick Off</fullName>
+                <default>false</default>
+                <label>Kick Off</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>Churned</fullName>
+                <default>false</default>
+                <label>Churned</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

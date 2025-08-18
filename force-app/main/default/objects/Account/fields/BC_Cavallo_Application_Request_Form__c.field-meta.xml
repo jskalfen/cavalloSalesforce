@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Cavallo_Application_Request_Form__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&apos;https://forms.gle/bjMpfEgarPFYqKuH7&apos;, &apos;https://forms.gle/bjMpfEgarPFYqKuH7&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Form to collect environment details to allow Partner access to our Cavallo products. To view form responses, see Cavallo&apos;s wiki https://wiki.cavallo.com/wiki/5327</inlineHelpText>
+    <label>BC - Cavallo Application Request Form</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

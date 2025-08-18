@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EDI_Document_type__c</fullName>
+    <label>EDI Document type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>850 - Purchase Order</fullName>
+                <default>false</default>
+                <label>850 - Purchase Order</label>
+            </value>
+            <value>
+                <fullName>945 - Warehouse Shipping Order</fullName>
+                <default>false</default>
+                <label>945 - Warehouse Shipping Order</label>
+            </value>
+            <value>
+                <fullName>856 - Advance Ship Notice</fullName>
+                <default>false</default>
+                <label>856 - Advance Ship Notice</label>
+            </value>
+            <value>
+                <fullName>810 - Invoice</fullName>
+                <default>false</default>
+                <label>810 - Invoice</label>
+            </value>
+            <value>
+                <fullName>855 - PO Acknowledgement</fullName>
+                <default>false</default>
+                <label>855 - PO Acknowledgement</label>
+            </value>
+            <value>
+                <fullName>846 - Inventory Inquiry/Advice</fullName>
+                <default>false</default>
+                <label>846 - Inventory Inquiry/Advice</label>
+            </value>
+            <value>
+                <fullName>940 - Warehouse Shipping Order</fullName>
+                <default>false</default>
+                <label>940 - Warehouse Shipping Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

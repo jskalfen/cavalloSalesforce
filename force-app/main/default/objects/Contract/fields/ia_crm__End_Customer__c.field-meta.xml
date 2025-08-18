@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__End_Customer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <inlineHelpText>For Standard/Direct business leave the field blank. 
+For Reseller business, populate this with End Customer. Please note that the value needs to be equal to the Opportunity Account.</inlineHelpText>
+    <label>End Customer</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Contracts (End Customer)</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

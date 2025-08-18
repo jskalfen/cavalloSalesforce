@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Create_Sales_Opportunity</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create Sales Opportunity</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR($Site.Prefix + &apos;/apex/ia_crm__CreateOpportunityFromAccount?RecordType=OrderEntry&amp;accid=&apos; + Account.Id + &apos;&amp;Intacct_Entity__c=&apos; + Account.ia_crm__Intacct_Entity__c + &apos;&amp;Intacct_Location__c=&apos; + Account.ia_crm__Intacct_Entity__c + &apos;&amp;Bill_to__c=&apos; + Account.ia_crm__Bill_to_ContactId__c + &apos;&amp;Ship_to__c=&apos; + Account.ia_crm__Ship_to_ContactId__c + &apos;&amp;Bill_to_Account__c=&apos; + Account.ia_crm__Bill_to_Account__c + &apos;&amp;Bill_to_AccountId__c=&apos; + Account.ia_crm__Bill_to_AccountId__c)}</url>
+</WebLink>

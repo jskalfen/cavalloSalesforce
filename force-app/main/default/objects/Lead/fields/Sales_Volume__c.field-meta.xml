@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Volume__c</fullName>
+    <label>Revenue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; $1,000,000</fullName>
+                <default>false</default>
+                <label>&lt; $1,000,000</label>
+            </value>
+            <value>
+                <fullName>$1,000,001 - $5,000,000</fullName>
+                <default>false</default>
+                <label>$1,000,001 - $5,000,000</label>
+            </value>
+            <value>
+                <fullName>$5,000,001 - $10,000,000</fullName>
+                <default>false</default>
+                <label>$5,000,001 - $10,000,000</label>
+            </value>
+            <value>
+                <fullName>$10,000,001 - $50,000,000</fullName>
+                <default>false</default>
+                <label>$10,000,001 - $50,000,000</label>
+            </value>
+            <value>
+                <fullName>&gt; $50,000,000</fullName>
+                <default>false</default>
+                <label>&gt; $50,000,000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

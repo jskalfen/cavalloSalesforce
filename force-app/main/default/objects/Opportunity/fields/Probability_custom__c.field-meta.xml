@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability_custom__c</fullName>
+    <inlineHelpText>Reflects the likelihood of an opportunity reaching a successful outcome based on its stage. Your options are: 
+Qualified/Discovery: 0%-30%
+Demo/Technical Evaluation: 0%-50%
+Proposal: 0%-70%
+Contract Negotiation: 0%-90%</inlineHelpText>
+    <label>Probability % (custom)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>70</label>
+            </value>
+            <value>
+                <fullName>80</fullName>
+                <default>false</default>
+                <label>80</label>
+            </value>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>90</label>
+            </value>
+            <value>
+                <fullName>100</fullName>
+                <default>false</default>
+                <label>100</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Qualified</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Qualified</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Qualified</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Qualified</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Demo/Technical Evaluation</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Negotiation</controllingFieldValue>
+            <valueName>90</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

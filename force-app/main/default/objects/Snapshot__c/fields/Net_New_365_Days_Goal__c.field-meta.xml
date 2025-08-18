@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_New_365_Days_Goal__c</fullName>
+    <formula>IF(Fiscal_Year__c=&apos;2021&apos;,
+CASE(MONTH( Today_s_Date__c ),
+1, 788000,
+2, 788000,
+3, 788000,
+4, 1125000,
+5, 1125000,
+6, 1125000,
+7, 1238000,
+8, 1238000,
+9, 1238000,
+10, 1256570,
+11, 1256570,
+12, 1256570,
+0),
+IF(Fiscal_Year__c=&apos;2022&apos;,
+CASE(MONTH(Today_s_Date__c ),
+1, 1275419,
+2, 1275419,
+3, 1275419,
+4, 1294550,
+5, 1294550,
+6, 1294550,
+7, 1313968,
+8, 1313968,
+9, 1313968,
+10, 1313968,
+11, 1313968,
+12, 1313968,
+0),0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Net New - Next Quarter (365 Days Goal)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Partner_Margin_Partner_Source</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.Full_Name__c != &quot;James Williams&quot;   
+&amp;&amp; $User.Full_Name__c != &quot;Sam Klooster&quot; 
+&amp;&amp;	$User.Full_Name__c != &quot;Jesse Clem&quot; 
+&amp;&amp;	$User.Full_Name__c != &quot;Anne Forshee&quot; 
+&amp;&amp; $Profile.Name != &quot;System Administrator&quot;  
+&amp;&amp;
+  (
+					(ISCHANGED(Partner__c) &amp;&amp; ISBLANK(Partner__c)) 
+						||
+	    (ISCHANGED(Partner_Sourced__c) &amp;&amp; (Partner_Sourced__c = FALSE))
+		)</errorConditionFormula>
+    <errorMessage>You are not authorized to clear Partner for Margin or Partner Sourced.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Value_required_past_Discovery</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name = &apos;New Business&apos;,
+ISCHANGED(StageName),
+ISPICKVAL(PRIORVALUE(StageName), &apos;Discovery&apos;),
+NOT(
+OR(
+ISPICKVAL(StageName, &apos;Closed Lost&apos;),
+NOT(ISBLANK(Estimated_Value__c))
+)
+),
+ISBLANK(Estimated_Value__c),
+$Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Estimated_Value__c</errorDisplayField>
+    <errorMessage>Estimated Value is required when moving the stage past Discovery.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Hold_Reason__c</fullName>
+    <inlineHelpText>Please utilize this field if an opportunity gets placed in the On Hold stage.</inlineHelpText>
+    <label>On Hold Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Budget Issues</fullName>
+                <default>false</default>
+                <label>Budget Issues</label>
+            </value>
+            <value>
+                <fullName>Cold Feet/Indecision</fullName>
+                <default>false</default>
+                <label>Cold Feet/Indecision</label>
+            </value>
+            <value>
+                <fullName>Delayed Decision</fullName>
+                <default>false</default>
+                <label>Delayed Decision</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Scope Creep</fullName>
+                <default>false</default>
+                <label>Scope Creep</label>
+            </value>
+            <value>
+                <fullName>Timing Issue/Too Busy</fullName>
+                <default>false</default>
+                <label>Timing Issue/Too Busy</label>
+            </value>
+            <value>
+                <fullName>Unexpected Business Circumstance</fullName>
+                <default>false</default>
+                <label>Unexpected Business Circumstance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

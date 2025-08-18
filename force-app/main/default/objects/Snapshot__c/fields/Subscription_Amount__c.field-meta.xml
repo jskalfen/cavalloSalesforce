@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Amount__c</fullName>
+    <formula>IF(  TEXT(Product_Family__c ) = &apos;CLOUD_PRODUCTS&apos; || TEXT(Product_Family__c )= &apos;DESKTOP_SUBSCRIPTION&apos; || TEXT(Product_Family__c )= &apos;DISTRIBUTION_CLOUD&apos; || TEXT(Product_Family__c )= &apos;INTELLIGENCE&apos; || TEXT(Product_Family__c )= &apos;SALESPAD_SUBSCRIPTION&apos; || TEXT(Product_Family__c )= &apos;ANALYTICS CLOUD&apos; || TEXT(Product_Family__c )= &apos;SUBSCRIPTION_DISCOUNT&apos;,  Total_Price__c , 0.00)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subscription Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

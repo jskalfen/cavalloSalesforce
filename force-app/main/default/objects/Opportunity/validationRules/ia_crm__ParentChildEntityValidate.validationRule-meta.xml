@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__ParentChildEntityValidate</fullName>
+    <active>false</active>
+    <errorConditionFormula>ia_crm__Intacct_Entity__r.ia_crm__Intacct_Entity_ID__c &lt;&gt;  Account.ia_crm__Intacct_Entity__r.ia_crm__Intacct_Entity_ID__c</errorConditionFormula>
+    <errorMessage>The Entity ID selected does not match the Entity ID selected for this Account or does not belong to the Parent Entity selected for this Account. 
+You must select the Entity ID selected in the Account or a child entity.</errorMessage>
+</ValidationRule>

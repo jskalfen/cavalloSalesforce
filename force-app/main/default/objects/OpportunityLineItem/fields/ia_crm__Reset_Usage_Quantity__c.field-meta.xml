@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Reset_Usage_Quantity__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Reset Usage Quantity</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>After each renewal</fullName>
+                <default>false</default>
+                <label>After each renewal</label>
+            </value>
+            <value>
+                <fullName>After each invoice</fullName>
+                <default>false</default>
+                <label>After each invoice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

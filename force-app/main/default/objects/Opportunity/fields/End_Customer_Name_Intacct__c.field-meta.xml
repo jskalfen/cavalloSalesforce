@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Customer_Name_Intacct__c</fullName>
+    <description>This pulls in the End Customer Name from the Parent Opportunity, if a Parent Opportunity exists. If there is no Parent Opportunity, it will pull in the name of the End Customer Name from the Opportunity Record. 
+
+
+This field exists so that it can be synced to Intacct.</description>
+    <externalId>false</externalId>
+    <formula>IF
+(NOT
+ (ISBLANK
+  ( Parent_Opportunity__c )), Parent_Opportunity__r.Account.Name,  Account.Name )</formula>
+    <label>End Customer Name Intacct</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

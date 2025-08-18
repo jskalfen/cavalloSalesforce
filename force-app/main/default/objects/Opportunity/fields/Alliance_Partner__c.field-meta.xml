@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alliance_Partner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>DEPRECATE Alliance Partner</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Alliance Partner Opportunities</relationshipLabel>
+    <relationshipName>Alliance_Partner_opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

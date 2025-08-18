@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Name_or_Parent_Account__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field has a name in it that is different from the Company Name, then you&apos;ll need to set up a two accounts.  The Org name is simply another account that you can relate to the Company account by using the &quot;parent account&quot; field in Salesforce.</inlineHelpText>
+    <label>Org Name or Parent Account</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

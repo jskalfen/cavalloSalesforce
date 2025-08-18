@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Feature_Notes_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Missing_Feature__c = TRUE
+&amp;&amp; ISBLANK(Missing_Feature_Notes__c)</errorConditionFormula>
+    <errorDisplayField>Missing_Feature_Notes__c</errorDisplayField>
+    <errorMessage>Missing Feature Notes required</errorMessage>
+</ValidationRule>

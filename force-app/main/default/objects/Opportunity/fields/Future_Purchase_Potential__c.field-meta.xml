@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Purchase_Potential__c</fullName>
+    <inlineHelpText># of Potential future seats/users in the next 24 months:
+What additional products are not being purchased now, but expected to be sold in 24 months?</inlineHelpText>
+    <label>Future Purchase Potential</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

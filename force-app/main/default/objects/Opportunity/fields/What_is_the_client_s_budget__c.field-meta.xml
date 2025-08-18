@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_the_client_s_budget__c</fullName>
+    <label>What is the client&apos;s budget?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;$10k</fullName>
+                <default>false</default>
+                <label>&lt;$10k</label>
+            </value>
+            <value>
+                <fullName>$10-25k</fullName>
+                <default>false</default>
+                <label>$10-25k</label>
+            </value>
+            <value>
+                <fullName>$25-50k</fullName>
+                <default>false</default>
+                <label>$25-50k</label>
+            </value>
+            <value>
+                <fullName>$50-100k</fullName>
+                <default>false</default>
+                <label>$50-100k</label>
+            </value>
+            <value>
+                <fullName>$100k+</fullName>
+                <default>false</default>
+                <label>$100k+</label>
+            </value>
+            <value>
+                <fullName>Not Given</fullName>
+                <default>false</default>
+                <label>Not Given</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

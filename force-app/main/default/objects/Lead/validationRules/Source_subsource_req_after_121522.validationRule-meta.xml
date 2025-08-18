@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_subsource_req_after_121522</fullName>
+    <active>false</active>
+    <description>Lead Source and sub source required for Leads created after 12/15/22</description>
+    <errorConditionFormula>IF(
+AND(DATEVALUE(CreatedDate) &gt; DATE(2022,12,15) , 
+OR( ISBLANK(TEXT(LeadSource)), ISBLANK(TEXT(Lead_Subsource__c))
+)
+), TRUE,FALSE
+)</errorConditionFormula>
+    <errorMessage>Lead Source and Lead Subsource are required</errorMessage>
+</ValidationRule>

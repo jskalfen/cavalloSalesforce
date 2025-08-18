@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Account_Contract_Signer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The individual authorized to sign contracts on behalf of the partner.</description>
+    <inlineHelpText>The individual authorized to sign contracts on behalf of the partner.</inlineHelpText>
+    <label>Partner Account Contract Signer</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Partner Account Contract Signer)</relationshipLabel>
+    <relationshipName>Accounts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

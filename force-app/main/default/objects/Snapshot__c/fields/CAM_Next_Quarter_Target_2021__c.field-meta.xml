@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAM_Next_Quarter_Target_2021__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(  Snapshopt_Created_Date2__c ),
+1, 598750,
+2, 598750,
+3, 598750,
+4, 598750,
+5, 598750,
+6, 598750,
+7, 718500,
+8, 718500,
+9, 718500,
+10,729278,
+11,729278,
+12,729278,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CAM Next Quarter Target 2021</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

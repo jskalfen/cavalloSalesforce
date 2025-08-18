@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Product_Type_Label__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Custom_Product_Type__c) = &apos;DataCollection Client&apos;, &apos;Inventory Manager&apos;, TEXT(Custom_Product_Type__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom Product Type Label</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

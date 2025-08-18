@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>chargebeeapps__Locale__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Locale</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>en</fullName>
+                <default>false</default>
+                <label>English</label>
+            </value>
+            <value>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+                <label>English (Australia)</label>
+            </value>
+            <value>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+                <label>English (Canada)</label>
+            </value>
+            <value>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+                <label>English (India)</label>
+            </value>
+            <value>
+                <fullName>en-IE</fullName>
+                <default>false</default>
+                <label>English (Ireland)</label>
+            </value>
+            <value>
+                <fullName>en-MT</fullName>
+                <default>false</default>
+                <label>English (Malta)</label>
+            </value>
+            <value>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+                <label>English (New Zealand)</label>
+            </value>
+            <value>
+                <fullName>en-PH</fullName>
+                <default>false</default>
+                <label>English (Philippines)</label>
+            </value>
+            <value>
+                <fullName>en-SG</fullName>
+                <default>false</default>
+                <label>English (Singapore)</label>
+            </value>
+            <value>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+                <label>English (South Africa)</label>
+            </value>
+            <value>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+                <label>English (United Kingdom)</label>
+            </value>
+            <value>
+                <fullName>en-US</fullName>
+                <default>false</default>
+                <label>English (United States)</label>
+            </value>
+            <value>
+                <fullName>fr</fullName>
+                <default>false</default>
+                <label>French</label>
+            </value>
+            <value>
+                <fullName>fr-BE</fullName>
+                <default>false</default>
+                <label>French (Belgium)</label>
+            </value>
+            <value>
+                <fullName>fr-CA</fullName>
+                <default>false</default>
+                <label>French (Canada)</label>
+            </value>
+            <value>
+                <fullName>fr-FR</fullName>
+                <default>false</default>
+                <label>French (France)</label>
+            </value>
+            <value>
+                <fullName>fr-LU</fullName>
+                <default>false</default>
+                <label>French (Luxembourg)</label>
+            </value>
+            <value>
+                <fullName>fr-CH</fullName>
+                <default>false</default>
+                <label>French (Switzerland)</label>
+            </value>
+            <value>
+                <fullName>de</fullName>
+                <default>false</default>
+                <label>German</label>
+            </value>
+            <value>
+                <fullName>de-AT</fullName>
+                <default>false</default>
+                <label>German (Austria)</label>
+            </value>
+            <value>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+                <label>German (Germany)</label>
+            </value>
+            <value>
+                <fullName>de-GR</fullName>
+                <default>false</default>
+                <label>German (Greece)</label>
+            </value>
+            <value>
+                <fullName>de-LU</fullName>
+                <default>false</default>
+                <label>German (Luxembourg)</label>
+            </value>
+            <value>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+                <label>German (Switzerland)</label>
+            </value>
+            <value>
+                <fullName>it</fullName>
+                <default>false</default>
+                <label>Italian</label>
+            </value>
+            <value>
+                <fullName>it-IT</fullName>
+                <default>false</default>
+                <label>Italian (Italy)</label>
+            </value>
+            <value>
+                <fullName>it-CH</fullName>
+                <default>false</default>
+                <label>Italian (Switzerland)</label>
+            </value>
+            <value>
+                <fullName>pt</fullName>
+                <default>false</default>
+                <label>Portuguese</label>
+            </value>
+            <value>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+                <label>Portuguese (Brazil)</label>
+            </value>
+            <value>
+                <fullName>pt-PT</fullName>
+                <default>false</default>
+                <label>Portuguese (Portugal)</label>
+            </value>
+            <value>
+                <fullName>es</fullName>
+                <default>false</default>
+                <label>Spanish</label>
+            </value>
+            <value>
+                <fullName>es-AR</fullName>
+                <default>false</default>
+                <label>Spanish (Argentina)</label>
+            </value>
+            <value>
+                <fullName>es-BO</fullName>
+                <default>false</default>
+                <label>Spanish (Bolivia)</label>
+            </value>
+            <value>
+                <fullName>es-CL</fullName>
+                <default>false</default>
+                <label>Spanish (Chile)</label>
+            </value>
+            <value>
+                <fullName>es-CO</fullName>
+                <default>false</default>
+                <label>Spanish (Colombia)</label>
+            </value>
+            <value>
+                <fullName>es-CR</fullName>
+                <default>false</default>
+                <label>Spanish (Costa Rica)</label>
+            </value>
+            <value>
+                <fullName>es-CU</fullName>
+                <default>false</default>
+                <label>Spanish (Cuba)</label>
+            </value>
+            <value>
+                <fullName>es-DO</fullName>
+                <default>false</default>
+                <label>Spanish (Dominican Republic)</label>
+            </value>
+            <value>
+                <fullName>es-EC</fullName>
+                <default>false</default>
+                <label>Spanish (Ecuador)</label>
+            </value>
+            <value>
+                <fullName>es-SV</fullName>
+                <default>false</default>
+                <label>Spanish (El Salvador)</label>
+            </value>
+            <value>
+                <fullName>es-GT</fullName>
+                <default>false</default>
+                <label>Spanish (Guatemala)</label>
+            </value>
+            <value>
+                <fullName>es-HN</fullName>
+                <default>false</default>
+                <label>Spanish (Honduras)</label>
+            </value>
+            <value>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+                <label>Spanish (Mexico)</label>
+            </value>
+            <value>
+                <fullName>es-NI</fullName>
+                <default>false</default>
+                <label>Spanish (Nicaragua)</label>
+            </value>
+            <value>
+                <fullName>es-PA</fullName>
+                <default>false</default>
+                <label>Spanish (Panama)</label>
+            </value>
+            <value>
+                <fullName>es-PY</fullName>
+                <default>false</default>
+                <label>Spanish (Paraguay)</label>
+            </value>
+            <value>
+                <fullName>es-PE</fullName>
+                <default>false</default>
+                <label>Spanish (Peru)</label>
+            </value>
+            <value>
+                <fullName>es-PR</fullName>
+                <default>false</default>
+                <label>Spanish (Puerto Rico)</label>
+            </value>
+            <value>
+                <fullName>es-ES</fullName>
+                <default>false</default>
+                <label>Spanish (Spain)</label>
+            </value>
+            <value>
+                <fullName>es-US</fullName>
+                <default>false</default>
+                <label>Spanish (United States)</label>
+            </value>
+            <value>
+                <fullName>es-UY</fullName>
+                <default>false</default>
+                <label>Spanish (Uruguay)</label>
+            </value>
+            <value>
+                <fullName>es-VE</fullName>
+                <default>false</default>
+                <label>Spanish (Venezuela)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_Cavallo_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;New_Business&quot;
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; ISPICKVAL(StageName, &quot;Closed Won&quot;)
+&amp;&amp; ISPICKVAL(Type, &quot;New Logo&quot;)
+&amp;&amp; ISBLANK(Why_Cavallo__c)</errorConditionFormula>
+    <errorDisplayField>Why_Cavallo__c</errorDisplayField>
+    <errorMessage>Required when Type is New Logo</errorMessage>
+</ValidationRule>

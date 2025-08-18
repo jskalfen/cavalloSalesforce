@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Risk_Detail_Checkbox_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Technical_Risks__c = TRUE &amp;&amp;
+NOT(
+  Bug__c || 
+  Found_Alternative__c || 
+  Misalignment_Roadmap__c || 
+  No_Budget__c || 
+  No_Decision__c
+)
+&amp;&amp; $Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorMessage>Bug / Missing Feature / No Budget / Found Alternative / Misalignment Roadmap / No Decision must be selected if Technical Risks is true.</errorMessage>
+</ValidationRule>

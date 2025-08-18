@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesPadGP_CON_AutomationAgent_Shopify__c</fullName>
+    <label>SalesPadGP CON_AutomationAgent_Shopify</label>
+    <summaryFilterItems>
+        <field>License__c.Full_Product_Name__c</field>
+        <operation>equals</operation>
+        <value>SalesPadGP CON_AutomationAgent_Shopify</value>
+    </summaryFilterItems>
+    <summaryForeignKey>License__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

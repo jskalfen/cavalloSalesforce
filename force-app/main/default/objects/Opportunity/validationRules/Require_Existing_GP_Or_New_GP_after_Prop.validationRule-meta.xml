@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Existing_GP_Or_New_GP_after_Prop</fullName>
+    <active>false</active>
+    <description>After Stage is Proposal/Quote, Existing GP Or New GP is required</description>
+    <errorConditionFormula>AND(ISBLANK(TEXT(Existing_GP_or_New_GP__c)),
+    RecordType.DeveloperName = &apos;Desktop_Custom&apos;,
+    NOT(ISPICKVAL(StageName, &apos;Qualification&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Demo&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Proposal/Quote&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;On Hold&apos;)),
+    NOT(ISPICKVAL(StageName, &apos;Closed Lost&apos;))
+   )</errorConditionFormula>
+    <errorDisplayField>Existing_GP_or_New_GP__c</errorDisplayField>
+    <errorMessage>After Stage is Proposal/Quote, Existing GP Or New GP is required</errorMessage>
+</ValidationRule>

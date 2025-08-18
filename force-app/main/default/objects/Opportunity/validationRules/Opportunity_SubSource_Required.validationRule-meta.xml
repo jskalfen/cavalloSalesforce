@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_SubSource_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(TEXT(Opportunity_SubSource_Global__c)), 
+ISPICKVAL(Opportunity_Source_Global__c, &quot;Professional Services&quot;),
+$Profile.Name != &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Opportunity_SubSource_Global__c</errorDisplayField>
+    <errorMessage>Opportunity Subsource is required</errorMessage>
+</ValidationRule>

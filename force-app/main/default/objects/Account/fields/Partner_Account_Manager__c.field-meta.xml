@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Account_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The main contact at the partner organization managing the relationship with this customer.</description>
+    <inlineHelpText>The main contact at the partner organization managing the relationship with this customer.</inlineHelpText>
+    <label>Partner Account Manager</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Partner Account Manager)</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

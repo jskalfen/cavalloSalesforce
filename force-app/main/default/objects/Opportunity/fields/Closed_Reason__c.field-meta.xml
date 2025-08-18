@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Reason__c</fullName>
+    <inlineHelpText>Please select a reason that this deal did not close.  Enter any additional comments in the Description field.</inlineHelpText>
+    <label>Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Price too high</fullName>
+                <default>false</default>
+                <label>Price too high</label>
+            </value>
+            <value>
+                <fullName>Kept current solution</fullName>
+                <default>false</default>
+                <label>Kept current solution</label>
+            </value>
+            <value>
+                <fullName>Internal/consultant build</fullName>
+                <default>false</default>
+                <label>Internal/consultant build</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Wrong contact/no decision maker</fullName>
+                <default>false</default>
+                <label>Wrong contact/no decision maker</label>
+            </value>
+            <value>
+                <fullName>No budget</fullName>
+                <default>false</default>
+                <label>No budget</label>
+            </value>
+            <value>
+                <fullName>Missing feature/functionality</fullName>
+                <default>false</default>
+                <label>Missing feature/functionality</label>
+            </value>
+            <value>
+                <fullName>No decision</fullName>
+                <default>false</default>
+                <label>No decision</label>
+            </value>
+            <value>
+                <fullName>Not qualified/not ICP</fullName>
+                <default>false</default>
+                <label>Not qualified/not ICP</label>
+            </value>
+            <value>
+                <fullName>Stopped responding</fullName>
+                <default>false</default>
+                <label>Stopped responding</label>
+            </value>
+            <value>
+                <fullName>Custom Only - Cavallo Declined</fullName>
+                <default>false</default>
+                <label>Custom Only - Cavallo Declined</label>
+            </value>
+            <value>
+                <fullName>Custom Only - Transferred to Support</fullName>
+                <default>false</default>
+                <label>Custom Only - Transferred to Support</label>
+            </value>
+            <value>
+                <fullName>Discovery Call No Show</fullName>
+                <default>false</default>
+                <label>Discovery Call No Show</label>
+            </value>
+            <value>
+                <fullName>Chargebee Issue - Had to create a new opp</fullName>
+                <default>false</default>
+                <label>Chargebee Issue - Had to create a new opp</label>
+            </value>
+            <value>
+                <fullName>COVID-19</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>COVID-19</label>
+            </value>
+            <value>
+                <fullName>Cavallo Declined</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cavallo Declined</label>
+            </value>
+            <value>
+                <fullName>Convert to Other Opportunity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convert to Other Opportunity</label>
+            </value>
+            <value>
+                <fullName>Converted to a GP lead</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Converted to Other SP Product</label>
+            </value>
+            <value>
+                <fullName>Customer Declined</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Declined</label>
+            </value>
+            <value>
+                <fullName>Ease of Use</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ease of Use</label>
+            </value>
+            <value>
+                <fullName>Error Creation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Error Creation</label>
+            </value>
+            <value>
+                <fullName>Missing Functionality</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Missing Functionality</label>
+            </value>
+            <value>
+                <fullName>Moving to Standard Opp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Moving to Standard Opp</label>
+            </value>
+            <value>
+                <fullName>No ERP Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No ERP Integration</label>
+            </value>
+            <value>
+                <fullName>No Longer Using Software</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Longer Using Software</label>
+            </value>
+            <value>
+                <fullName>Not Ideal Client Profile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Ideal Client Profile</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Quote Expired</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quote Expired</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Switching ERP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Switching ERP</label>
+            </value>
+            <value>
+                <fullName>Unified Solution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unified Solution</label>
+            </value>
+            <value>
+                <fullName>Went With Competitor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Went with competitor</label>
+            </value>
+            <value>
+                <fullName>Workflow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workflow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

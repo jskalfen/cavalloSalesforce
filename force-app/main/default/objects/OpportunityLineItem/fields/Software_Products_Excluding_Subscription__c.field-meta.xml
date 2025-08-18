@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Software_Products_Excluding_Subscription__c</fullName>
+    <formula>IF(  TEXT(Product_Family__c) = &apos;DESKTOP_PRODUCTS&apos;  || TEXT(Product_Family__c) = &apos;DESKTOP_SPLA&apos;  || TEXT(Product_Family__c) = &apos;DESKTOP_ENHANCEMENT&apos;  || TEXT(Product_Family__c) = &apos;CLOUD_PRODUCTS&apos;|| TEXT(Product_Family__c) = &apos;ANALYTICS CLOUD&apos;|| TEXT(Product_Family__c) = &apos;INTELLIGENCE&apos; ||TEXT(Product_Family__c) = &apos;DISTRIBUTION CLOUD&apos; || TEXT(Product_Family__c) = &apos;DISTRIBUTION_CLOUD&apos;,  TotalPrice , 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Software Products Excluding Subscription</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

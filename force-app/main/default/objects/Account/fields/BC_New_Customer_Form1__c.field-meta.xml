@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_New_Customer_Form1__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&apos;https://forms.gle/EA2fpfMh2fdDZGtu9&apos;, &apos;https://forms.gle/EA2fpfMh2fdDZGtu9&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Form to collect the necessary customer and environment information for application provisioning. To view form responses, see Cavallo&apos;s wiki https://wiki.cavallo.com/wiki/5327</inlineHelpText>
+    <label>BC - New Customer Form</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

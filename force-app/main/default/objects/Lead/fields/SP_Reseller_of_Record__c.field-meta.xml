@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SP_Reseller_of_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>SP Reseller of Record</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please select a Strategic Partner Account</errorMessage>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Reseller,Strategic Partner, Partner - Prospective, Partner - Reseller, Partner - Referral</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads (SP Reseller of Record)</relationshipLabel>
+    <relationshipName>Leads1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

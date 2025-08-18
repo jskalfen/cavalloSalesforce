@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Found_Alternative_Notes_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Found_Alternative__c = TRUE
+&amp;&amp; ISBLANK(Found_Alternative_Notes__c)</errorConditionFormula>
+    <errorDisplayField>Found_Alternative_Notes__c</errorDisplayField>
+    <errorMessage>Found Alternative Notes required</errorMessage>
+</ValidationRule>

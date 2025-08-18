@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Acumatica&quot; ), &quot;Acumatica; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Epicor&quot; ), &quot;Epicor; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;IBM&quot; ), &quot;IBM; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Infor&quot; ), &quot;Infor; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Intuit - Quickbooks&quot; ), &quot;Intuit - Quickbooks; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;MSFT - GP (Great Plains)&quot; ), &quot;MSFT - GP (Great Plains); &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;MSFT - D365&quot; ), &quot;MSFT - D365; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;MSFT - Dynamics Business Central&quot; ), &quot;MSFT - Dynamics Business Central; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Oracle - E-Business Suite (EBS)&quot; ), &quot;Oracle - E-Business Suite (EBS); &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Oracle - Fusion&quot; ), &quot;Oracle - Fusion; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Oracle - Netsuite&quot; ), &quot;Oracle - Netsuite; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - Intacct&quot; ), &quot;Sage - Intacct; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - Sage 100&quot; ), &quot;Sage - Sage 100; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - Sage 200&quot; ), &quot;Sage - Sage 200; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - Sage 300&quot; ), &quot;Sage - Sage 300; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - Sage 50&quot; ), &quot;Sage - Sage 50; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Sage - X3&quot; ), &quot;Sage - X3; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Salesforce&quot; ), &quot;Salesforce; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;SAP - B1&quot; ), &quot;SAP - B1; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Syspro&quot; ), &quot;Syspro; &quot;,null ) &amp;
+IF ( INCLUDES (  Lead.ERP_Platform__c, &quot;Workday&quot; ), &quot;Workday; &quot;,null ) &amp;
+IF ( INCLUDES ( Lead.ERP_Platform__c , &quot;Other&quot; ), &quot;Other; &quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ERP (Lead)</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

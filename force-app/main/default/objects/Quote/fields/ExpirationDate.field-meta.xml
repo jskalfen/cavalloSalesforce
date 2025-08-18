@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpirationDate</fullName>
+    <inlineHelpText>This field shows up on the quote template. Make sure there is always a date in here, and that you take into consideration any discount terms you&apos;ve offered.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

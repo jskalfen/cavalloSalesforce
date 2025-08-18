@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Level__c</fullName>
+    <label>Health Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Healthy Customer</fullName>
+                <default>false</default>
+                <label>Healthy Customer</label>
+            </value>
+            <value>
+                <fullName>Satisfied Customer</fullName>
+                <default>false</default>
+                <label>Satisfied Customer</label>
+            </value>
+            <value>
+                <fullName>Low Risk</fullName>
+                <default>false</default>
+                <label>Low Risk</label>
+            </value>
+            <value>
+                <fullName>High Risk</fullName>
+                <default>false</default>
+                <label>High Risk</label>
+            </value>
+            <value>
+                <fullName>Planned Attrition (Churn)</fullName>
+                <default>false</default>
+                <label>Planned Attrition (Churn)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

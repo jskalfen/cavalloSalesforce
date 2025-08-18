@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bob_Buresh_SE_Requests</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Bob Buresh</value>
+    </filters>
+    <label>Bob Buresh SE Requests</label>
+    <sharedTo>
+        <role>Territory_Manager</role>
+    </sharedTo>
+</ListView>

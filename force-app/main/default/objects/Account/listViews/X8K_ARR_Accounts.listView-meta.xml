@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8K_ARR_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Enhancement_Amount__c</columns>
+    <columns>Enhancement_Date__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Customer_Class__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Enhancement_Amount__c</field>
+        <operation>greaterThan</operation>
+        <value>7999</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>End User</value>
+    </filters>
+    <filters>
+        <field>Customer_Class__c</field>
+        <operation>equals</operation>
+        <value>End User Desktop</value>
+    </filters>
+    <label>8K ARR Accounts</label>
+</ListView>

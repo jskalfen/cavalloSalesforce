@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_Sub_Attainment_Old_List_Price__c</fullName>
+    <label>OLD_AM_Sub Attainment Old List Price</label>
+    <summarizedField>OpportunityLineItem.Subscription_Old_List_Price_Total__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Family__c</field>
+        <operation>equals</operation>
+        <value>CLOUD_PRODUCTS, DESKTOP_SUBSCRIPTION, DISTRIBUTION_CLOUD, INTELLIGENCE, SALESPAD_SUBSCRIPTION, ANALYTICS CLOUD, SUBSCRIPTION_DISCOUNT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Approved_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(StageName)
+&amp;&amp; ISPICKVAL(StageName, &apos;Closed Won&apos;)
+&amp;&amp; Is_Quote_Approved__c = false
+&amp;&amp; RecordType.Name==&apos;New Business&apos;</errorConditionFormula>
+    <errorMessage>You cannot update the stage beyond Contractual until there is a synced and approved Quote.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_GP_or_New_GP__c</fullName>
+    <inlineHelpText>Does the person you&apos;re selling this to already own Dynamics GP, or will they also be purchasing Dynamics GP?</inlineHelpText>
+    <label>Existing GP or New GP</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Existing GP</fullName>
+                <default>false</default>
+                <label>Existing GP</label>
+            </value>
+            <value>
+                <fullName>New GP</fullName>
+                <default>false</default>
+                <label>New GP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

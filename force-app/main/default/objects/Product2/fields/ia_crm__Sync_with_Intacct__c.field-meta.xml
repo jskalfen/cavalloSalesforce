@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Sync_with_Intacct__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <label>Sync With Intacct</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

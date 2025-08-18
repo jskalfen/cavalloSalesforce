@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Budget Qualification</fullName>
+                <default>false</default>
+                <label>Budget Qualification</label>
+            </value>
+            <value>
+                <fullName>Business Case</fullName>
+                <default>false</default>
+                <label>Business Case</label>
+            </value>
+            <value>
+                <fullName>CAM</fullName>
+                <default>false</default>
+                <label>CAM</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Closing</fullName>
+                <default>false</default>
+                <label>Closing</label>
+            </value>
+            <value>
+                <fullName>Confirm Value with Power</fullName>
+                <default>false</default>
+                <label>Confirm Value with Power</label>
+            </value>
+            <value>
+                <fullName>Declined Renew</fullName>
+                <default>false</default>
+                <label>Declined Renew</label>
+            </value>
+            <value>
+                <fullName>Delivered</fullName>
+                <default>false</default>
+                <label>Delivered</label>
+            </value>
+            <value>
+                <fullName>Delivery Meeting</fullName>
+                <default>false</default>
+                <label>Delivery Meeting</label>
+            </value>
+            <value>
+                <fullName>Estimates</fullName>
+                <default>false</default>
+                <label>Estimates</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Finalize Closure</fullName>
+                <default>false</default>
+                <label>Finalize Closure</label>
+            </value>
+            <value>
+                <fullName>Grace</fullName>
+                <default>false</default>
+                <label>Grace</label>
+            </value>
+            <value>
+                <fullName>Identify Opportunity</fullName>
+                <default>false</default>
+                <label>Identify Opportunity</label>
+            </value>
+            <value>
+                <fullName>Needs Info</fullName>
+                <default>false</default>
+                <label>Needs Info</label>
+            </value>
+            <value>
+                <fullName>Negotiate Proposal</fullName>
+                <default>false</default>
+                <label>Negotiate Proposal</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Order-to-Cash Value Discussion</fullName>
+                <default>false</default>
+                <label>Order-to-Cash Value Discussion</label>
+            </value>
+            <value>
+                <fullName>Pending Paperwork</fullName>
+                <default>false</default>
+                <label>Pending Paperwork</label>
+            </value>
+            <value>
+                <fullName>Product Manager Review</fullName>
+                <default>false</default>
+                <label>Product Manager Review</label>
+            </value>
+            <value>
+                <fullName>Proposal/Quote</fullName>
+                <default>false</default>
+                <label>Proposal/Quote</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>Provisioning</fullName>
+                <default>false</default>
+                <label>Provisioning</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>Quote Delivery</fullName>
+                <default>false</default>
+                <label>Quote Delivery</label>
+            </value>
+            <value>
+                <fullName>Quote Delivery - PM</fullName>
+                <default>false</default>
+                <label>Quote Delivery - PM</label>
+            </value>
+            <value>
+                <fullName>Quote Development</fullName>
+                <default>false</default>
+                <label>Quote Development</label>
+            </value>
+            <value>
+                <fullName>Quote Review</fullName>
+                <default>false</default>
+                <label>Quote Review</label>
+            </value>
+            <value>
+                <fullName>Renewal Closing</fullName>
+                <default>false</default>
+                <label>Renewal Closing</label>
+            </value>
+            <value>
+                <fullName>Renewal Lost</fullName>
+                <default>false</default>
+                <label>Renewal Lost</label>
+            </value>
+            <value>
+                <fullName>Renewal Negotiation</fullName>
+                <default>false</default>
+                <label>Renewal Negotiation</label>
+            </value>
+            <value>
+                <fullName>Renewal Won</fullName>
+                <default>false</default>
+                <label>Renewal Won</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Rep Review</fullName>
+                <default>false</default>
+                <label>Rep Review</label>
+            </value>
+            <value>
+                <fullName>RFQ Assignment</fullName>
+                <default>false</default>
+                <label>RFQ Assignment</label>
+            </value>
+            <value>
+                <fullName>Sandbox</fullName>
+                <default>false</default>
+                <label>Sandbox</label>
+            </value>
+            <value>
+                <fullName>Scoping</fullName>
+                <default>false</default>
+                <label>Scoping</label>
+            </value>
+            <value>
+                <fullName>Trialing</fullName>
+                <default>false</default>
+                <label>Trialing</label>
+            </value>
+            <value>
+                <fullName>Unqualified</fullName>
+                <default>false</default>
+                <label>Unqualified</label>
+            </value>
+            <value>
+                <fullName>Validate Benefits &amp; Value</fullName>
+                <default>false</default>
+                <label>Validate Benefits &amp; Value</label>
+            </value>
+            <value>
+                <fullName>Qualify</fullName>
+                <default>false</default>
+                <label>Qualify</label>
+            </value>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Demo</fullName>
+                <default>false</default>
+                <label>Demo</label>
+            </value>
+            <value>
+                <fullName>Solution Creation</fullName>
+                <default>false</default>
+                <label>Solution Creation</label>
+            </value>
+            <value>
+                <fullName>Present and Negotiate</fullName>
+                <default>false</default>
+                <label>Present and Negotiate</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

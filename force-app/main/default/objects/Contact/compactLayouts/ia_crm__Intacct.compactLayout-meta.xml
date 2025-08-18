@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct</fullName>
+    <fields>Name</fields>
+    <fields>ia_crm__Sync_With_Intacct__c</fields>
+    <fields>ia_crm__Synced_With_Intacct_Date__c</fields>
+    <label>Intacct</label>
+</CompactLayout>

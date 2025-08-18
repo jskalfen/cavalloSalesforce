@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Software_Subtotal__c</fullName>
+    <label>Software Subtotal</label>
+    <summarizedField>QuoteLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>QuoteLineItem.Product_Code_rollup__c</field>
+        <operation>notContain</operation>
+        <value>SRV00001</value>
+    </summaryFilterItems>
+    <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

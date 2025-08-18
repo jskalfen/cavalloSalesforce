@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <constants>
+        <name>Standard_RecordType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Standard</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Set Quote status to &apos;In Review&apos;</description>
+        <name>Status_In_Review</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>In Review</stringValue>
+        </value>
+    </constants>
+    <description>This Flow is used to set Discount Prior fields to be updated once Quote is approved.</description>
+    <environments>Default</environments>
+    <interviewLabel>Quote Set Discount Prior Values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Quote Set Discount Prior Values</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>If the discount is increased on a quote then update status to &apos;In Review&apos;.</description>
+        <name>Update_Discount_Prior_Values</name>
+        <label>Update Discount Prior Values</label>
+        <locationX>247</locationX>
+        <locationY>470</locationY>
+        <inputAssignments>
+            <field>Discount_Prior_Value__c</field>
+            <value>
+                <elementReference>$Record.Discount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount_Term_Prior__c</field>
+            <value>
+                <elementReference>$Record.Discount_Term_Length__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Is_Discount_Forever_Prior__c</field>
+            <value>
+                <elementReference>$Record.Is_Discount_Forever__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>119</locationX>
+        <locationY>132</locationY>
+        <connector>
+            <targetReference>Update_Discount_Prior_Values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Quote</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>DiscountPriorval</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+        <value>
+            <elementReference>$Record.Discount_Prior_Value__c</elementReference>
+        </value>
+    </variables>
+</Flow>

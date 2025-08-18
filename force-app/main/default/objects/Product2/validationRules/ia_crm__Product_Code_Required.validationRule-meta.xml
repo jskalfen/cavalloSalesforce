@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Product_Code_Required</fullName>
+    <active>false</active>
+    <description>Enforces the user to add a value to &apos;Product Code&apos; field.</description>
+    <errorConditionFormula>ISBLANK(ProductCode)</errorConditionFormula>
+    <errorDisplayField>ProductCode</errorDisplayField>
+    <errorMessage>You must enter a value</errorMessage>
+</ValidationRule>

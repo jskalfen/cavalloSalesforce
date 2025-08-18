@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_SKUs__c</fullName>
+    <label>Number of SKUs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; 100</fullName>
+                <default>false</default>
+                <label>&lt; 100</label>
+            </value>
+            <value>
+                <fullName>101 - 499</fullName>
+                <default>false</default>
+                <label>101 - 499</label>
+            </value>
+            <value>
+                <fullName>500 - 999</fullName>
+                <default>false</default>
+                <label>500 - 999</label>
+            </value>
+            <value>
+                <fullName>1,000 - 4,999</fullName>
+                <default>false</default>
+                <label>1,000 - 4,999</label>
+            </value>
+            <value>
+                <fullName>&gt; 5,000</fullName>
+                <default>false</default>
+                <label>&gt; 5,000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

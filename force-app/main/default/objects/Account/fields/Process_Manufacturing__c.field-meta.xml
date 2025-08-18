@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Process_Manufacturing__c</fullName>
+    <label>Process Manufacturing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WilloWare</fullName>
+                <default>false</default>
+                <label>WilloWare</label>
+            </value>
+            <value>
+                <fullName>Vicinity</fullName>
+                <default>false</default>
+                <label>Vicinity</label>
+            </value>
+            <value>
+                <fullName>Batchmaster</fullName>
+                <default>false</default>
+                <label>Batchmaster</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

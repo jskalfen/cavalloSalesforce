@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Which_products_will_need_to_be_shown__c</fullName>
+    <label>Which products will need to be shown?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analytics Cloud</fullName>
+                <default>false</default>
+                <label>Analytics Cloud</label>
+            </value>
+            <value>
+                <fullName>Automation Agent</fullName>
+                <default>false</default>
+                <label>Automation Agent</label>
+            </value>
+            <value>
+                <fullName>Avalara</fullName>
+                <default>false</default>
+                <label>Avalara</label>
+            </value>
+            <value>
+                <fullName>Binary Stream MEM</fullName>
+                <default>false</default>
+                <label>Binary Stream MEM</label>
+            </value>
+            <value>
+                <fullName>Configurator Module</fullName>
+                <default>false</default>
+                <label>Configurator Module</label>
+            </value>
+            <value>
+                <fullName>CRM Module</fullName>
+                <default>false</default>
+                <label>CRM Module</label>
+            </value>
+            <value>
+                <fullName>Customer &amp; Order Manager</fullName>
+                <default>false</default>
+                <label>Customer &amp; Order Manager</label>
+            </value>
+            <value>
+                <fullName>Customer Portal - Ext</fullName>
+                <default>false</default>
+                <label>Customer Portal - Ext</label>
+            </value>
+            <value>
+                <fullName>Customer Portal - Int</fullName>
+                <default>false</default>
+                <label>Customer Portal - Int</label>
+            </value>
+            <value>
+                <fullName>Dispatch</fullName>
+                <default>false</default>
+                <label>Dispatch</label>
+            </value>
+            <value>
+                <fullName>Distribution Cloud</fullName>
+                <default>false</default>
+                <label>Distribution Cloud</label>
+            </value>
+            <value>
+                <fullName>EDI</fullName>
+                <default>false</default>
+                <label>EDI</label>
+            </value>
+            <value>
+                <fullName>Equipment Module</fullName>
+                <default>false</default>
+                <label>Equipment Module</label>
+            </value>
+            <value>
+                <fullName>FedEx/UPS Connector</fullName>
+                <default>false</default>
+                <label>FedEx/UPS Connector</label>
+            </value>
+            <value>
+                <fullName>Inventory Manager</fullName>
+                <default>false</default>
+                <label>Inventory Manager</label>
+            </value>
+            <value>
+                <fullName>Kwiktag</fullName>
+                <default>false</default>
+                <label>Kwiktag</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PaceJet</fullName>
+                <default>false</default>
+                <label>PaceJet</label>
+            </value>
+            <value>
+                <fullName>PayFabric</fullName>
+                <default>false</default>
+                <label>PayFabric</label>
+            </value>
+            <value>
+                <fullName>Pricing Module</fullName>
+                <default>false</default>
+                <label>Pricing Module</label>
+            </value>
+            <value>
+                <fullName>Purchasing Module</fullName>
+                <default>false</default>
+                <label>Purchasing Module</label>
+            </value>
+            <value>
+                <fullName>Returns Tracker</fullName>
+                <default>false</default>
+                <label>Returns Tracker</label>
+            </value>
+            <value>
+                <fullName>SalesPad</fullName>
+                <default>false</default>
+                <label>SalesPad</label>
+            </value>
+            <value>
+                <fullName>SalesPad Mobile</fullName>
+                <default>false</default>
+                <label>SalesPad Mobile</label>
+            </value>
+            <value>
+                <fullName>Shipping Module</fullName>
+                <default>false</default>
+                <label>Shipping Module</label>
+            </value>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Square</fullName>
+                <default>false</default>
+                <label>Square</label>
+            </value>
+            <value>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+                <label>Thomson Reuters</label>
+            </value>
+            <value>
+                <fullName>Workflow &amp; Profit Manager</fullName>
+                <default>false</default>
+                <label>Workflow &amp; Profit Manager</label>
+            </value>
+            <value>
+                <fullName>Case Tracker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Case Tracker</label>
+            </value>
+            <value>
+                <fullName>DataCollection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DataCollection</label>
+            </value>
+            <value>
+                <fullName>Manufacturing/Configurator</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturing/Configurator</label>
+            </value>
+            <value>
+                <fullName>SalesPad Desktop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SalesPad Desktop</label>
+            </value>
+            <value>
+                <fullName>ShipCenter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ShipCenter</label>
+            </value>
+            <value>
+                <fullName>ShipTo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ShipTo</label>
+            </value>
+            <value>
+                <fullName>Telesales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telesales</label>
+            </value>
+            <value>
+                <fullName>WebPortal - External</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>WebPortal - External</label>
+            </value>
+            <value>
+                <fullName>WebPortal - Internal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>WebPortal - Internal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

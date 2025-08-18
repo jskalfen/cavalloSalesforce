@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_software_are_they_currently_running__c</fullName>
+    <description>What software are they currently running that is relevant to us (non-Cavallo software)?</description>
+    <inlineHelpText>What software are they currently running that is relevant to us (non-Cavallo software)?</inlineHelpText>
+    <label>What software are they currently running</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

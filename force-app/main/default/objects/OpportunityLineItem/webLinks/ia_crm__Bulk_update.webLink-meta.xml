@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Bulk_update</fullName>
+    <availability>online</availability>
+    <description>This button can be used in classic interface only, it contains item selection from Opportunity page.</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Bulk update</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var ids = {!GETRECORDIDS($ObjectType.OpportunityLineItem)}; 
+
+var url = &apos;{!URLFOR($Site.Prefix)}/apex/ia_crm__OpportunityProductsBulkUpdate?recordId={!Opportunity.Id}&amp;recordType={!Opportunity.RecordTypeId}&amp;hasOpportunityLine={!if(Opportunity.HasOpportunityLineItem,&apos;true&apos;,&apos;false&apos;)}&apos;;   
+
+var isValid = true;
+if (ids.length) { 
+if (ids.length &lt;= 50) { 
+url += &apos;&amp;oproductIds=&apos; + ids.join(&apos;,&apos;); 
+} else { 
+alert(&apos;You have selected more than 50 items, please select less items.&apos;); 
+isValid=false;
+} 
+}
+if(isValid) {
+window.location = url;
+}</url>
+</WebLink>

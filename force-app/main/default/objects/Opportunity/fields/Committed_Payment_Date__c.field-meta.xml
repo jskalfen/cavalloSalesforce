@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Committed_Payment_Date__c</fullName>
+    <label>Committed Payment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Confirmed in writing</fullName>
+                <default>false</default>
+                <label>Confirmed in writing</label>
+            </value>
+            <value>
+                <fullName>Customer using best effort to meet payment due date</fullName>
+                <default>false</default>
+                <label>Customer using best effort to meet payment due date</label>
+            </value>
+            <value>
+                <fullName>No committed payment date</fullName>
+                <default>false</default>
+                <label>No committed payment date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

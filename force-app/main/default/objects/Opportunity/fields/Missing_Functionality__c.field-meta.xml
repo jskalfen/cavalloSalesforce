@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Functionality__c</fullName>
+    <inlineHelpText>Select all functionality noted as being missing that prevented the deal from closing.</inlineHelpText>
+    <label>Missing Functionality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Closed_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Directed Picking</fullName>
+                <default>false</default>
+                <label>Directed Picking</label>
+            </value>
+            <value>
+                <fullName>Directed Putaway</fullName>
+                <default>false</default>
+                <label>Directed Putaway</label>
+            </value>
+            <value>
+                <fullName>Forecasting_Inventory</fullName>
+                <default>false</default>
+                <label>Forecasting - Inventory</label>
+            </value>
+            <value>
+                <fullName>Wave Picking</fullName>
+                <default>false</default>
+                <label>Wave Picking</label>
+            </value>
+            <value>
+                <fullName>Landed Cost</fullName>
+                <default>false</default>
+                <label>Landed Cost</label>
+            </value>
+            <value>
+                <fullName>EDI-Specific Document Support</fullName>
+                <default>false</default>
+                <label>EDI-Specific Document Support</label>
+            </value>
+            <value>
+                <fullName>Robust Manufacturing</fullName>
+                <default>false</default>
+                <label>Robust Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Material Requirements Planning</fullName>
+                <default>false</default>
+                <label>Material Requirements Planning</label>
+            </value>
+            <value>
+                <fullName>Finished Goods Receiving</fullName>
+                <default>false</default>
+                <label>Finished Goods Receiving</label>
+            </value>
+            <value>
+                <fullName>Work-In-Progress Visibility</fullName>
+                <default>false</default>
+                <label>Work-In-Progress Visibility</label>
+            </value>
+            <value>
+                <fullName>Forecasting - Production</fullName>
+                <default>false</default>
+                <label>Forecasting - Production</label>
+            </value>
+            <value>
+                <fullName>Advanced Catchweights</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advanced Catchweights</label>
+            </value>
+            <value>
+                <fullName>Container Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Container Management</label>
+            </value>
+            <value>
+                <fullName>DC Mobile MO Receipt Transaction Entry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DC Mobile MO Receipt Transaction Entry</label>
+            </value>
+            <value>
+                <fullName>Job Costing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Job Costing</label>
+            </value>
+            <value>
+                <fullName>License Plating</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>License Plating</label>
+            </value>
+            <value>
+                <fullName>Project Accounting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Project Accounting</label>
+            </value>
+            <value>
+                <fullName>Purchase Order Workflow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Purchase Order Workflow</label>
+            </value>
+            <value>
+                <fullName>Requisitions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Requisitions</label>
+            </value>
+            <value>
+                <fullName>SP Mobile Purchasing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SP Mobile Purchasing</label>
+            </value>
+            <value>
+                <fullName>SalesPad Cloud - No POS Functionality</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SalesPad Cloud - No POS Functionality</label>
+            </value>
+            <value>
+                <fullName>Time Tracking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Time Tracking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

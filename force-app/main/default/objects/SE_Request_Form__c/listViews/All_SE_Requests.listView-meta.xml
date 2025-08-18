@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SE_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>Partner_Name__c</columns>
+    <columns>Sales_Engineer__c</columns>
+    <columns>SE_Request_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Round_Robin_Assignment__c</columns>
+    <columns>Round_robin_Assignment_Formula__c</columns>
+    <columns>Round_Robin_for_AC__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All SE Requests</label>
+    <sharedTo>
+        <group>SE_Request_Forms_for_Ken</group>
+    </sharedTo>
+</ListView>

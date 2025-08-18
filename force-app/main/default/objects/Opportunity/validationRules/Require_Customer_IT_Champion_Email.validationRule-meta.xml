@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Customer_IT_Champion_Email</fullName>
+    <active>true</active>
+    <description>If the products field on the opportunity contains Profit Analytics and or Mission Control OR ERP = BC, this field is required to be filled out prior to being able to mark the opportunity as closed won.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &apos;Closed Won&apos;),
+    RecordType.Name = &apos;New Business&apos;,
+    OR(
+        INCLUDES(Products__c, &apos;Profit Analytics - Enterprise&apos;),
+        INCLUDES(Products__c, &apos;Profit Analytics - Essentials&apos;),
+        INCLUDES(Products__c, &apos;Profit Analytics -Professional&apos;),
+        ISPICKVAL(ERP__c, &apos;BC&apos;)
+    ),
+    ISBLANK(Customer_IT_Champion_Email_Address__c),
+    CloseDate &gt;= DATE(2024, 7, 26)  
+)</errorConditionFormula>
+    <errorDisplayField>Customer_IT_Champion_Email_Address__c</errorDisplayField>
+    <errorMessage>This field is required to be filled out prior to being able to mark the opportunity as closed won.</errorMessage>
+</ValidationRule>

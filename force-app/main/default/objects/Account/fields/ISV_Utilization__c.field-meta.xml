@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISV_Utilization__c</fullName>
+    <label>Alliance Partners</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Avalara</fullName>
+                <default>false</default>
+                <label>Avalara</label>
+            </value>
+            <value>
+                <fullName>Binary Stream</fullName>
+                <default>false</default>
+                <label>Binary Stream</label>
+            </value>
+            <value>
+                <fullName>Blue Moon</fullName>
+                <default>false</default>
+                <label>Blue Moon</label>
+            </value>
+            <value>
+                <fullName>Envisage Software Solutions</fullName>
+                <default>false</default>
+                <label>Envisage Software Solutions</label>
+            </value>
+            <value>
+                <fullName>KEY2ACT</fullName>
+                <default>false</default>
+                <label>KEY2ACT</label>
+            </value>
+            <value>
+                <fullName>Kwiktag</fullName>
+                <default>false</default>
+                <label>Kwiktag</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>Nodus/Payfabric</fullName>
+                <default>false</default>
+                <label>Nodus/Payfabric</label>
+            </value>
+            <value>
+                <fullName>PaceJet</fullName>
+                <default>false</default>
+                <label>PaceJet</label>
+            </value>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>SPS Commerce</fullName>
+                <default>false</default>
+                <label>SPS Commerce</label>
+            </value>
+            <value>
+                <fullName>Square</fullName>
+                <default>false</default>
+                <label>Square</label>
+            </value>
+            <value>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+                <label>Thomson Reuters</label>
+            </value>
+            <value>
+                <fullName>Vicinity Manufacturing</fullName>
+                <default>false</default>
+                <label>Vicinity Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Highjump</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Highjump</label>
+            </value>
+            <value>
+                <fullName>Panatrack</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Panatrack</label>
+            </value>
+            <value>
+                <fullName>TrueCommerce</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TrueCommerce</label>
+            </value>
+            <value>
+                <fullName>iSolutions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>iSolutions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

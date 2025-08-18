@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Stage_Skipping</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(StageName),
+    $RecordType.DeveloperName = &quot;New_Business&quot;,
+    OR(
+        ISPICKVAL(Type, &quot;New Logo&quot;),
+        ISPICKVAL(Type, &quot;Expansion - New Products&quot;),
+        ISPICKVAL(Type, &quot;Expansion - Early renewal with growth&quot;),
+        ISPICKVAL(Type, &quot;Expansion - Perpetual to subscription conversion&quot;)
+    ),
+    OR(
+								AND(
+            ISPICKVAL(StageName, &quot;Demo/Technical Evaluation&quot;),
+            NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Qualified&quot;))
+        ),
+        AND(
+            ISPICKVAL(StageName, &quot;Proposal&quot;),
+            NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Demo/Technical Evaluation&quot;))
+        ),
+        AND(
+            ISPICKVAL(StageName, &quot;Contract Negotiation&quot;),
+            NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Proposal&quot;))
+        ),
+        AND(
+            ISPICKVAL(StageName, &quot;Closed Won&quot;),
+            NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Contract Negotiation&quot;))
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Stages cannot be skipped and must be progressed in order.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Reason__c</fullName>
+    <inlineHelpText>Software. SalesPad selling software directly to end customers (with no margin to the VAR). 
+Billing. SalesPad billing the end customer directly for software (with a margin “check” to the VAR). 
+Services. SalesPad selling implementation services directly to end customers. 
+Custom. SalesPad selling custom development services directly to end customers.</inlineHelpText>
+    <label>Direct Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Software Subscription</fullName>
+                <default>false</default>
+                <label>Software Subscription</label>
+            </value>
+            <value>
+                <fullName>Software License</fullName>
+                <default>false</default>
+                <label>Software License</label>
+            </value>
+            <value>
+                <fullName>Software Enhancements</fullName>
+                <default>false</default>
+                <label>Software Enhancements</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Custom Work (Partner)</fullName>
+                <default>false</default>
+                <label>Custom Work (Partner)</label>
+            </value>
+            <value>
+                <fullName>Custom Work (Customer)</fullName>
+                <default>false</default>
+                <label>Custom Work (Customer)</label>
+            </value>
+            <value>
+                <fullName>Custom Work (N/A)</fullName>
+                <default>false</default>
+                <label>Custom Work (N/A)</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

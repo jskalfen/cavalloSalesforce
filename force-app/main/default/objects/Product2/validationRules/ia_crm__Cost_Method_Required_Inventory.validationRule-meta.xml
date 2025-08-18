@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Cost_Method_Required_Inventory</fullName>
+    <active>true</active>
+    <description>Cost Method should be required if item type is inventory.</description>
+    <errorConditionFormula>AND( ISPICKVAL(ia_crm__Item_Type__c, &apos;Inventory&apos;),  IsPICKVAL( ia_crm__Cost_Method__c, &apos;&apos; ) )</errorConditionFormula>
+    <errorMessage>Cost method is required for Inventory products.</errorMessage>
+</ValidationRule>

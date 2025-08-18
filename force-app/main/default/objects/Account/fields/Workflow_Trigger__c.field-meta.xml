@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workflow_Trigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Allows us to Retroactively trigger workflow on current records when the evaluation criteria is &quot;Evaluate the rule when a record is created, and every time it&apos;s edited to subsequently meet criteria&quot;</description>
+    <label>Workflow Trigger</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

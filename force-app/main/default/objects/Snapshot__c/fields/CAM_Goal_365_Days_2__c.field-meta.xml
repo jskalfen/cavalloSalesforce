@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAM_Goal_365_Days_2__c</fullName>
+    <formula>(90*( CAM_Next_3_Quarter_365_Days_Goal__c /90))+((90- Days_left_in_this_Quarter__c *(  CAM_Next_4_Quarter_365_Days_Goal__c /90)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CAM - Goal 365 Days(2)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

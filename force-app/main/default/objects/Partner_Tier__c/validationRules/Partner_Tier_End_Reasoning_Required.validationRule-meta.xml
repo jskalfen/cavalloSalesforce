@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Tier_End_Reasoning_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK( Partner_Tier_End_Date__c ) ), ISBLANK( Partner_Tier_End_Reasoning__c ) )</errorConditionFormula>
+    <errorDisplayField>Partner_Tier_End_Reasoning__c</errorDisplayField>
+    <errorMessage>Partner Tier End Reasoning is required when Partner Tier End Date is populated.</errorMessage>
+</ValidationRule>

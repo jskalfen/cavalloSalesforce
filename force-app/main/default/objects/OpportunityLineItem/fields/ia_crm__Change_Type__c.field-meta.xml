@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Change_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Change Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New MRR</fullName>
+                <default>false</default>
+                <label>New MRR</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Add on MRR</fullName>
+                <default>false</default>
+                <label>Add on MRR</label>
+            </value>
+            <value>
+                <fullName>Renewal upgrade</fullName>
+                <default>false</default>
+                <label>Renewal upgrade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

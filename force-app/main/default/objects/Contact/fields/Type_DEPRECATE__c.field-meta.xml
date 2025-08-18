@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_DEPRECATE__c</fullName>
+    <label>DEPRECATE Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SP5 - Head of Company</fullName>
+                <default>false</default>
+                <label>SP5 - Head of Company</label>
+            </value>
+            <value>
+                <fullName>SP5 - Head of Operations</fullName>
+                <default>false</default>
+                <label>SP5 - Head of Operations</label>
+            </value>
+            <value>
+                <fullName>SP5 - Head of Finance</fullName>
+                <default>false</default>
+                <label>SP5 - Head of Finance</label>
+            </value>
+            <value>
+                <fullName>SP5 - Head of Service/Sales</fullName>
+                <default>false</default>
+                <label>SP5 - Head of Service/Sales</label>
+            </value>
+            <value>
+                <fullName>SP5 - Head of IT</fullName>
+                <default>false</default>
+                <label>SP5 - Head of IT</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Service/Sales</fullName>
+                <default>false</default>
+                <label>Service/Sales</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Partner - Consultant</fullName>
+                <default>false</default>
+                <label>Partner - Consultant</label>
+            </value>
+            <value>
+                <fullName>Partner - Sales/Marketing</fullName>
+                <default>false</default>
+                <label>Partner - Sales/Marketing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

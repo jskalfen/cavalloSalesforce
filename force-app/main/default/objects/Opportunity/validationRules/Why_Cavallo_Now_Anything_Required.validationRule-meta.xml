@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_Cavallo_Now_Anything_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;New_Business&quot;
+&amp;&amp; ISPICKVAL(Type, &quot;New Logo&quot;)
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; ISPICKVAL(StageName, &quot;Closed Won&quot;)
+&amp;&amp; 
+(
+				ISBLANK(Why_Cavallo__c)
+				||
+				ISBLANK(Why_Now__c)  
+				||
+				ISBLANK(Why_Anything__c)
+)</errorConditionFormula>
+    <errorMessage>Why Anything/Now/Cavallo required to close.</errorMessage>
+</ValidationRule>

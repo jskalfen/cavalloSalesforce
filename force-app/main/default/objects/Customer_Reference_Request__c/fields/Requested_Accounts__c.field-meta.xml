@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Accounts__c</fullName>
+    <inlineHelpText>Select 3 accounts that you would like to see. SIC Code Report https://salespad.lightning.force.com/lightning/r/Report/00O3u0000075OtkEAE/view</inlineHelpText>
+    <label>Requested Accounts</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

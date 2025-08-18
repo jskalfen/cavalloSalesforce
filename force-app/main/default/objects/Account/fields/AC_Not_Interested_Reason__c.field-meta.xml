@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_Not_Interested_Reason__c</fullName>
+    <label>AC-Not Interested Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>AC_Interest__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing Features</fullName>
+                <default>false</default>
+                <label>Missing Features</label>
+            </value>
+            <value>
+                <fullName>Reporting Product Already</fullName>
+                <default>false</default>
+                <label>Reporting Product Already</label>
+            </value>
+            <value>
+                <fullName>Leaving Great Plains</fullName>
+                <default>false</default>
+                <label>Leaving Great Plains</label>
+            </value>
+            <value>
+                <fullName>Not a Fit</fullName>
+                <default>false</default>
+                <label>Not a Fit</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Time/Resource Constraints</fullName>
+                <default>false</default>
+                <label>Time/Resource Constraints</label>
+            </value>
+            <value>
+                <fullName>Multicurrency</fullName>
+                <default>false</default>
+                <label>Multicurrency</label>
+            </value>
+            <value>
+                <fullName>None Given</fullName>
+                <default>false</default>
+                <label>None Given</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Missing Features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Reporting Product Already</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Leaving Great Plains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Not a Fit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Time/Resource Constraints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Multicurrency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>None Given</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Class__c</fullName>
+    <inlineHelpText>Original Customer Class - Taken from ERP systemb</inlineHelpText>
+    <label>Customer Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beta SB</fullName>
+                <default>false</default>
+                <label>Beta SB</label>
+            </value>
+            <value>
+                <fullName>Dead</fullName>
+                <default>false</default>
+                <label>Dead</label>
+            </value>
+            <value>
+                <fullName>End GP Tax Exempt</fullName>
+                <default>false</default>
+                <label>End GP Tax Exempt</label>
+            </value>
+            <value>
+                <fullName>End User Cloud</fullName>
+                <default>false</default>
+                <label>End User Cloud</label>
+            </value>
+            <value>
+                <fullName>End User GP</fullName>
+                <default>false</default>
+                <label>End User GP</label>
+            </value>
+            <value>
+                <fullName>End user QB</fullName>
+                <default>false</default>
+                <label>End user QB</label>
+            </value>
+            <value>
+                <fullName>Ex end user 7th</fullName>
+                <default>false</default>
+                <label>Ex end user 7th</label>
+            </value>
+            <value>
+                <fullName>Ex end user GP</fullName>
+                <default>false</default>
+                <label>Ex end user GP</label>
+            </value>
+            <value>
+                <fullName>Ex end user QB</fullName>
+                <default>false</default>
+                <label>Ex end user QB</label>
+            </value>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
+            <value>
+                <fullName>ISV</fullName>
+                <default>false</default>
+                <label>ISV</label>
+            </value>
+            <value>
+                <fullName>Lead 7th</fullName>
+                <default>false</default>
+                <label>Lead 7th</label>
+            </value>
+            <value>
+                <fullName>Lead AX</fullName>
+                <default>false</default>
+                <label>Lead AX</label>
+            </value>
+            <value>
+                <fullName>Lead GP</fullName>
+                <default>false</default>
+                <label>Lead GP</label>
+            </value>
+            <value>
+                <fullName>Lead QB</fullName>
+                <default>false</default>
+                <label>Lead QB</label>
+            </value>
+            <value>
+                <fullName>Lead Solomoan</fullName>
+                <default>false</default>
+                <label>Lead Solomoan</label>
+            </value>
+            <value>
+                <fullName>Microsoft</fullName>
+                <default>false</default>
+                <label>Microsoft</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>VAR</fullName>
+                <default>false</default>
+                <label>VAR</label>
+            </value>
+            <value>
+                <fullName>VAR 7th</fullName>
+                <default>false</default>
+                <label>VAR 7th</label>
+            </value>
+            <value>
+                <fullName>VAR Dead</fullName>
+                <default>false</default>
+                <label>VAR Dead</label>
+            </value>
+            <value>
+                <fullName>VAR National</fullName>
+                <default>false</default>
+                <label>VAR National</label>
+            </value>
+            <value>
+                <fullName>VAR QB</fullName>
+                <default>false</default>
+                <label>VAR QB</label>
+            </value>
+            <value>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <label>Wholesale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

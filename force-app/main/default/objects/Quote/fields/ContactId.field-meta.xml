@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactId</fullName>
+    <inlineHelpText>This is the person that will be signing the quote eventually.</inlineHelpText>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

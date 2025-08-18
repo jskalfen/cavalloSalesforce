@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tier_1_2_3__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    $RecordType.DeveloperName = &quot;Customer&quot; &amp;&amp; ARR_MFC__c != 0,
+    IF(ARR_MFC__c &lt; 12000, 3,
+        IF(ARR_MFC__c &lt; 30000, 2,
+            IF(ARR_MFC__c &gt;= 30000, 1, NULL)
+        )
+    ),
+    NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tier 1, 2, 3</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

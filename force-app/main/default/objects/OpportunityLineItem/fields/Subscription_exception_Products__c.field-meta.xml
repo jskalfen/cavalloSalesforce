@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_exception_Products__c</fullName>
+    <formula>IF( PricebookEntry.Product2.Name = &apos;SALESPAD INVENTORY MANAGER - ESSENTIALS&apos;,  List_Price_Total__c * 2.75 ,  IF( PricebookEntry.Product2.Name = &apos;SALESPAD INVENTORY MANAGER - ADDITIONAL WAREHOUSES&apos;,  List_Price_Total__c *2.75,  IF( PricebookEntry.Product2.Name = &apos;SALESPAD INVENTORY MANAGER - ADDITIONAL USERS&apos;, List_Price_Total__c *2.75, NULL ) ) )</formula>
+    <label>Subscription exception Products</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

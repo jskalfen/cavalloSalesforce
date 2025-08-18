@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Round_Robin__c</fullName>
+    <description>Calculation used to assign an opp to the appropriate SE. 
+
+1: Expansion - Early renewal with growth / Expansion - New products / Expansion - Current products
+2: New Logo</description>
+    <externalId>false</externalId>
+    <label>Opp Round Robin</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

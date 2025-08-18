@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Misalignment_Notes_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Misalignment_Roadmap__c = TRUE
+&amp;&amp; ISBLANK(Misalignment_Notes__c)</errorConditionFormula>
+    <errorDisplayField>Misalignment_Notes__c</errorDisplayField>
+    <errorMessage>Misalignment Notes required</errorMessage>
+</ValidationRule>

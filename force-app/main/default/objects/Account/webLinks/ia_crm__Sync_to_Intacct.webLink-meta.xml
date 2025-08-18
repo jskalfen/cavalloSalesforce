@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Sync_to_Intacct</fullName>
+    <availability>online</availability>
+    <description>Opens an window to sync a customer with Intacct</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Sync to Intacct</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR($Site.Prefix + &apos;/apex/ia_crm__DataSyncronization?action=&apos; + IF( Account.ia_crm__Is_Merged__c , &apos;MERGE_SYNC_CUSTOMER&apos;, &apos;SYNC_CUSTOMER&apos;) + &apos;&amp;recordId=&apos; + Account.Id)}</url>
+</WebLink>

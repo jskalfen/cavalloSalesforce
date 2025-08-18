@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Ready_to_sync__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Show green flag when when contract is valid to be synced, oherwise will show red flag.</description>
+    <externalId>false</externalId>
+    <formula>CASE( ia_crm__Is_valid_for_sync_status__c, &quot;OK&quot;, IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;OK&quot;), &quot;Error&quot;, IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Error&quot;), &quot;Warning&quot;, IMAGE(&quot;/img/samples/flag_yellow.gif&quot;, &quot;Warning&quot;), TEXT(ia_crm__Is_valid_for_sync_status__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ready to sync</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

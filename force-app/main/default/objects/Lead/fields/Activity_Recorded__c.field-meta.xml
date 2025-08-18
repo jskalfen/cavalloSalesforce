@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Recorded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Read-only field to indicate that an activity has been recorded against the lead</description>
+    <label>Activity Recorded</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>chargebeeapps__Addon_Event__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Addon Event</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SUBSCRIPTION_CREATION</fullName>
+                <default>false</default>
+                <label>On subscription creation</label>
+            </value>
+            <value>
+                <fullName>SUBSCRIPTION_TRIAL_START</fullName>
+                <default>false</default>
+                <label>On subscription trial start</label>
+            </value>
+            <value>
+                <fullName>PLAN_ACTIVATION</fullName>
+                <default>false</default>
+                <label>On plan activation</label>
+            </value>
+            <value>
+                <fullName>SUBSCRIPTION_ACTIVATION</fullName>
+                <default>false</default>
+                <label>On subscription activation</label>
+            </value>
+            <value>
+                <fullName>CONTRACT_TERMINATION</fullName>
+                <default>false</default>
+                <label>On contract termination</label>
+            </value>
+            <value>
+                <fullName>IMMEDIATELY</fullName>
+                <default>false</default>
+                <label>Immediately</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

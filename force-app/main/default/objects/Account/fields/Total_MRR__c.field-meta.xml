@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_MRR__c</fullName>
+    <label>Chargebee_MRR</label>
+    <summarizedField>chargebeeapps__CB_Subscription__c.chargebeeapps__MRR__c</summarizedField>
+    <summaryForeignKey>chargebeeapps__CB_Subscription__c.chargebeeapps__Company__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

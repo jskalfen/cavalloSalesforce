@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Subsource__c</fullName>
+    <label>DEPRECATE Opportunity Subsource</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Opportunity_Source__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alliance Partner</fullName>
+                <default>false</default>
+                <label>Alliance Partner</label>
+            </value>
+            <value>
+                <fullName>Blog</fullName>
+                <default>false</default>
+                <label>Blog</label>
+            </value>
+            <value>
+                <fullName>BPR</fullName>
+                <default>false</default>
+                <label>BPR</label>
+            </value>
+            <value>
+                <fullName>Cavallo Employee</fullName>
+                <default>false</default>
+                <label>Cavallo Employee</label>
+            </value>
+            <value>
+                <fullName>Change Order</fullName>
+                <default>false</default>
+                <label>Change Order</label>
+            </value>
+            <value>
+                <fullName>Customer Inbound Request</fullName>
+                <default>false</default>
+                <label>Customer Inbound Request</label>
+            </value>
+            <value>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+                <label>Customer Referral</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Digital ads (Google, Bing)</fullName>
+                <default>false</default>
+                <label>Digital ads (Google, Bing)</label>
+            </value>
+            <value>
+                <fullName>DUG Forums</fullName>
+                <default>false</default>
+                <label>DUG Forums</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Event / Tradeshow</fullName>
+                <default>false</default>
+                <label>Event / Tradeshow</label>
+            </value>
+            <value>
+                <fullName>General Prospecting</fullName>
+                <default>false</default>
+                <label>General Prospecting</label>
+            </value>
+            <value>
+                <fullName>GPUG Forums</fullName>
+                <default>false</default>
+                <label>GPUG Forums</label>
+            </value>
+            <value>
+                <fullName>Independent Consultant</fullName>
+                <default>false</default>
+                <label>Independent Consultant</label>
+            </value>
+            <value>
+                <fullName>Juhl</fullName>
+                <default>false</default>
+                <label>Juhl</label>
+            </value>
+            <value>
+                <fullName>Kayako</fullName>
+                <default>false</default>
+                <label>Kayako</label>
+            </value>
+            <value>
+                <fullName>Key2Act</fullName>
+                <default>false</default>
+                <label>Key2Act</label>
+            </value>
+            <value>
+                <fullName>LinkedIn Navigator</fullName>
+                <default>false</default>
+                <label>LinkedIn Navigator</label>
+            </value>
+            <value>
+                <fullName>Marketing: User Conferences</fullName>
+                <default>false</default>
+                <label>Marketing: User Conferences</label>
+            </value>
+            <value>
+                <fullName>Microsoft AppSource</fullName>
+                <default>false</default>
+                <label>Microsoft AppSource</label>
+            </value>
+            <value>
+                <fullName>MSDW</fullName>
+                <default>false</default>
+                <label>MSDW</label>
+            </value>
+            <value>
+                <fullName>Newsletter</fullName>
+                <default>false</default>
+                <label>Newsletter</label>
+            </value>
+            <value>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+                <label>Onsite</label>
+            </value>
+            <value>
+                <fullName>Outbound Call</fullName>
+                <default>false</default>
+                <label>Outbound Call</label>
+            </value>
+            <value>
+                <fullName>Outbound Email</fullName>
+                <default>false</default>
+                <label>Outbound Email</label>
+            </value>
+            <value>
+                <fullName>Paid Media</fullName>
+                <default>false</default>
+                <label>Paid Media</label>
+            </value>
+            <value>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+                <label>Paid Search</label>
+            </value>
+            <value>
+                <fullName>Panels</fullName>
+                <default>false</default>
+                <label>Panels</label>
+            </value>
+            <value>
+                <fullName>Partner Team</fullName>
+                <default>false</default>
+                <label>Partner Team</label>
+            </value>
+            <value>
+                <fullName>Podcast</fullName>
+                <default>false</default>
+                <label>Podcast</label>
+            </value>
+            <value>
+                <fullName>Project Expansion</fullName>
+                <default>false</default>
+                <label>Project Expansion</label>
+            </value>
+            <value>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+                <label>Public Relations</label>
+            </value>
+            <value>
+                <fullName>Reseller/VAR</fullName>
+                <default>false</default>
+                <label>Reseller/VAR</label>
+            </value>
+            <value>
+                <fullName>Sales: Panels</fullName>
+                <default>false</default>
+                <label>Sales: Panels</label>
+            </value>
+            <value>
+                <fullName>Social media</fullName>
+                <default>false</default>
+                <label>Social media</label>
+            </value>
+            <value>
+                <fullName>Software Advice</fullName>
+                <default>false</default>
+                <label>Software Advice</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Trade Publications</fullName>
+                <default>false</default>
+                <label>Trade Publications</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Upgrade Request Form</fullName>
+                <default>false</default>
+                <label>Upgrade Request Form</label>
+            </value>
+            <value>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+                <label>Upsell</label>
+            </value>
+            <value>
+                <fullName>User Conference</fullName>
+                <default>false</default>
+                <label>User Conference</label>
+            </value>
+            <value>
+                <fullName>Webinar/ Virtual Event</fullName>
+                <default>false</default>
+                <label>Webinar/ Virtual Event</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>Website RFQ</fullName>
+                <default>false</default>
+                <label>Website RFQ</label>
+            </value>
+            <value>
+                <fullName>ZoomInfo</fullName>
+                <default>false</default>
+                <label>ZoomInfo</label>
+            </value>
+            <value>
+                <fullName>ZoomInfo - Intent to Buy</fullName>
+                <default>false</default>
+                <label>ZoomInfo - Intent to Buy</label>
+            </value>
+            <value>
+                <fullName>ZoomInfo - Website Insights</fullName>
+                <default>false</default>
+                <label>ZoomInfo - Website Insights</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>MSDW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Blog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Digital ads (Google, Bing)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Event / Tradeshow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Newsletter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Paid Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Paid Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Podcast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Public Relations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Social media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Trade Publications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>User Conference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <valueName>Webinar/ Virtual Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maketing</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Website</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inside Sales</controllingFieldValue>
+            <valueName>Cavallo Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inside Sales</controllingFieldValue>
+            <valueName>Customer Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Customer Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Project Expansion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Upsell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Alliance Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Independent Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Key2Act</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Partner Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Reseller/VAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>BPR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Customer Inbound Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>DUG Forums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>General Prospecting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>GPUG Forums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>LinkedIn Navigator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Onsite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Outbound Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Outbound Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Microsoft AppSource</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Upgrade Request Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Website RFQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Juhl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Software Advice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Twitter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>ZoomInfo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>ZoomInfo - Intent to Buy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>ZoomInfo - Website Insights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Kayako</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Support</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

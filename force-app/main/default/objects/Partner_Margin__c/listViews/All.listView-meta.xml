@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Partner_Billing_Type__c</columns>
+    <columns>Client__c</columns>
+    <columns>Partner_Client_Margin_Eligibility__c</columns>
+    <columns>Partner__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>CB_Subscription_ID__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Partner_Margin_Status__c</columns>
+    <columns>Approved_for_AP_Date__c</columns>
+    <columns>CB_Invoice__c</columns>
+    <columns>Software_Partner_Margin_Amount__c</columns>
+    <columns>Enhancement_Partner_Margin_Amount__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>7/1/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>lessThan</operation>
+        <value>8/1/2025 12:00 AM</value>
+    </filters>
+    <label>All</label>
+</ListView>

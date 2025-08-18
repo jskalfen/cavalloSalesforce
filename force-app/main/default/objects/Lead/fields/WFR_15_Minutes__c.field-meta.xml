@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WFR_15_Minutes__c</fullName>
+    <description>Displays the time 45 minutes prior to the first speed to lead notification time. This field is only used in the Speed to Lead 2 process.</description>
+    <formula>Speed_to_Lead_Notification_Sent_Time__c - (45/1440)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>WFR - 15 Minutes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Enhancement_Items__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>When a product is added to an Opportunity, if this option is checked, we will look for another product with the original name and &quot; Enhancement&quot; appended.  If it&apos;s found, we&apos;ll add it also.</inlineHelpText>
+    <label>Add Enhancement Items</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Feature_Functionality_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;New_Business&quot;
+&amp;&amp; ISPICKVAL(Closed_Reason__c, &quot;Missing feature/functionality&quot;)
+&amp;&amp;  ISBLANK(Missing_Feature_Functionality__c)</errorConditionFormula>
+    <errorDisplayField>Missing_Feature_Functionality__c</errorDisplayField>
+    <errorMessage>Required when Closed Reason is Missing feature/functionality</errorMessage>
+</ValidationRule>

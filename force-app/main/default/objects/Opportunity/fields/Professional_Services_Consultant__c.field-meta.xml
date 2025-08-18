@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professional_Services_Consultant__c</fullName>
+    <label>Professional Services Consultant</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LeadSource</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kevin Albee</fullName>
+                <default>false</default>
+                <label>Kevin Albee</label>
+            </value>
+            <value>
+                <fullName>Brandon Bollenbach</fullName>
+                <default>false</default>
+                <label>Brandon Bollenbach</label>
+            </value>
+            <value>
+                <fullName>Lara Brinkmeyer</fullName>
+                <default>false</default>
+                <label>Lara Brinkmeyer</label>
+            </value>
+            <value>
+                <fullName>Michael DeFazio</fullName>
+                <default>false</default>
+                <label>Michael DeFazio</label>
+            </value>
+            <value>
+                <fullName>Sam Griswold</fullName>
+                <default>false</default>
+                <label>Sam Griswold</label>
+            </value>
+            <value>
+                <fullName>Kreg Losinski</fullName>
+                <default>false</default>
+                <label>Kreg Losinski</label>
+            </value>
+            <value>
+                <fullName>Lexi Rarick</fullName>
+                <default>false</default>
+                <label>Lexi Rarick</label>
+            </value>
+            <value>
+                <fullName>Christina Swick</fullName>
+                <default>false</default>
+                <label>Christina Swick</label>
+            </value>
+            <value>
+                <fullName>Marlene Tate</fullName>
+                <default>false</default>
+                <label>Marlene Tate</label>
+            </value>
+            <value>
+                <fullName>Jordan Hurner</fullName>
+                <default>false</default>
+                <label>Jordan Hurner</label>
+            </value>
+            <value>
+                <fullName>Tommy Jacobs</fullName>
+                <default>false</default>
+                <label>Tommy Jacobs</label>
+            </value>
+            <value>
+                <fullName>Mary Kailing</fullName>
+                <default>false</default>
+                <label>Mary Kailing</label>
+            </value>
+            <value>
+                <fullName>Emily Karel</fullName>
+                <default>false</default>
+                <label>Emily Karel</label>
+            </value>
+            <value>
+                <fullName>Heather Longstreet</fullName>
+                <default>false</default>
+                <label>Heather Longstreet</label>
+            </value>
+            <value>
+                <fullName>Carina VanderMeer</fullName>
+                <default>false</default>
+                <label>Carina VanderMeer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

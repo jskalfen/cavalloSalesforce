@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Source__c</fullName>
+    <label>DEPRECATE Opportunity Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>SDR</fullName>
+                <default>false</default>
+                <label>SDR</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Maketing</fullName>
+                <default>false</default>
+                <label>Maketing</label>
+            </value>
+            <value>
+                <fullName>Inside Sales</fullName>
+                <default>false</default>
+                <label>Inside Sales</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Blog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blog</label>
+            </value>
+            <value>
+                <fullName>Business Process Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Process Review</label>
+            </value>
+            <value>
+                <fullName>Cavallo Consulting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cavallo Consulting</label>
+            </value>
+            <value>
+                <fullName>Cavallo Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cavallo Support</label>
+            </value>
+            <value>
+                <fullName>Customer RFQ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer RFQ</label>
+            </value>
+            <value>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Referral</label>
+            </value>
+            <value>
+                <fullName>Innovation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Innovation</label>
+            </value>
+            <value>
+                <fullName>InsideView</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>InsideView</label>
+            </value>
+            <value>
+                <fullName>Outbound Call</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound Call</label>
+            </value>
+            <value>
+                <fullName>PR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PR</label>
+            </value>
+            <value>
+                <fullName>Paid Media</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid Media</label>
+            </value>
+            <value>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid Search</label>
+            </value>
+            <value>
+                <fullName>Podcast</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Podcast</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Sales Rep</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Search</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Search</label>
+            </value>
+            <value>
+                <fullName>Strategic Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategic Partner</label>
+            </value>
+            <value>
+                <fullName>Trade Publications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trade Publications</label>
+            </value>
+            <value>
+                <fullName>User Conference</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>User Conference</label>
+            </value>
+            <value>
+                <fullName>Webinar/ Virtual Event</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Webinar/ Virtual Event</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Website</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

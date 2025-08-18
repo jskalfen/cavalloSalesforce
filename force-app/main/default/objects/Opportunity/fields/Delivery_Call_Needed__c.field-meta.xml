@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Call_Needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If checked, the SE should be included on a delivery call for the custom solution</inlineHelpText>
+    <label>Delivery Call Needed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Start_and_End_Dates_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ia_crm__Start_Date__c &gt; ia_crm__End_Date__c, ia_crm__Billing_Start_Date__c &gt; ia_crm__Billing_End_Date__c)</errorConditionFormula>
+    <errorMessage>Start dates must be earlier than the end dates.</errorMessage>
+</ValidationRule>

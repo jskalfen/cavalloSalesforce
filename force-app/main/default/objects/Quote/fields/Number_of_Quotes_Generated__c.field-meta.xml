@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Quotes_Generated__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines the V number on the next quote generated.  It will be this number + 1. You do not need to manually edit this field.</inlineHelpText>
+    <label>Number of Quotes Generated</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

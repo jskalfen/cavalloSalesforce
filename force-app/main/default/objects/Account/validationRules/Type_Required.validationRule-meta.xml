@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISCHANGED( Type ),
+$User.Id &lt;&gt; OwnerId,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;Super User&quot;,
+$Profile.Name &lt;&gt; &quot;Partner Associate&quot;,
+$Profile.Name &lt;&gt; &quot;Client Account Managers&quot;,
+$User.Alias &lt;&gt; &quot;jbard&quot;
+)</errorConditionFormula>
+    <errorMessage>Only partner&apos;s team or account owner can change the field</errorMessage>
+</ValidationRule>

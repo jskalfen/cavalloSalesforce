@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Role_Required_before_Closed_Won</fullName>
+    <active>false</active>
+    <description>Contact role is required before closing the deal.</description>
+    <errorConditionFormula>AND(ISPICKVAL(  StageName , &apos;Present and Negotiate&apos;), 
+RecordTypeId &lt;&gt; &apos;0123u000000uC1jAAE&apos;,
+ISBLANK( of_Contact_Roles__c ) )</errorConditionFormula>
+    <errorMessage>Contact Role is required. Please add contact role to the opportunity</errorMessage>
+</ValidationRule>

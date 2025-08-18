@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_software_are_they_currently_running</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK( What_software_are_they_currently_running__c )</errorConditionFormula>
+    <errorDisplayField>What_software_are_they_currently_running__c</errorDisplayField>
+    <errorMessage>Required fields are not entered on SE Request Form tab on opportunity. Please make sure to update all the fields on SE request form before submitting SE request.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contains_6W_Opps__c</fullName>
+    <formula>Contact.Contains_Closed_Won_Opps__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contains 6W Opps</label>
+    <type>Checkbox</type>
+</CustomField>

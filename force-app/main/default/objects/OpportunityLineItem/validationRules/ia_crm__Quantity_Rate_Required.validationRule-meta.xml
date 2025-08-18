@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Quantity_Rate_Required</fullName>
+    <active>false</active>
+    <description>If Rate, Quantity or Multiplier, then both Rate and Quantity need to be filled in.</description>
+    <errorConditionFormula>IF(Opportunity.RecordType.DeveloperName = &apos;Contract&apos;,
+AND(OR(NOT(ISBLANK(UnitPrice)), NOT(ISBLANK(Quantity)), NOT(ISBLANK( ia_crm__Multiplier__c ))), OR(ISBLANK(UnitPrice), ISBLANK(Quantity))), false)</errorConditionFormula>
+    <errorMessage>Incomplete input data is provided for &apos;Rate&apos;, &apos;Quantity&apos;, and &apos;Multiplier&apos;.</errorMessage>
+</ValidationRule>

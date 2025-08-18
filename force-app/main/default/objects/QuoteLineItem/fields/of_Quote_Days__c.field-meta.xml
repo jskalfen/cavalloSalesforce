@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Quote_Days__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+    (Quote.Opportunity.RecordType.DeveloperName = &apos;Cloud&apos;,    
+        IF(
+            AND (NOT(ISBLANK(Quote.Opportunity.Contract_Start_Date_forward__c)),NOT(ISBLANK(Quote.Opportunity.Contract_End_date_forward__c))),
+            TEXT( 
+                 (Quote.Opportunity.Contract_End_date_forward__c  - Quote.Opportunity.Contract_Start_Date_forward__c) +                   
+                 (Quote.Opportunity.Account.Enhancement_Date__c -  Created_Date2__c)
+                ),
+            TEXT(
+                 Quote.Opportunity.Account.Enhancement_Date__c -  Created_Date2__c
+                )
+        ),        
+        IF(
+            AND (NOT(ISBLANK(Quote.Opportunity.Contract_Start_Date_forward__c)),NOT(ISBLANK(Quote.Opportunity.Contract_End_date_forward__c  ))),
+            TEXT( 
+                 (Quote.Opportunity.Contract_End_date_forward__c  - Quote.Opportunity.Contract_Start_Date_forward__c) +                   
+                 (Quote.Opportunity.Parent_Opportunity__r.Account.Enhancement_Date__c - Created_Date2__c)
+                ),
+            TEXT(
+                 Quote.Opportunity.Parent_Opportunity__r.Account.Enhancement_Date__c - Created_Date2__c
+                )
+        )
+    )</formula>
+    <label># of Quote Days</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

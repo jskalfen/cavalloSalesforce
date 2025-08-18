@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Refrenced_Account_when_Approved</fullName>
+    <active>true</active>
+    <description>When request os approved then the approved reference account is required</description>
+    <errorConditionFormula>AND(  ISPICKVAL(CRR_Status__c, &quot;Approved&quot;)  , ISBLANK(  Approved_Referenced_Account__c ) )</errorConditionFormula>
+    <errorMessage>Approved Reference Account is required</errorMessage>
+</ValidationRule>

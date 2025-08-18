@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Opportunity_from_Qualify_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.FirstName &lt;&gt; &apos;Salesforce&apos;
+&amp;&amp; ISCHANGED(StageName) 
+&amp;&amp;
+TEXT(PRIORVALUE(StageName))=&apos;Qualify&apos;
+&amp;&amp;
+Has_Contact_Role__c = FALSE
+&amp;&amp;
+(
+				$RecordType.Name = &apos;Custom&apos;
+				|| $RecordType.Name = &apos;Change_Order_NEW&apos;
+)</errorConditionFormula>
+    <errorMessage>Please add at least one Contact Role that is flagged as Primary to move from the Qualify stage</errorMessage>
+</ValidationRule>

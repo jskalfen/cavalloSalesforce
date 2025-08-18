@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebee_ARR_Enhancement_Acct__c</fullName>
+    <description>Chargebee ARR Enhancement Acct</description>
+    <label>Chargebee ARR Enhancement Acct</label>
+    <summarizedField>chargebeeapps__CB_Subscription__c.chargebeeapps__MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>chargebeeapps__CB_Subscription__c.chargebeeapps__Plan_Id__c</field>
+        <operation>equals</operation>
+        <value>SALESPAD-FOR-GP</value>
+    </summaryFilterItems>
+    <summaryForeignKey>chargebeeapps__CB_Subscription__c.chargebeeapps__Company__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

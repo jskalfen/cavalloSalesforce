@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_left_in_the_quarter__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(MONTH(TODAY()) &lt;= 3, 
+DATE(YEAR(TODAY()), 03 , 31 ), 
+IF(MONTH(TODAY()) &lt;= 6, 
+DATE(YEAR(TODAY()), 06 , 30 ), 
+IF(MONTH(TODAY()) &lt;= 9, 
+DATE(YEAR(TODAY()), 09 , 30 ), 
+DATE(YEAR(TODAY()), 12 , 31 )))) 
+- 
+TODAY()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days left in the quarter</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

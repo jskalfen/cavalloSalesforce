@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_re_Tiering__c</fullName>
+    <description>Customer Value (low / high)
+Project Difficulty (low / high)</description>
+    <inlineHelpText>Why was this rated at the tiering level chosen?  
+What is the perception of Customer Value? (low or high)
+What is the perception of Project Difficulty? (low or high)
+Are there special considerations or requirements to document?</inlineHelpText>
+    <label>Tiering Decision and Requirements</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

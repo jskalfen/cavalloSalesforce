@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Direct_v_Partner_After_Proposal</fullName>
+    <active>false</active>
+    <description>After Stage is Proposal/Quote, Direct v Partner is required</description>
+    <errorConditionFormula>AND(ISBLANK(TEXT(Direct_v_Partner__c)),
+    OR(AND(RecordType.DeveloperName = &apos;Desktop_Custom&apos;,
+           NOT(ISPICKVAL(StageName, &apos;Qualification&apos;)),
+           NOT(ISPICKVAL(StageName, &apos;Demo&apos;)),
+           NOT(ISPICKVAL(StageName, &apos;Proposal/Quote&apos;)),
+           NOT(ISPICKVAL(StageName, &apos;On Hold&apos;)),
+           NOT(ISPICKVAL(StageName, &apos;Closed Lost&apos;))
+          )
+       )
+    )</errorConditionFormula>
+    <errorDisplayField>Direct_v_Partner__c</errorDisplayField>
+    <errorMessage>After Stage is Proposal/Quote, Direct v Partner is required</errorMessage>
+</ValidationRule>

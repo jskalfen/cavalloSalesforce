@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteLineValidation</fullName>
+    <active>true</active>
+    <description>removed ISCHANGED(Discount) from VR and made it read only on the page layout.</description>
+    <errorConditionFormula>AND(
+				$Permission.EditReadOnlyFields = FALSE,
+    Quote.RecordType.DeveloperName  == &apos;Desktop&apos;,
+				OR(
+								ISCHANGED(Quantity), 
+								ISCHANGED(UnitPrice)
+				)
+)</errorConditionFormula>
+    <errorMessage>Quantity, Sales Price, and Discount cannot be updated here. Please navigate to the Manage CB Product screen to make this change.</errorMessage>
+</ValidationRule>

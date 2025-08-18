@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAM_Targets_21_22__c</fullName>
+    <formula>IF(Fiscal_Year__c=&apos;2021&apos;,
+CASE(MONTH( Snapshopt_Created_Date2__c ),
+1, 479000,
+2, 479000,
+3, 479000,
+4, 598750,
+5, 598750,
+6, 598750,
+7, 598750,
+8, 598750,
+9, 598750,
+10, 718500,
+11, 718500,
+12, 718500,
+0),
+IF(Fiscal_Year__c=&apos;2022&apos;,
+CASE(MONTH( Snapshopt_Created_Date2__c ),
+1, 729278,
+2, 729278,
+3, 729278,
+4, 740217,
+5, 740217,
+6, 740217,
+7, 751320,
+8, 751320,
+9, 751320,
+10, 762590,
+11, 762590,
+12, 762590,
+0),0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CAM Targets 21-22</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

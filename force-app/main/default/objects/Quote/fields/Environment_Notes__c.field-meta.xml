@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Environment_Notes__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Details regarding customer environment for custom quoting</description>
+    <inlineHelpText>Details regarding customer environment for custom quoting</inlineHelpText>
+    <label>Environment Notes</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

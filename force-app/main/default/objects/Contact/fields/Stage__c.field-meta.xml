@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Contact</fullName>
+                <default>true</default>
+                <label>New Contact</label>
+            </value>
+            <value>
+                <fullName>New - Inbound</fullName>
+                <default>false</default>
+                <label>New - Inbound</label>
+            </value>
+            <value>
+                <fullName>New - Imported</fullName>
+                <default>false</default>
+                <label>New - Imported</label>
+            </value>
+            <value>
+                <fullName>New Prospect</fullName>
+                <default>false</default>
+                <label>New Prospect</label>
+            </value>
+            <value>
+                <fullName>Working - Sales</fullName>
+                <default>false</default>
+                <label>In Process - Sales</label>
+            </value>
+            <value>
+                <fullName>Marketing Qualified</fullName>
+                <default>false</default>
+                <label>Marketing Qualified</label>
+            </value>
+            <value>
+                <fullName>Nurture - Marketing</fullName>
+                <default>false</default>
+                <label>Nurture - Marketing</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Sales Qualified</fullName>
+                <default>false</default>
+                <label>Sales Qualified</label>
+            </value>
+            <value>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+                <label>New Customer</label>
+            </value>
+            <value>
+                <fullName>Current Customer</fullName>
+                <default>false</default>
+                <label>Current Customer</label>
+            </value>
+            <value>
+                <fullName>Cold</fullName>
+                <default>false</default>
+                <label>Cold</label>
+            </value>
+            <value>
+                <fullName>Dead</fullName>
+                <default>false</default>
+                <label>Dead</label>
+            </value>
+            <value>
+                <fullName>Delete</fullName>
+                <default>false</default>
+                <label>Delete</label>
+            </value>
+            <value>
+                <fullName>Dead - Bad / No Contact Info</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dead - Bad / No Contact Info</label>
+            </value>
+            <value>
+                <fullName>Dead - Doesn&apos;t Exist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dead - Doesn&apos;t Exist</label>
+            </value>
+            <value>
+                <fullName>Dead - No Longer There</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dead - No Longer There</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NN_Next_2_Quarter_365_Days_Goal__c</fullName>
+    <formula>IF(Fiscal_Year__c=&apos;2021&apos;,
+CASE(MONTH( Snapshopt_Created_Date2__c ),
+1, 1125000,
+2, 1125000,
+3, 1125000,
+4, 1238000,
+5, 1238000,
+6, 1238000,
+7, 1256570,
+8, 1256570,
+9, 1256570,
+10, 1275419,
+11, 1275419,
+12, 1275419,
+0),
+IF(Fiscal_Year__c=&apos;2022&apos;,
+CASE(MONTH(Snapshopt_Created_Date2__c ),
+1, 1294550,
+2, 1294550,
+3, 1294550,
+4, 1313968,
+5, 1313968,
+6, 1313968,
+7, 1313968,
+8, 1313968,
+9, 1313968,
+10, 1313968,
+11, 1313968,
+12, 1313968,
+0),0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NN - Next 2 Quarter (365 Days Goal)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

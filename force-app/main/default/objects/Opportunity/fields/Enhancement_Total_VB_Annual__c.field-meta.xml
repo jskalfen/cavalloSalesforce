@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enhancement_Total_VB_Annual__c</fullName>
+    <description>Enhancement products Rollup - Annual Price - SE -6/07/21</description>
+    <inlineHelpText>Rollup of Enhancement products (Total of list price)</inlineHelpText>
+    <label>OLD_Enhancement Total_V2 (Annual)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

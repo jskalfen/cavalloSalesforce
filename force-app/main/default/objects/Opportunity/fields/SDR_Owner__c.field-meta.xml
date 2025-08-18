@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDR_Owner__c</fullName>
+    <label>SDR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delaney Sebring</fullName>
+                <default>false</default>
+                <label>Delaney Sebring</label>
+            </value>
+            <value>
+                <fullName>Grace Medrano</fullName>
+                <default>false</default>
+                <label>Grace Medrano</label>
+            </value>
+            <value>
+                <fullName>Jack Biwer</fullName>
+                <default>false</default>
+                <label>Jack Biwer</label>
+            </value>
+            <value>
+                <fullName>Jake Gerber</fullName>
+                <default>false</default>
+                <label>Jake Gerber</label>
+            </value>
+            <value>
+                <fullName>Killian Lynam</fullName>
+                <default>false</default>
+                <label>Killian Lynam</label>
+            </value>
+            <value>
+                <fullName>Tim Haadsma</fullName>
+                <default>false</default>
+                <label>Tim Haadsma</label>
+            </value>
+            <value>
+                <fullName>Kristina Kaufman</fullName>
+                <default>false</default>
+                <label>Kristina Kaufman</label>
+            </value>
+            <value>
+                <fullName>Robert Vaeco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Robert Vaeco</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

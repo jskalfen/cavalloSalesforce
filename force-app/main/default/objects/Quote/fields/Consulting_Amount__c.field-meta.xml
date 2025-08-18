@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consulting_Amount__c</fullName>
+    <label>Consulting Amount</label>
+    <summarizedField>QuoteLineItem.Total_Price_Custom__c</summarizedField>
+    <summaryFilterItems>
+        <field>QuoteLineItem.Product_family_Custom__c</field>
+        <operation>equals</operation>
+        <value>SERVICES</value>
+    </summaryFilterItems>
+    <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

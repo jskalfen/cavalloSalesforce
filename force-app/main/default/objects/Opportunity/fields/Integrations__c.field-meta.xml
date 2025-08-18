@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integrations__c</fullName>
+    <label>Integrations/Connectors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CC Processing: PayFabric and Square</fullName>
+                <default>false</default>
+                <label>CC Processing: PayFabric</label>
+            </value>
+            <value>
+                <fullName>CC Processing: Square</fullName>
+                <default>false</default>
+                <label>CC Processing: Square</label>
+            </value>
+            <value>
+                <fullName>Document Management: KwikTag</fullName>
+                <default>false</default>
+                <label>Document Management: KwikTag</label>
+            </value>
+            <value>
+                <fullName>eCommerce: Adobe Commerce</fullName>
+                <default>false</default>
+                <label>eCommerce: Adobe Commerce</label>
+            </value>
+            <value>
+                <fullName>Ecommerce: Shopify, Adobe Commerce, WooCommerce</fullName>
+                <default>false</default>
+                <label>Ecommerce: Shopify</label>
+            </value>
+            <value>
+                <fullName>eCommerce: WooCommerce</fullName>
+                <default>false</default>
+                <label>eCommerce: WooCommerce</label>
+            </value>
+            <value>
+                <fullName>EDI: SPS Commerce</fullName>
+                <default>false</default>
+                <label>EDI: SPS Commerce</label>
+            </value>
+            <value>
+                <fullName>HubSpot</fullName>
+                <default>false</default>
+                <label>HubSpot</label>
+            </value>
+            <value>
+                <fullName>Job Costing: WennSoft</fullName>
+                <default>false</default>
+                <label>Job Costing: WennSoft</label>
+            </value>
+            <value>
+                <fullName>Shipping: FedEx, UPS, PaceJet</fullName>
+                <default>false</default>
+                <label>Shipping: FedEx</label>
+            </value>
+            <value>
+                <fullName>Shipping: Fedex &amp; UPS Bundle</fullName>
+                <default>false</default>
+                <label>Shipping: Fedex &amp; UPS Bundle</label>
+            </value>
+            <value>
+                <fullName>Shipping: PaceJet</fullName>
+                <default>false</default>
+                <label>Shipping: PaceJet</label>
+            </value>
+            <value>
+                <fullName>Shipping: UPS</fullName>
+                <default>false</default>
+                <label>Shipping: UPS</label>
+            </value>
+            <value>
+                <fullName>Taxes: Avalara and Thomson Reuters</fullName>
+                <default>false</default>
+                <label>Taxes: Avalara</label>
+            </value>
+            <value>
+                <fullName>Taxes: Thomson Reuters</fullName>
+                <default>false</default>
+                <label>Taxes: Thomson Reuters</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

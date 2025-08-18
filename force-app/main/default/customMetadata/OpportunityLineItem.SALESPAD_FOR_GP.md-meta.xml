@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SALESPAD FOR GP</label>
+    <protected>false</protected>
+    <values>
+        <field>Product_ID__c</field>
+        <value xsi:type="xsd:string">01t3u000006yEQEAA2</value>
+    </values>
+</CustomMetadata>

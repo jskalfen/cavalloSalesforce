@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResellerVAR_Influence_Required</fullName>
+    <active>false</active>
+    <description>Reseller/VAR Influence is required when Standard/Reseller opp move to Discovery stage</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;Cloud&apos;|| RecordType.DeveloperName = &apos;Reseller&apos;,
+NOT( CONTAINS( Name , &quot;ChangeOrder&quot;)),
+COOpp__c = False,
+TEXT(StageName) = &apos;Solution Creation&apos; || TEXT(StageName) = &apos;Present and Negotiate&apos;,
+TEXT(Reseller_VAR_Influence__c) =&apos;&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Reseller_VAR_Influence__c</errorDisplayField>
+    <errorMessage>Reseller/VAR Influence field is required</errorMessage>
+</ValidationRule>

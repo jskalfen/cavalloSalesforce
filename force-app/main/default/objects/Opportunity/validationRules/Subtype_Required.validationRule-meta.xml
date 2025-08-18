@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtype_Required</fullName>
+    <active>false</active>
+    <description>When type is new business then subtype needs to be populated.</description>
+    <errorConditionFormula>ISPICKVAL( Type , &apos;New Business&apos;) &amp;&amp; TEXT(Subtype__c ) = &apos;&apos; &amp;&amp; ( RecordType.DeveloperName = &apos;Cloud&apos;  )</errorConditionFormula>
+    <errorDisplayField>Subtype__c</errorDisplayField>
+    <errorMessage>Subtype is required</errorMessage>
+</ValidationRule>

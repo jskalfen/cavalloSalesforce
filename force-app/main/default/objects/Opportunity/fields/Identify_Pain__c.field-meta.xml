@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identify_Pain__c</fullName>
+    <description>What pain is causing their need (high costs, slow production, increased overhead - manual processes, low revenue)? What will happen if they make the wrong (or no) decision?</description>
+    <inlineHelpText>What pain is causing their need (high costs, slow production, increased overhead - manual processes, low revenue)? What will happen if they make the wrong (or no) decision?</inlineHelpText>
+    <label>Identify Pain</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

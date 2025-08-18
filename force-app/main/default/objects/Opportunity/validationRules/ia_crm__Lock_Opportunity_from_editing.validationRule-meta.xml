@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Lock_Opportunity_from_editing</fullName>
+    <active>false</active>
+    <description>Once synched with Intacct, Opportunity&apos;s information cannot be edited anymore.</description>
+    <errorConditionFormula>IF(Account.Id = &apos;&apos;, true, false)</errorConditionFormula>
+    <errorMessage>This opportunity is locked from editing because it has already been synchronized with Intacct.</errorMessage>
+</ValidationRule>

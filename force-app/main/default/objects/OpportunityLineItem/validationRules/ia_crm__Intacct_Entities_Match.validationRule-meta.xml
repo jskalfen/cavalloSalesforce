@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ia_crm__Intacct_Entities_Match</fullName>
+    <active>false</active>
+    <description>The Intacct Location from the Opportunity Product should match the Opportunity Intacct Entity or be a sub-location for it.</description>
+    <errorConditionFormula>IF(Opportunity.RecordType.DeveloperName = &apos;Contract&apos;,
+IF(!ISBLANK( Opportunity.ia_crm__Intacct_Location__c ), IF(OR( ia_crm__Intacct_Location__c =  Opportunity.ia_crm__Intacct_Location__c,  ia_crm__Intacct_Location__r.ia_crm__Top_Entity__c  =  Opportunity.ia_crm__Intacct_Location__c, ISBLANK(ia_crm__Intacct_Location__c)), false, true), false), false)</errorConditionFormula>
+    <errorDisplayField>ia_crm__Intacct_Location__c</errorDisplayField>
+    <errorMessage>The Intacct Location should match the Opportunity Intacct Entity or be a sublocation for it.</errorMessage>
+</ValidationRule>

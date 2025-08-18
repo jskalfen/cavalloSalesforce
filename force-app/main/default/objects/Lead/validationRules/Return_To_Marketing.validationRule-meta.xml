@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_To_Marketing</fullName>
+    <active>false</active>
+    <description>Does not allow the status of Return to Marketing unless Return to Marketing Reason is populated</description>
+    <errorConditionFormula>AND (
+ISPICKVAL(Status, &apos;Nurture - Marketing&apos;),
+ISPICKVAL( Return_to_Marketing_Reason__c , &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Return_to_Marketing_Reason__c</errorDisplayField>
+    <errorMessage>Please select a Return to Marketing Reason.</errorMessage>
+</ValidationRule>

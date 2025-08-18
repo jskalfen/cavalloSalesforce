@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_Feedback__c</fullName>
+    <inlineHelpText>Feedback on AC for all interest levels, Purchase (why they purchased), Yes (What sparked the interest), No (Expansion on  what the missing feature was or just more details)</inlineHelpText>
+    <label>AC-Feedback</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>8</visibleLines>
+</CustomField>

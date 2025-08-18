@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_to_be_Audited</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Partner - Prospective,Partner - Reseller,Partner - Referral,Partner - Strategic / ISV</value>
+    </filters>
+    <label>Accounts to be Audited</label>
+    <sharedTo>
+        <group>Partner_Account_Audit</group>
+    </sharedTo>
+</ListView>

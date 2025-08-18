@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Forward_Date_Calculated__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Quote.Opportunity.RecordType.DeveloperName = &apos;Cloud&apos;,TEXT( MONTH(    Quote.Opportunity.Contract_End_date_forward__c ) ) &amp; &quot;/&quot; &amp; TEXT( DAY(  Quote.Opportunity.Contract_End_date_forward__c ) ) &amp; &quot;/&quot; &amp; TEXT( YEAR(  Quote.Opportunity.Contract_End_date_forward__c  ) ) , TEXT( MONTH(  Quote.Opportunity.Contract_End_date_forward__c ) ) &amp; &quot;/&quot; &amp; TEXT( DAY(  Quote.Opportunity.Contract_End_date_forward__c ) ) &amp; &quot;/&quot; &amp; TEXT( YEAR(  Quote.Opportunity.Contract_End_date_forward__c ) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contract Forward Date Calculated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

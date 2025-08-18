@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name</fullName>
+    <inlineHelpText>This should be similar to the opportunity name, but include quote at the end. This field will show up in the PO # field on the document you send.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

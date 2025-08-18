@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contains_Closed_Won_Opps__c</fullName>
+    <formula>IF(Account.of_Closed_Won_Opps__c &gt;0, True, False)</formula>
+    <label>Contains Closed Won Opps</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

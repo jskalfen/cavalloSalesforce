@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  TEXT(Stage__c)  = &apos;Inbound&apos;, 0,  IF(  TEXT(Stage__c) =&apos;Qualify&apos;, 10,  IF(  TEXT(Stage__c) = &apos;Discovery&apos;, 25,  IF( TEXT(Stage__c) = &apos;Estimation&apos;, 40,  IF( TEXT(Stage__c) = &apos;Proposal&apos;, 50,  IF( TEXT(Stage__c) = &apos;Nurture&apos;, 75,  IF( TEXT(Stage__c) = &apos;Closed Won&apos;, 100,  IF( TEXT(Stage__c  ) =&apos;Closed Lost&apos;, 0,  IF( TEXT(Stage__c) = &apos;Needs Info&apos;, 20,  IF( TEXT(Stage__c) = &apos;Negotiation&apos;, 80,  IF( TEXT(Stage__c) = &apos;Closing&apos;, 95,  IF( TEXT(Stage__c) = &apos;Quote Delivery&apos;, 70,  IF( TEXT(Stage__c) = &apos;Quote Development&apos;  || TEXT(Stage__c) = &apos;Quote Review&apos;, 20,0 ) ) ) ) ) ) ) ) ) ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Probability</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enhancement_Status_Formula_Field__c</fullName>
+    <description>Checks for:
+Current = Enhancement Date on the account is in the future
+Grace = Up to 30 days past the Enhancement Date on the account
+Expired = 31 days past the Enhancement Date on the account</description>
+    <externalId>false</externalId>
+    <formula>IF(Enhancement_Date__c  &lt; today() -30,
+   &apos;Expired&apos;
+,
+   IF(Enhancement_Date__c &lt; today(),
+       &apos;Grace&apos;
+   ,
+     IF(Enhancement_Date__c &gt;=today(), 
+      &apos;Current&apos;
+,
+&quot; &quot;
+   )
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ARR/Enhancement Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

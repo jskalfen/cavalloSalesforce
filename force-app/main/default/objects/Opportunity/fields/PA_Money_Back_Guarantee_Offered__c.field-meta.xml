@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PA_Money_Back_Guarantee_Offered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For the PA Money Back Guarantee promotion - check the box if we are doing the MBG Offer</description>
+    <label>PA Money Back Guarantee Offered</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
