@@ -1,109 +1,7 @@
-// Trigger Handler for Opportunity Line Item
-// 2017-12-21 Ray Dehler <rdehler@square2marketing.com> created
 public with sharing class OpportunityLineItemTriggerHandler {
-    /*private static final String ENHANCEMENT_APPEND = ' Enhancement';
-    private static final String ERROR_ON_INSERT = 'Unable to Add Enhancement Product, please contact your Administrator';
-    private static final String ENHANCEMENT_PERCENT_STRING = '22';
-    private static final DOUBLE ENHANCEMENT_PERCENT = .22;
-    public static Feature_Activation__c fa = Feature_Activation__c.getInstance();*/
-    
     public static void onAfterInsert(Map<Id, OpportunityLineItem> newMap) {
         
     }
-    
-    // for each of the Items being added, if there is another product
-    // with Enhancement at the end, add it also
-    /*private static void addEnhancementItem(Map<Id, OpportunityLineItem> newMap) {
-        if (!fa.Add_Enhancement_Items__c) {
-            return;
-        }
-        
-        Map<Id, OpportunityLineItem> existingOliMap = new Map<Id, OpportunityLineItem>();
-        Set<String> productNameSet = new Set<String>();
-        Set<Id> pricebookIds = new Set<Id>();
-        Map<String, PricebookEntry> pricebookEntryMap = new Map<String, PricebookEntry>();
-        Map<Id, OpportunityLineItem> olisToAdd = new Map<Id, OpportunityLineItem>();
-        Map<Id, Set<String>> oppProductSetMap = new Map<Id, Set<String>>();
-        
-        // fill collections
-        for (Id oliId : newMap.keySet()) {
-            OpportunityLineItem oli = newMap.get(oliId);
-            existingOliMap.put(oli.Id, null);
-        }
-        
-        existingOliMap = new Map<Id, OpportunityLineItem>(
-            [
-                SELECT
-                Product2.Name,
-                Product2Id,
-                PricebookEntry.Pricebook2Id,
-                OpportunityId,
-                Quantity
-                FROM OpportunityLineItem
-                WHERE Id IN :existingOliMap.keySet()
-            ]
-        );
-        
-        for (Id oliId : existingOliMap.keySet()) {
-            OpportunityLineItem oli = existingOliMap.get(oliId);
-            productNameSet.add(oli.Product2.Name + ENHANCEMENT_APPEND);
-            pricebookIds.add(oli.PricebookEntry.Pricebook2Id);
-            oppProductSetMap.put(oli.OpportunityId, new Set<String>());
-        }
-        
-        for (OpportunityLineItem oli : [
-            SELECT Product2.Name, OpportunityId
-            FROM OpportunityLineItem
-            WHERE OpportunityId IN :oppProductSetMap.keySet()
-        ]) {
-            oppProductSetMap.get(oli.OpportunityId).add(oli.Product2.Name);
-        }
-        
-        for (PricebookEntry pbe : [
-            SELECT Product2.Name, Pricebook2Id, UnitPrice
-            FROM PricebookEntry
-            WHERE Product2.Name IN :productNameSet AND Pricebook2Id IN :pricebookIds
-        ]) {
-            pricebookEntryMap.put(pbe.Product2.Name + ';' + pbe.Pricebook2Id, pbe);
-        }
-        
-        for (Id oliId : existingOliMap.keySet()) {
-            OpportunityLineItem oli = existingOliMap.get(oliId);
-            String key =
-                oli.Product2.Name +
-                ENHANCEMENT_APPEND +
-                ';' +
-                oli.PricebookEntry.Pricebook2Id;
-            if (
-                pricebookEntryMap.containsKey(key) &&
-                !oppProductSetMap.get(oli.OpportunityId)
-                .contains(oli.Product2.Name + ENHANCEMENT_APPEND)
-            ) {
-                OpportunityLineItem oliToAdd = new OpportunityLineItem();
-                oliToAdd.OpportunityId = oli.OpportunityId;
-                oliToAdd.PricebookEntryId = pricebookEntryMap.get(key).Id;
-                oliToAdd.Product2Id = oli.Product2Id;
-                oliToAdd.Quantity = oli.Quantity;
-                oliToAdd.UnitPrice = pricebookEntryMap.get(key).UnitPrice;
-                oliToAdd.Comments__c = String.Format(
-                    '{0}% Annual Enhancement per concurrent user. \nProrated Enhancement from date: \nList price: $',
-                    new List<String>{ ENHANCEMENT_PERCENT_STRING }
-                );
-                olisToAdd.put(oliId, oliToAdd);
-            }
-        }
-        
-        if (!olisToAdd.isEmpty()) {
-            try {
-                insert olisToAdd.values();
-            } catch (Exception e) {
-                // could segment the actual error, but let's error all for now
-                for (Id oliId : olisToAdd.keySet()) {
-                    newMap.get(oliId).addError(ERROR_ON_INSERT);
-                }
-            }
-        }
-    }*/
     
     public static void updateOpportunityWithARR(
         Map<Id, OpportunityLineItem> newMap,
@@ -111,14 +9,10 @@ public with sharing class OpportunityLineItemTriggerHandler {
     ) {
         Set<ID> oppIDSet = new Set<ID>();
         String licensingSubscription = System.Label.OppLine_Licensing_Subscription;
-        String licensingSoftware = System.Label.OppLine_Licensing_Software;
-        String businessLineProfessionalServices = System.Label.OppLine_BusinessLine_ProfessionalServices;
         String licensingPerpetual = System.Label.OppLine_Licensing_Perpetual;
         String perpetualTypeEnhancement = System.Label.OppLine_PerpetualType_Enhancement;
         List<Opportunity> oppListToUpdate = new List<Opportunity>();
         List<Opportunity> oppListForPM = new List<Opportunity>();
-        List<OpportunityLineItem> oppProductListForPM = new List<OpportunityLineItem>();
-        //Boolean createPartnerMargin = false;
         Set<ID> oppIdSetWithPartner = new Set<ID>();
         Set<ID> oppProductIdSet = new Set<ID>();
         for (OpportunityLineItem oli : newMap.values()) {
@@ -160,15 +54,9 @@ public with sharing class OpportunityLineItemTriggerHandler {
                         if(oli.ARR_MFC__c != null && oli.ARR_MFC__c > 0){
                             opp.Total_ARR_Opp__c += oli.ARR_MFC__c;
                         }
-                        system.debug('Opp Partner:::'+Opp.Partner__c);
-                        //system.debug('Oli Recc Revenue:::'+oli.Recurring_Revenue__c);
                         if(Opp.Partner__c != null){
                            oppIdSetWithPartner.add(Opp.Id);
                            oppListForPM.add(Opp);
-                           /*if(oli.Recurring_Revenue__c){
-                           		
-                               	createPartnerMargin = true; 
-                           }*/
                         }
                     }
                     
@@ -189,9 +77,12 @@ public with sharing class OpportunityLineItemTriggerHandler {
             update oppListToUpdate; 
         }
         
-        //future call to update coupon information on Opportunity Products
         if(!System.isFuture()){
         	CouponService.updateOppProductCoupons(oppProductIdSet);
+        }
+        
+        if(oldMap != null) {
+            OpportunityLineItemCouponTracking.trackManualPartnerPayments(newMap.values(), oldMap);
         }
         
     }
@@ -215,9 +106,6 @@ public with sharing class OpportunityLineItemTriggerHandler {
             }
         }
         
-        
-        //Partner_Payment_OP_Bill_through__c
-        //system.debug('cbItemPriceSet::::'+cbItemPriceSet);
         if(cbItemPriceSet != null && cbItemPriceSet.size() > 0){
             cbItemPriceMap = new Map<ID,chargebeeapps__CB_Item_Price__c>
                 ([Select ID,chargebeeapps__Price__c,chargebeeapps__Period_Unit__c,chargebeeapps__Period__c From chargebeeapps__CB_Item_Price__c where ID IN: cbItemPriceSet]);   
@@ -230,7 +118,6 @@ public with sharing class OpportunityLineItemTriggerHandler {
             for(Opportunity opp:oppList){
                 oppSubIDSet.add(opp.chargebeeapps__Subscription_Id__c);
             }
-            //system.debug('oppSubIDSet::::'+oppSubIDSet);
             if(oppSubIDSet != null && oppSubIDSet.size() > 0){
                     for(chargebeeapps__Subscription_Addon__c cbSubAddon: [Select ID,chargebeeapps__Unit_Price__c,chargebeeapps__Product__r.ProductCode From chargebeeapps__Subscription_Addon__c 
                                                                            Where chargebeeapps__Subscription__c IN: oppSubIDSet]){
@@ -273,14 +160,6 @@ public with sharing class OpportunityLineItemTriggerHandler {
                 }
             }
             oli.Sales_Gross_ARR__c = grossARR;
-            //oli.Partner_Margin_Attributable_Amount__c = oli.TotalPrice;
-            /*for(chargebeeapps__CB_Opportunity_Coupon__c cbCoupon: opCbCouponMap.get(oli.OpportunityId)){
-                if(cbCoupon.chargebeeapps__CB_Coupon__r.chargebeeapps__Addon_Id__c.Contains(oli.ProductCode) ||
-                  cbCoupon.chargebeeapps__CB_Coupon__r.chargebeeapps__Charge_Id__c.Contains(oli.ProductCode)){
-                  System.debug('....Inside If...');
-                  oli.Partner_Payment_OP_Bill_through__c = cbCoupon.chargebeeapps__CB_Coupon__r.chargebeeapps__Discount_Percentage__c; 
-                }
-            }*/
         }        
     }   
 }
