@@ -1,13 +1,14 @@
 //Trigger Handler for Opportunity Line Item
 // 2017-12-21 Ray Dehler <rdehler@square2marketing.com> created
-public with sharing class OpportunityTriggerHandler {
-    private static final String PRICEBOOK_PREFIX = 'Dealer - ';
-   
+public with sharing class OpportunityTriggerHandler {   
     public static Feature_Activation__c fa = Feature_Activation__c.getInstance();
-    public String oppStageName = 'Discovery';
    
     public static void onBeforeInsert(List<Opportunity> newList) {
         defaultPricebookId(newList);
+    }
+    
+    public static void onBeforeUpdate(List<Opportunity> newList, Map<Id, Opportunity> oldMap) {
+        updateManualDiscount(newList, oldMap);
     }
    
     public static void afterUpdate(Map<Id,Opportunity> newOppMap, Map<Id,Opportunity> oldOppMap) {
@@ -59,79 +60,6 @@ public with sharing class OpportunityTriggerHandler {
             }
         }
     }
-    
-    //create quotes and quote line items for opportunity with discovery stage
-    /*private static void createQuotesAndLineItems(
-    List<Opportunity> opps, Set<Id> accountIds) {
-            List<Id> productIds = new List<Id>{'01t6A000003ngnRQAQ','01t3u000006w8RzAAI','01t3u000006w8RuAAI'};
-            List<Quote> newQuotes = new List<Quote>();
-            List<QuoteLineItem> newQuoteLineItems = new List<QuoteLineItem>();
-            //Fetch standard price book detail
-            Id standardPbId;
-            Map<Id, Pricebook2> pricebookMap = new Map<Id, Pricebook2>();
-            //Fetch standard price book detail
-            for (Pricebook2 pb : [select Id, Name, IsStandard from Pricebook2 where IsActive = true]) {
-                pricebookMap.put(pb.Id, pb);
-                if (pb.IsStandard) {
-                    standardPbId = pb.Id;
-                }
-            }
-            Map<Id, List<PricebookEntry>> pbEntriesMapByPriceBook = new Map<Id, List<PricebookEntry>>();
-            //Fetch price book entries for the given products
-            for (PricebookEntry pbEntries : [select id,unitprice,product2id,product2.name,pricebook2id from pricebookentry where product2id IN :productIds and pricebook2id IN: pricebookMap.keyset()]) {
-                if(pbEntriesMapByPriceBook.containsKey(pbEntries.pricebook2id)) {
-                    pbEntriesMapByPriceBook.get(pbEntries.pricebook2id).add(pbEntries);
-                } else {
-                    pbEntriesMapByPriceBook.put(pbEntries.pricebook2id, new List<PricebookEntry>{pbEntries});
-                }
-            }
-            //Fetch contact details for accounts
-            List<Account> accounts = [Select Id, (Select Id from Contacts) From Account Where Id in : accountIds];
-            Map<Id, Id> accountContactMap = new Map<Id, Id>();
-            for (Account acc : accounts) {
-                if (acc.contacts.size() > 0) {
-                    accountContactMap.put(acc.Id, acc.contacts[0].Id);    
-                }
-            }
-           //query quote record type
-            Id quoteRecordtypeId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get('Custom').getRecordTypeId();
-            //create quotes for respective opportunities
-            for (Opportunity opp: opps) {
-                Quote newQuote = new Quote();
-                newQuote.Name = opp.Name;
-                newQuote.opportunityId = opp.Id;
-                if (pbEntriesMapByPriceBook.containsKey(opp.PriceBook2ID)) {
-                    newQuote.PriceBook2ID = opp.PriceBook2ID;
-                     }
-                     else {
-                    newQuote.PriceBook2ID = standardPbId;
-                     }
-                if (accountContactMap.containsKey(opp.AccountId)) {
-                    newQuote.ContactId = accountContactMap.get(opp.AccountId);
-                }
-                newQuote.RecordTypeId = quoteRecordtypeId;
-                newQuotes.add(newQuote);
-            }
-            insert newQuotes;
-           
-            //for inserted quotes create line items for above products
-            for(Quote newQuote: newQuotes) {
-                if (newQuote.PriceBook2ID != null && pbEntriesMapByPriceBook.containsKey(newQuote.PriceBook2ID)) {
-                    for (PricebookEntry pbDetail : pbEntriesMapByPriceBook.get(newQuote.PriceBook2ID)) {
-                        QuoteLineItem qli = new QuoteLineItem();
-                        qli.Product2Id = pbDetail.Id;
-                        qli.quoteId = newQuote.Id;
-                        qli.UnitPrice = 1;
-                        qli.Quantity = 1;
-                        qli.PriceBookentryid = pbDetail.pricebook2id;
-                        newQuoteLineItems.add(qli);
-                    }
-                }
-
-            }
-            insert newQuoteLineItems;
-   
-    }*/
    
     private static void defaultPricebookId(List<Opportunity> newList) {
         if (!fa.Default_Pricebook_Id__c) {
@@ -158,13 +86,75 @@ public with sharing class OpportunityTriggerHandler {
             if (opp.Pricebook2Id != null) {
                 continue;
             }
-            //Account acct = accountMap.get(opp.AccountId);
-            //String key = PRICEBOOK_PREFIX + acct.Partner_Level__c;
-            //if (pricebookMap.containsKey(key)) {
-            //    opp.Pricebook2Id = pricebookMap.get(key).Id;
-            //} else {
-                opp.Pricebook2Id = standardPbId;
-            //}
+            opp.Pricebook2Id = standardPbId;
         }
+    }
+    
+    /**
+     * Updates the Manual_Discount__c field based on the chargebeeapps__Manual_Discount__c JSON data
+     */
+    private static void updateManualDiscount(List<Opportunity> newList, Map<Id, Opportunity> oldMap) {
+        for (Opportunity opp : newList) {
+            Opportunity oldOpp = oldMap.get(opp.Id);
+            
+            // Check if the chargebeeapps__Manual_Discount__c field has changed
+            if (opp.chargebeeapps__Manual_Discount__c != oldOpp.chargebeeapps__Manual_Discount__c && 
+                opp.chargebeeapps__Manual_Discount__c != null) {
+                
+                try {
+                    // Parse the JSON and extract the discount percentage
+                    Decimal discountPercentage = parseManualDiscountPercentage(opp.chargebeeapps__Manual_Discount__c);
+                    if (discountPercentage != null) {
+                        opp.Manual_Discount__c = discountPercentage;
+                    }
+                    Decimal discountAmount = parseManualDiscountAmount(opp.chargebeeapps__Manual_Discount__c);
+                    if (discountAmount != null) {
+                        opp.Manual_Discount_Fixed__c = discountAmount;
+                    }
+                } catch (Exception e) {
+                    System.debug('Error parsing manual discount JSON: ' + e.getMessage());
+                    // Don't throw exception to avoid breaking the trigger
+                }
+            }
+        }
+    }
+    
+    /**
+     * Parses the manual discount JSON string and extracts the discount percentage
+     * Returns the first percentage discount found, or null if none found
+     */
+    private static Decimal parseManualDiscountPercentage(String jsonString) {
+        try {
+            List<QuoteLineDiscount> discounts = (List<QuoteLineDiscount>) JSON.deserialize(jsonString, List<QuoteLineDiscount>.class);
+            
+            for (QuoteLineDiscount discount : discounts) {
+                // Look for percentage discounts that are invoice-level discounts
+                if (discount.isPercentageDiscount != null && discount.isPercentageDiscount && 
+                    discount.isInvoiceDiscount != null && discount.isInvoiceDiscount &&
+                    String.isNotBlank(discount.discountPercentage)) {
+                    
+                    return Decimal.valueOf(discount.discountPercentage);
+                }
+            }
+        } catch (Exception e) {
+            System.debug('Error deserializing manual discount JSON: ' + e.getMessage());
+        }
+        
+        return null;
+    }
+
+    private static Decimal parseManualDiscountAmount(String jsonString) {
+        try {
+            List<QuoteLineDiscount> discounts = (List<QuoteLineDiscount>) JSON.deserialize(jsonString, List<QuoteLineDiscount>.class);
+            for (QuoteLineDiscount discount : discounts) {
+                if (discount.isFixedDiscount != null && discount.isFixedDiscount && 
+                    String.isNotBlank(discount.discountAmount)) {
+                    return Decimal.valueOf(discount.discountAmount);
+                }
+            }
+        } catch (Exception e) {
+            System.debug('Error deserializing manual discount JSON: ' + e.getMessage());
+        }
+        return null;
     }
 }
