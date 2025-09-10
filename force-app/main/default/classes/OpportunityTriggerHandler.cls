@@ -2,9 +2,85 @@
 // 2017-12-21 Ray Dehler <rdehler@square2marketing.com> created
 public with sharing class OpportunityTriggerHandler {   
     public static Feature_Activation__c fa = Feature_Activation__c.getInstance();
+    
+    /**
+     * Auto-populates Rob Schlatzer as Sales Engineer for specific opportunity criteria
+     * Requirements:
+     * - Record Type = New Business
+     * - Type != 'Expansion - Services only' AND Type != 'Renewal'
+     * - Business_Segment = 'SalesPad for BC' OR 'Profit Max Platform'
+     */
+    private static void autoPopulateSalesEngineer(List<Opportunity> newList) {
+        // Get the New Business record type ID
+        Id newBusinessRecordTypeId;
+        try {
+            RecordType newBusinessRecordType = [SELECT Id FROM RecordType WHERE SObjectType = 'Opportunity' AND DeveloperName = 'New_Business' LIMIT 1];
+            newBusinessRecordTypeId = newBusinessRecordType.Id;
+        } catch (Exception e) {
+            System.debug('Error getting New Business record type: ' + e.getMessage());
+            return;
+        }
+        
+        // Get Rob Schlatzer's User ID by querying for his name
+        Id robSchlatzerUserId = getRobSchlatzerUserId();
+        if (robSchlatzerUserId == null) {
+            System.debug('Error: Could not find Rob Schlatzer user');
+            return;
+        }
+        
+        for (Opportunity opp : newList) {
+            // Check if this opportunity meets the criteria
+            if (shouldAutoPopulateSalesEngineer(opp, newBusinessRecordTypeId)) {
+                opp.Sales_Engineer__c = robSchlatzerUserId;
+            }
+        }
+    }
+    
+    /**
+     * Gets Rob Schlatzer's User ID by querying for his first and last name
+     */
+    private static Id getRobSchlatzerUserId() {
+        try {
+            User robSchlatzer = [
+                SELECT Id 
+                FROM User 
+                WHERE FirstName = 'Rob' 
+                AND LastName = 'Schlatzer' 
+                AND IsActive = true
+                LIMIT 1
+            ];
+            return robSchlatzer.Id;
+        } catch (Exception e) {
+            System.debug('Error finding Rob Schlatzer user: ' + e.getMessage());
+            return null;
+        }
+    }
+    
+    /**
+     * Determines if the opportunity should have Rob Schlatzer auto-populated as Sales Engineer
+     */
+    private static Boolean shouldAutoPopulateSalesEngineer(Opportunity opp, Id newBusinessRecordTypeId) {
+        // Check Record Type = New Business
+        if (opp.RecordTypeId != newBusinessRecordTypeId) {
+            return false;
+        }
+        
+        // Check Type is not 'Expansion - Services only' or 'Renewal'
+        if (opp.Type == 'Expansion - Services only' || opp.Type == 'Renewal') {
+            return false;
+        }
+        
+        // Check Business_Segment equals 'SalesPad for BC' or 'Profit Max Platform'
+        if (opp.Business_Segment__c == 'SalesPad for BC' || opp.Business_Segment__c == 'Profit Max Platform') {
+            return true;
+        }
+        
+        return false;
+    }
    
     public static void onBeforeInsert(List<Opportunity> newList) {
         defaultPricebookId(newList);
+        autoPopulateSalesEngineer(newList);
     }
     
     public static void onBeforeUpdate(List<Opportunity> newList, Map<Id, Opportunity> oldMap) {
