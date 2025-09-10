@@ -254,7 +254,7 @@ public class OpportunityTriggerHandler_Test {
             CloseDate = Date.today().addDays(30),
             RecordTypeId = newBusinessRecordType.Id,
             Type = 'New Logo',
-            Business_Segment__c = 'Other Segment'
+            Business_Segment__c = 'SalesPad'
         );
         insert testOpp;
         
