@@ -103,10 +103,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Applied AI for Distributors</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>BPR</fullName>
             <default>false</default>
         </values>
@@ -128,10 +124,6 @@
         </values>
         <values>
             <fullName>Cliently</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Conf - AM Expo 2025</fullName>
             <default>false</default>
         </values>
         <values>
@@ -191,10 +183,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Conf - acuConnect</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Customer Referral</fullName>
             <default>false</default>
         </values>
@@ -232,10 +220,6 @@
         </values>
         <values>
             <fullName>GPUG Forums</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GR Tech Week</fullName>
             <default>false</default>
         </values>
         <values>
@@ -447,6 +431,10 @@
         </values>
         <values>
             <fullName>Cavallo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2134,6 +2122,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>FasCor WMS</fullName>
             <default>false</default>
         </values>
@@ -2523,6 +2515,10 @@
         </values>
         <values>
             <fullName>Commerce V3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>

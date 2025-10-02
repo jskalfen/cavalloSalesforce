@@ -86,6 +86,11 @@
                 <label>EVO exception</label>
             </value>
             <value>
+                <fullName>Currently Not Interested</fullName>
+                <default>false</default>
+                <label>Currently Not Interested</label>
+            </value>
+            <value>
                 <fullName>Authorize.net</fullName>
                 <default>false</default>
                 <isActive>false</isActive>

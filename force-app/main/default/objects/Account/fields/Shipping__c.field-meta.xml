@@ -75,6 +75,11 @@
                 <default>false</default>
                 <label>UPS WorldShip</label>
             </value>
+            <value>
+                <fullName>Currently Not Interested</fullName>
+                <default>false</default>
+                <label>Currently Not Interested</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
     <visibleLines>4</visibleLines>
