@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ABM</fullName>
+        <default>false</default>
+        <label>ABM</label>
+    </customValue>
+    <customValue>
+        <fullName>Alliance Partner</fullName>
+        <default>false</default>
+        <label>Alliance Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Applied AI for Distributors</fullName>
+        <default>false</default>
+        <label>Applied AI for Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Blog</fullName>
+        <default>false</default>
+        <label>Blog</label>
+    </customValue>
+    <customValue>
+        <fullName>BPR</fullName>
+        <default>false</default>
+        <label>BPR</label>
+    </customValue>
+    <customValue>
+        <fullName>Calendly</fullName>
+        <default>false</default>
+        <label>Calendly</label>
+    </customValue>
+    <customValue>
+        <fullName>Cavallo Employee</fullName>
+        <default>false</default>
+        <label>Cavallo Employee</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Order</fullName>
+        <default>false</default>
+        <label>Change Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Cliently</fullName>
+        <default>false</default>
+        <label>Cliently</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Accumatica</fullName>
+        <default>false</default>
+        <label>Conf - Accumatica</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - acuConnect</fullName>
+        <default>false</default>
+        <label>Conf - acuConnect</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - AM Expo 2025</fullName>
+        <default>false</default>
+        <label>Conf - AM Expo 2025</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - CSNA</fullName>
+        <default>false</default>
+        <label>Conf - CSNA</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Customer</fullName>
+        <default>false</default>
+        <label>Conf - Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Directions EMEA</fullName>
+        <default>false</default>
+        <label>Conf - Directions EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Directions NA</fullName>
+        <default>false</default>
+        <label>Conf - Directions NA</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - DUG</fullName>
+        <default>false</default>
+        <label>Conf - DUG</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - GPUC</fullName>
+        <default>false</default>
+        <label>Conf - GPUC</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Innovia</fullName>
+        <default>false</default>
+        <label>Conf - Innovia</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Stoneridge</fullName>
+        <default>false</default>
+        <label>Conf - Stoneridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Summit</fullName>
+        <default>false</default>
+        <label>Conf - Summit</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - TM Group</fullName>
+        <default>false</default>
+        <label>Conf - TM Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - User</fullName>
+        <default>false</default>
+        <label>Conf - User</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - Velosio ASPIRE</fullName>
+        <default>false</default>
+        <label>Conf - Velosio ASPIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>Conf - WennSoft Synergy</fullName>
+        <default>false</default>
+        <label>Conf - WennSoft Synergy</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Referral</fullName>
+        <default>false</default>
+        <label>Customer Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Request</fullName>
+        <default>false</default>
+        <label>Customer Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital ads (Google, Bing)</fullName>
+        <default>false</default>
+        <label>Digital ads (Google, Bing)</label>
+    </customValue>
+    <customValue>
+        <fullName>DSG Webinars</fullName>
+        <default>false</default>
+        <label>DSG Webinars</label>
+    </customValue>
+    <customValue>
+        <fullName>DUG Forums</fullName>
+        <default>false</default>
+        <label>DUG Forums</label>
+    </customValue>
+    <customValue>
+        <fullName>eCommerce</fullName>
+        <default>false</default>
+        <label>eCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Event / Tradeshow</fullName>
+        <default>false</default>
+        <label>Event / Tradeshow</label>
+    </customValue>
+    <customValue>
+        <fullName>Event - Cavallo Day</fullName>
+        <default>false</default>
+        <label>Event - Cavallo Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Fabtech Event 2025</fullName>
+        <default>false</default>
+        <label>Fabtech Event 2025</label>
+    </customValue>
+    <customValue>
+        <fullName>G2</fullName>
+        <default>false</default>
+        <label>G2</label>
+    </customValue>
+    <customValue>
+        <fullName>General Prospecting</fullName>
+        <default>false</default>
+        <label>General Prospecting</label>
+    </customValue>
+    <customValue>
+        <fullName>GPUC</fullName>
+        <default>false</default>
+        <label>GPUC</label>
+    </customValue>
+    <customValue>
+        <fullName>GPUG Forums</fullName>
+        <default>false</default>
+        <label>GPUG Forums</label>
+    </customValue>
+    <customValue>
+        <fullName>GR Tech Week</fullName>
+        <default>false</default>
+        <label>GR Tech Week</label>
+    </customValue>
+    <customValue>
+        <fullName>Inbound Call</fullName>
+        <default>false</default>
+        <label>Inbound Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent Consultant</fullName>
+        <default>false</default>
+        <label>Independent Consultant</label>
+    </customValue>
+    <customValue>
+        <fullName>Juhl</fullName>
+        <default>false</default>
+        <label>Juhl</label>
+    </customValue>
+    <customValue>
+        <fullName>Kayako</fullName>
+        <default>false</default>
+        <label>Kayako</label>
+    </customValue>
+    <customValue>
+        <fullName>Key2Act</fullName>
+        <default>false</default>
+        <label>Key2Act</label>
+    </customValue>
+    <customValue>
+        <fullName>Key2Act - Webinar</fullName>
+        <default>false</default>
+        <label>Key2Act - Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead List</fullName>
+        <default>false</default>
+        <label>Lead List</label>
+    </customValue>
+    <customValue>
+        <fullName>LinkedIn Navigator</fullName>
+        <default>false</default>
+        <label>LinkedIn Navigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Research</fullName>
+        <default>false</default>
+        <label>Market Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft AppSource</fullName>
+        <default>false</default>
+        <label>Microsoft AppSource</label>
+    </customValue>
+    <customValue>
+        <fullName>MSDW</fullName>
+        <default>false</default>
+        <label>MSDW</label>
+    </customValue>
+    <customValue>
+        <fullName>Newsletter</fullName>
+        <default>false</default>
+        <label>Newsletter</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodus</fullName>
+        <default>false</default>
+        <label>Nodus</label>
+    </customValue>
+    <customValue>
+        <fullName>Onsite</fullName>
+        <default>false</default>
+        <label>Onsite</label>
+    </customValue>
+    <customValue>
+        <fullName>Outbound Call</fullName>
+        <default>false</default>
+        <label>Outbound Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Outbound Email</fullName>
+        <default>false</default>
+        <label>Outbound Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Paid Media</fullName>
+        <default>false</default>
+        <label>Paid Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Paid Search</fullName>
+        <default>false</default>
+        <label>Paid Search</label>
+    </customValue>
+    <customValue>
+        <fullName>Panels</fullName>
+        <default>false</default>
+        <label>Panels</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Webinar</fullName>
+        <default>false</default>
+        <label>Partner Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>PMPAA</fullName>
+        <default>false</default>
+        <label>PMPAA</label>
+    </customValue>
+    <customValue>
+        <fullName>Podcast</fullName>
+        <default>false</default>
+        <label>Podcast</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Relations</fullName>
+        <default>false</default>
+        <label>Public Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>Renewals</fullName>
+        <default>false</default>
+        <label>Renewals</label>
+    </customValue>
+    <customValue>
+        <fullName>Reseller/VAR</fullName>
+        <default>false</default>
+        <label>Reseller/VAR</label>
+    </customValue>
+    <customValue>
+        <fullName>Respondent</fullName>
+        <default>false</default>
+        <label>Respondent</label>
+    </customValue>
+    <customValue>
+        <fullName>RSM Quarterly</fullName>
+        <default>false</default>
+        <label>RSM Quarterly</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Rep</fullName>
+        <default>false</default>
+        <label>Sales Rep</label>
+    </customValue>
+    <customValue>
+        <fullName>Social media</fullName>
+        <default>false</default>
+        <label>Social media</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Advice</fullName>
+        <default>false</default>
+        <label>Software Advice</label>
+    </customValue>
+    <customValue>
+        <fullName>Square</fullName>
+        <default>false</default>
+        <label>Square</label>
+    </customValue>
+    <customValue>
+        <fullName>Support</fullName>
+        <default>false</default>
+        <label>Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Publications</fullName>
+        <default>false</default>
+        <label>Trade Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Twitter</fullName>
+        <default>false</default>
+        <label>Twitter</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Upsell</fullName>
+        <default>false</default>
+        <label>Upsell</label>
+    </customValue>
+    <customValue>
+        <fullName>User Conference</fullName>
+        <default>false</default>
+        <label>User Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar/ Virtual Event</fullName>
+        <default>false</default>
+        <label>Webinar/ Virtual Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar KwikTag</fullName>
+        <default>false</default>
+        <label>Webinar KwikTag</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar PowerGP Online</fullName>
+        <default>false</default>
+        <label>Webinar PowerGP Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar SPS</fullName>
+        <default>false</default>
+        <label>Webinar SPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Website RFQ</fullName>
+        <default>false</default>
+        <label>Website RFQ</label>
+    </customValue>
+    <customValue>
+        <fullName>White Space Analysis</fullName>
+        <default>false</default>
+        <label>White Space Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>ZoomInfo</fullName>
+        <default>false</default>
+        <label>ZoomInfo</label>
+    </customValue>
+    <customValue>
+        <fullName>ZoomInfo - Intent to Buy</fullName>
+        <default>false</default>
+        <label>ZoomInfo - Intent to Buy</label>
+    </customValue>
+    <customValue>
+        <fullName>ZoomInfo - Website Insights</fullName>
+        <default>false</default>
+        <label>ZoomInfo - Website Insights</label>
+    </customValue>
+    <customValue>
+        <fullName>SPS - Webinar</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPS - Webinar</label>
+    </customValue>
+    <masterLabel>Lead Subsource</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

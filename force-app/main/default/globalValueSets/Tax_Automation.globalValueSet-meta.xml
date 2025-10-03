@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Avalara</fullName>
+        <default>false</default>
+        <label>Avalara</label>
+    </customValue>
+    <customValue>
+        <fullName>Thompson Reuters</fullName>
+        <default>false</default>
+        <label>Thompson Reuters</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <masterLabel>Tax Automation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>E-Mail</fullName>
+        <default>false</default>
+        <label>E-Mail</label>
+    </customValue>
+    <customValue>
+        <fullName>Print</fullName>
+        <default>false</default>
+        <label>Print</label>
+    </customValue>
+    <description>To be used with the Delivery Option field on the Account Object as part of the Intacct Integration piece.</description>
+    <masterLabel>Delivery Option</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

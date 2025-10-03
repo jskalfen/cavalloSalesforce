@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer Consulting</fullName>
+        <default>false</default>
+        <label>Consulting - Developer</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Transfer</fullName>
+        <default>false</default>
+        <label>Data Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Documentation</fullName>
+        <default>false</default>
+        <label>Documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Existing Plugin or Form</fullName>
+        <default>false</default>
+        <label>Existing Plugin or Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Misc</fullName>
+        <default>false</default>
+        <label>General Development</label>
+    </customValue>
+    <customValue>
+        <fullName>New Form</fullName>
+        <default>false</default>
+        <label>New Form</label>
+    </customValue>
+    <customValue>
+        <fullName>New Module</fullName>
+        <default>false</default>
+        <label>New Module</label>
+    </customValue>
+    <customValue>
+        <fullName>New Plugin</fullName>
+        <default>false</default>
+        <label>New Plugin</label>
+    </customValue>
+    <customValue>
+        <fullName>Printed Form</fullName>
+        <default>false</default>
+        <label>Printed Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Dashboard Report</fullName>
+        <default>false</default>
+        <label>Reporting - Dashboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Quick Report</fullName>
+        <default>false</default>
+        <label>Reporting - Quick Reports</label>
+    </customValue>
+    <customValue>
+        <fullName>SSRS</fullName>
+        <default>false</default>
+        <label>Reporting - SSRS</label>
+    </customValue>
+    <customValue>
+        <fullName>Script</fullName>
+        <default>false</default>
+        <label>Scripting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>SQL</fullName>
+        <default>false</default>
+        <label>SQL Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>UDF</fullName>
+        <default>false</default>
+        <label>User Defined Fields</label>
+    </customValue>
+    <masterLabel>Custom Task</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

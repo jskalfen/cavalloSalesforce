@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Netstock</fullName>
+        <default>false</default>
+        <label>Netstock</label>
+    </customValue>
+    <customValue>
+        <fullName>StockIQ</fullName>
+        <default>false</default>
+        <label>StockIQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Easystock</fullName>
+        <default>false</default>
+        <label>Easystock</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Demand Planning</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

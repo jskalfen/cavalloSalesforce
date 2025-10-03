@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automation Agent</fullName>
+        <default>false</default>
+        <label>Automation Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Avalara Avatax</fullName>
+        <default>false</default>
+        <label>Avalara Avatax</label>
+    </customValue>
+    <customValue>
+        <fullName>BPR</fullName>
+        <default>false</default>
+        <label>Business Process Review</label>
+    </customValue>
+    <customValue>
+        <fullName>CardControl</fullName>
+        <default>false</default>
+        <label>CardControl</label>
+    </customValue>
+    <customValue>
+        <fullName>Connector</fullName>
+        <default>false</default>
+        <label>Custom Connector</label>
+    </customValue>
+    <customValue>
+        <fullName>WebPortal</fullName>
+        <default>false</default>
+        <label>Customer Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>Integration</fullName>
+        <default>false</default>
+        <label>Custom Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Dispatch</fullName>
+        <default>false</default>
+        <label>Dispatch</label>
+    </customValue>
+    <customValue>
+        <fullName>EDI</fullName>
+        <default>false</default>
+        <label>EDI</label>
+    </customValue>
+    <customValue>
+        <fullName>DataCollection Client</fullName>
+        <default>false</default>
+        <label>Inventory Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>DataCollection Android</fullName>
+        <default>false</default>
+        <label>Inventory Manager - Android</label>
+    </customValue>
+    <customValue>
+        <fullName>DataCollection - Extended</fullName>
+        <default>false</default>
+        <label>Inventory Manager - Extended</label>
+    </customValue>
+    <customValue>
+        <fullName>DataCollection iOS</fullName>
+        <default>false</default>
+        <label>Inventory Manager - iOS</label>
+    </customValue>
+    <customValue>
+        <fullName>PayFabric</fullName>
+        <default>false</default>
+        <label>Nodus PayFabric</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacejet</fullName>
+        <default>false</default>
+        <label>Pacejet</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Tracker</fullName>
+        <default>false</default>
+        <label>Returns Tracker</label>
+    </customValue>
+    <customValue>
+        <fullName>Desktop</fullName>
+        <default>false</default>
+        <label>SalesPad Desktop</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile</fullName>
+        <default>false</default>
+        <label>SalesPad Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>SalesPad Mobile - Android</fullName>
+        <default>false</default>
+        <label>SalesPad Mobile - Android</label>
+    </customValue>
+    <customValue>
+        <fullName>SalesPad Mobile - iOS</fullName>
+        <default>false</default>
+        <label>SalesPad Mobile - iOS</label>
+    </customValue>
+    <customValue>
+        <fullName>ShipCenter</fullName>
+        <default>false</default>
+        <label>ShipCenter</label>
+    </customValue>
+    <customValue>
+        <fullName>ShipTo</fullName>
+        <default>false</default>
+        <label>ShipTo</label>
+    </customValue>
+    <customValue>
+        <fullName>Thomson Reuters OneSource</fullName>
+        <default>false</default>
+        <label>Thomson Reuters OneSource</label>
+    </customValue>
+    <customValue>
+        <fullName>WebAPI</fullName>
+        <default>false</default>
+        <label>WebAPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Telesales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Telesales</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud-Intacct</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cloud-Intacct</label>
+    </customValue>
+    <customValue>
+        <fullName>POS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>POS</label>
+    </customValue>
+    <customValue>
+        <fullName>Desktop - Extended</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Desktop - Extended</label>
+    </customValue>
+    <customValue>
+        <fullName>DataCollection Mobile</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inventory Manager Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud-QBO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cloud-QBO</label>
+    </customValue>
+    <description>Product line types for custom quoting</description>
+    <masterLabel>Custom Product Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

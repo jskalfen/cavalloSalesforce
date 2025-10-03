@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>3dCart</fullName>
+        <default>false</default>
+        <label>3dCart</label>
+    </customValue>
+    <customValue>
+        <fullName>BigCommerce</fullName>
+        <default>false</default>
+        <label>BigCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Commerce V3</fullName>
+        <default>false</default>
+        <label>Commerce V3</label>
+    </customValue>
+    <customValue>
+        <fullName>Episerver Digital Commerce</fullName>
+        <default>false</default>
+        <label>Episerver Digital Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Homegrown</fullName>
+        <default>false</default>
+        <label>Homegrown</label>
+    </customValue>
+    <customValue>
+        <fullName>IBM Digital Commerce</fullName>
+        <default>false</default>
+        <label>IBM Digital Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Magento</fullName>
+        <default>false</default>
+        <label>Magento</label>
+    </customValue>
+    <customValue>
+        <fullName>NetSuite SuiteCommerce</fullName>
+        <default>false</default>
+        <label>NetSuite SuiteCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Oracle CX Commerce</fullName>
+        <default>false</default>
+        <label>Oracle CX Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Commerce Cloud</fullName>
+        <default>false</default>
+        <label>Salesforce Commerce Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Commerce Cloud</fullName>
+        <default>false</default>
+        <label>SAP Commerce Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopify</fullName>
+        <default>false</default>
+        <label>Shopify</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopify Plus</fullName>
+        <default>false</default>
+        <label>Shopify Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>SPS Commerce</fullName>
+        <default>false</default>
+        <label>SPS Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>TrueCommerce</fullName>
+        <default>false</default>
+        <label>TrueCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Volusion</fullName>
+        <default>false</default>
+        <label>Volusion</label>
+    </customValue>
+    <customValue>
+        <fullName>WooCommerce</fullName>
+        <default>false</default>
+        <label>WooCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>K-eCommerce</fullName>
+        <default>false</default>
+        <label>K-eCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Sana</fullName>
+        <default>false</default>
+        <label>Sana</label>
+    </customValue>
+    <customValue>
+        <fullName>SPS Commerce (not Cavallo)</fullName>
+        <default>false</default>
+        <label>SPS Commerce (not Cavallo)</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <masterLabel>eCommerce</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

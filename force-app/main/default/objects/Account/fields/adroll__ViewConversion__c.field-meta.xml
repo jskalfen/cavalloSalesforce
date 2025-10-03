@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Annual_Subscription_Amount__c</fullName>
-    <label>OLD_Subscription ARR (Acct)</label>
+    <fullName>adroll__ViewConversion__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Conversion Rate for Views</description>
+    <inlineHelpText>Conversion Rate for Views</inlineHelpText>
+    <label>View Conversion (Deprecated)</label>
     <precision>18</precision>
     <required>false</required>
     <scale>2</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>Currency</type>
+    <type>Percent</type>
 </CustomField>

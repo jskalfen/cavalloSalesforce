@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Blue Moon Credit Card Processing</fullName>
+        <default>false</default>
+        <label>Blue Moon Credit Card Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodus CCA</fullName>
+        <default>false</default>
+        <label>Nodus CCA</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodus Merchant Services</fullName>
+        <default>false</default>
+        <label>Nodus Merchant Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodus Payfabric</fullName>
+        <default>false</default>
+        <label>Nodus Payfabric</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodus Paylink</fullName>
+        <default>false</default>
+        <label>Nodus Paylink</label>
+    </customValue>
+    <customValue>
+        <fullName>Paypal</fullName>
+        <default>false</default>
+        <label>Paypal</label>
+    </customValue>
+    <customValue>
+        <fullName>Square</fullName>
+        <default>false</default>
+        <label>Square</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <description>Payments Provider</description>
+    <masterLabel>Payments</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

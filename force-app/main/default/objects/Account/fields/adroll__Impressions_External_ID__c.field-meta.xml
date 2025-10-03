@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Enhancement_Amount__c</fullName>
-    <externalId>false</externalId>
-    <label>OLD_Enhancement ARR (Acct)</label>
-    <precision>17</precision>
+    <fullName>adroll__Impressions_External_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>true</externalId>
+    <label>Impressions External ID (Deprecated)</label>
+    <precision>18</precision>
     <required>false</required>
-    <scale>2</scale>
+    <scale>0</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <type>Number</type>

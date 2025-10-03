@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alibab cloud</fullName>
+        <default>false</default>
+        <label>Alibab cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Amazon Web Services</fullName>
+        <default>false</default>
+        <label>Amazon Web Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Cavallo</fullName>
+        <default>false</default>
+        <label>Cavallo</label>
+    </customValue>
+    <customValue>
+        <fullName>Domo</fullName>
+        <default>false</default>
+        <label>Domo</label>
+    </customValue>
+    <customValue>
+        <fullName>Google</fullName>
+        <default>false</default>
+        <label>Google</label>
+    </customValue>
+    <customValue>
+        <fullName>IBM</fullName>
+        <default>false</default>
+        <label>IBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Incorta</fullName>
+        <default>false</default>
+        <label>Incorta</label>
+    </customValue>
+    <customValue>
+        <fullName>Jet Reports</fullName>
+        <default>false</default>
+        <label>Jet Reports</label>
+    </customValue>
+    <customValue>
+        <fullName>MicroStrategy</fullName>
+        <default>false</default>
+        <label>MicroStrategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Oracle</fullName>
+        <default>false</default>
+        <label>Oracle</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Power BI</fullName>
+        <default>false</default>
+        <label>Power BI</label>
+    </customValue>
+    <customValue>
+        <fullName>Pyramid Analytics</fullName>
+        <default>false</default>
+        <label>Pyramid Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Qlik</fullName>
+        <default>false</default>
+        <label>Qlik</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce (Tableau)</fullName>
+        <default>false</default>
+        <label>Salesforce (Tableau)</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP</fullName>
+        <default>false</default>
+        <label>SAP</label>
+    </customValue>
+    <customValue>
+        <fullName>SAS</fullName>
+        <default>false</default>
+        <label>SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Sisense</fullName>
+        <default>false</default>
+        <label>Sisense</label>
+    </customValue>
+    <customValue>
+        <fullName>Tableau</fullName>
+        <default>false</default>
+        <label>Tableau</label>
+    </customValue>
+    <customValue>
+        <fullName>ThoughtSpot</fullName>
+        <default>false</default>
+        <label>ThoughtSpot</label>
+    </customValue>
+    <customValue>
+        <fullName>TIBCO Software</fullName>
+        <default>false</default>
+        <label>TIBCO Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Yellowfin</fullName>
+        <default>false</default>
+        <label>Yellowfin</label>
+    </customValue>
+    <customValue>
+        <fullName>Zoho</fullName>
+        <default>false</default>
+        <label>Zoho</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <masterLabel>Analytics</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

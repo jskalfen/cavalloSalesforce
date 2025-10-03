@@ -18,6 +18,6 @@
     <relationshipName>Accounts</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>Lookup</type>
 </CustomField>

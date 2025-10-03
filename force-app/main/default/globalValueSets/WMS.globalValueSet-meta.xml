@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SalesPad</fullName>
+        <default>false</default>
+        <label>SalesPad</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC</fullName>
+        <default>false</default>
+        <label>ASC</label>
+    </customValue>
+    <customValue>
+        <fullName>FasCor WMS</fullName>
+        <default>false</default>
+        <label>FasCor WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Korber (Accellos) - Warehouse Advantage</fullName>
+        <default>false</default>
+        <label>Korber (Accellos) - Warehouse Advantage</label>
+    </customValue>
+    <customValue>
+        <fullName>HighJump WMS</fullName>
+        <default>false</default>
+        <label>HighJump WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Panatrack WMS</fullName>
+        <default>false</default>
+        <label>Panatrack WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Willoware</fullName>
+        <default>false</default>
+        <label>Willoware</label>
+    </customValue>
+    <customValue>
+        <fullName>Manhattan WMS</fullName>
+        <default>false</default>
+        <label>Manhattan WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>QStock</fullName>
+        <default>false</default>
+        <label>QStock</label>
+    </customValue>
+    <customValue>
+        <fullName>Savant WMS</fullName>
+        <default>false</default>
+        <label>Savant WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>3PL External WMS</fullName>
+        <default>false</default>
+        <label>3PL External WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>No WMS</fullName>
+        <default>false</default>
+        <label>No WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Without Wire WMS</fullName>
+        <default>false</default>
+        <label>Without Wire WMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue Moon Software</fullName>
+        <default>false</default>
+        <label>Blue Moon Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Inventory Manager</fullName>
+        <default>false</default>
+        <label>Inventory Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <description>Warehouse Management Systems</description>
+    <masterLabel>WMS</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -156,6 +156,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Applied AI for Distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>BPR</fullName>
             <default>false</default>
         </values>
@@ -177,6 +181,10 @@
         </values>
         <values>
             <fullName>Cliently</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf - AM Expo 2025</fullName>
             <default>false</default>
         </values>
         <values>
@@ -236,6 +244,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Conf - acuConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Customer Referral</fullName>
             <default>false</default>
         </values>
@@ -264,6 +276,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Fabtech Event 2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>G2</fullName>
             <default>false</default>
         </values>
@@ -273,6 +289,10 @@
         </values>
         <values>
             <fullName>GPUG Forums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GR Tech Week</fullName>
             <default>false</default>
         </values>
         <values>
@@ -706,6 +726,10 @@
     <picklistValues>
         <picklist>Demand_Planning__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Easystock</fullName>
             <default>false</default>
         </values>
@@ -842,6 +866,10 @@
         <picklist>EDI__c</picklist>
         <values>
             <fullName>BSI EDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1331,6 +1359,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>CybersourceSoap</fullName>
             <default>false</default>
         </values>
@@ -1684,6 +1716,10 @@
     <picklistValues>
         <picklist>Job_Costing__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Fieldpoint Field Service</fullName>
             <default>false</default>
         </values>
@@ -1700,6 +1736,10 @@
         <picklist>Multi_Channel_Manager__c</picklist>
         <values>
             <fullName>Channel Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1853,6 +1893,10 @@
         <picklist>Payments__c</picklist>
         <values>
             <fullName>Blue Moon Credit Card Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2075,6 +2119,10 @@
     <picklistValues>
         <picklist>Shipping__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>FedEx ShipManager</fullName>
             <default>false</default>
         </values>
@@ -2172,6 +2220,10 @@
         <picklist>Tax_Automation__c</picklist>
         <values>
             <fullName>Avalara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>

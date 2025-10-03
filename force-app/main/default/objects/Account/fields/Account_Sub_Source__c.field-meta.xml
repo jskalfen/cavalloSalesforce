@@ -12,6 +12,7 @@
         <valueSetName>Lead_Subsource</valueSetName>
         <valueSettings>
             <controllingFieldValue>Cavallo</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
             <valueName>Cavallo Employee</valueName>
         </valueSettings>
         <valueSettings>
@@ -30,6 +31,12 @@
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
             <valueName>Calendly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Conf - AM Expo 2025</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
@@ -130,11 +137,19 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Applied AI for Distributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Blog</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Conf - Accumatica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Conf - acuConnect</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -207,12 +222,20 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Fabtech Event 2025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
             <valueName>G2</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>GPUC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>GR Tech Week</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -240,6 +263,14 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Partner Webinar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>PMPAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Podcast</valueName>
         </valueSettings>
         <valueSettings>
@@ -264,10 +295,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Partner Webinar</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Webinar KwikTag</valueName>
         </valueSettings>
         <valueSettings>
@@ -281,10 +308,6 @@
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Website</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>PMPAA</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Support</controllingFieldValue>

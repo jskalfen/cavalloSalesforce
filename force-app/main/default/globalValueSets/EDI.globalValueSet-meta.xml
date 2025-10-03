@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BSI EDI</fullName>
+        <default>false</default>
+        <label>BSI EDI</label>
+    </customValue>
+    <customValue>
+        <fullName>SPS Commerce</fullName>
+        <default>false</default>
+        <label>SPS Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>TrueCommerce</fullName>
+        <default>false</default>
+        <label>TrueCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <masterLabel>EDI</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

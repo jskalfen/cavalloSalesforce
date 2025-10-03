@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Head of Company</fullName>
+        <default>false</default>
+        <label>Head of Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Finance</fullName>
+        <default>false</default>
+        <label>Head of Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Warehouse</fullName>
+        <default>false</default>
+        <label>Head of Warehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Service</fullName>
+        <default>false</default>
+        <label>Head of Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Sales</fullName>
+        <default>false</default>
+        <label>Head of Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of IT</fullName>
+        <default>false</default>
+        <label>Head of IT</label>
+    </customValue>
+    <customValue>
+        <fullName>Executive Assistant</fullName>
+        <default>false</default>
+        <label>Executive Assistant</label>
+    </customValue>
+    <masterLabel>Personas</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

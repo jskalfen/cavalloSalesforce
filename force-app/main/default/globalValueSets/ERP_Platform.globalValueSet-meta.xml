@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acumatica</fullName>
+        <default>false</default>
+        <label>Acumatica</label>
+    </customValue>
+    <customValue>
+        <fullName>Do not know</fullName>
+        <default>false</default>
+        <label>Do not know</label>
+    </customValue>
+    <customValue>
+        <fullName>Epicor</fullName>
+        <default>false</default>
+        <label>Epicor</label>
+    </customValue>
+    <customValue>
+        <fullName>IBM</fullName>
+        <default>false</default>
+        <label>IBM</label>
+    </customValue>
+    <customValue>
+        <fullName>IFS</fullName>
+        <default>false</default>
+        <label>IFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Infor</fullName>
+        <default>false</default>
+        <label>Infor</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft Dynamics 365 F&amp;SCM</fullName>
+        <default>false</default>
+        <label>Microsoft Dynamics 365 F&amp;SCM</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft Dynamics 365 Business Central</fullName>
+        <default>false</default>
+        <label>Microsoft Dynamics 365 Business Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft Dynamics GP</fullName>
+        <default>false</default>
+        <label>Microsoft Dynamics GP</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft Dynamics Unknown</fullName>
+        <default>false</default>
+        <label>Microsoft Dynamics Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>MSFT Dynamics CRM</fullName>
+        <default>false</default>
+        <label>MSFT Dynamics CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>MSFT - F&amp;O (Finance &amp; Operations) (AX)</fullName>
+        <default>false</default>
+        <label>MSFT - F&amp;O (Finance &amp; Operations) (AX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MSFT - NAV (Navision</fullName>
+        <default>false</default>
+        <label>MSFT - NAV (Navision)</label>
+    </customValue>
+    <customValue>
+        <fullName>MSFT - SL (Solomon)</fullName>
+        <default>false</default>
+        <label>MSFT - SL (Solomon)</label>
+    </customValue>
+    <customValue>
+        <fullName>Odoo</fullName>
+        <default>false</default>
+        <label>Odoo</label>
+    </customValue>
+    <customValue>
+        <fullName>Oracle - E-Business Suite (EBS)</fullName>
+        <default>false</default>
+        <label>Oracle - E-Business Suite (EBS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Oracle - Fusion</fullName>
+        <default>false</default>
+        <label>Oracle - Fusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Netsuite</fullName>
+        <default>false</default>
+        <label>Oracle - Netsuite</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Quickbooks</fullName>
+        <default>false</default>
+        <label>Quickbooks</label>
+    </customValue>
+    <customValue>
+        <fullName>Quickbooks Online</fullName>
+        <default>false</default>
+        <label>Quickbooks Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage Intacct</fullName>
+        <default>false</default>
+        <label>Sage - Intacct</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage 100</fullName>
+        <default>false</default>
+        <label>Sage - Sage 100</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage 200</fullName>
+        <default>false</default>
+        <label>Sage - Sage 200</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage 300</fullName>
+        <default>false</default>
+        <label>Sage - Sage 300</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage 50</fullName>
+        <default>false</default>
+        <label>Sage - Sage 50</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage X3</fullName>
+        <default>false</default>
+        <label>Sage - X3</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP B1</fullName>
+        <default>false</default>
+        <label>SAP - B1</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP - Other</fullName>
+        <default>false</default>
+        <label>SAP - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP - S/4HANA</fullName>
+        <default>false</default>
+        <label>SAP - S/4HANA</label>
+    </customValue>
+    <customValue>
+        <fullName>Syspro</fullName>
+        <default>false</default>
+        <label>Syspro</label>
+    </customValue>
+    <customValue>
+        <fullName>Workday</fullName>
+        <default>false</default>
+        <label>Workday</label>
+    </customValue>
+    <customValue>
+        <fullName>Zoho</fullName>
+        <default>false</default>
+        <label>Zoho</label>
+    </customValue>
+    <customValue>
+        <fullName>MSFT - D365</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MSFT - D365</label>
+    </customValue>
+    <masterLabel>ERP Platform</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

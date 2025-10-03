@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Channel Advisor</fullName>
+        <default>false</default>
+        <label>Channel Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Sellbrite</fullName>
+        <default>false</default>
+        <label>Sellbrite</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Not Interested</fullName>
+        <default>false</default>
+        <label>Currently Not Interested</label>
+    </customValue>
+    <masterLabel>MultiChannel Manager</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
