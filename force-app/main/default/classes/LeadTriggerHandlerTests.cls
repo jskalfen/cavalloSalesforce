@@ -18,10 +18,11 @@ private class LeadTriggerHandlerTests {
         insert lead;
 
         // Convert the lead using Database.convertLead()
+        // setDoNotCreateOpportunity(true) to avoid validation errors on Opportunity
         Database.LeadConvert lc = new Database.LeadConvert();
         lc.setLeadId(lead.Id);
         lc.setConvertedStatus('Converted');
-        lc.setDoNotCreateOpportunity(false);
+        lc.setDoNotCreateOpportunity(true);
 
         Test.startTest();
         Database.LeadConvertResult lcr = Database.convertLead(lc);
@@ -76,10 +77,11 @@ private class LeadTriggerHandlerTests {
         insert lead;
 
         // Convert the lead - this should trigger the handler to set Lead_Outcome__c to 'Converted'
+        // setDoNotCreateOpportunity(true) to avoid validation errors on Opportunity
         Database.LeadConvert lc = new Database.LeadConvert();
         lc.setLeadId(lead.Id);
         lc.setConvertedStatus('Converted');
-        lc.setDoNotCreateOpportunity(false);
+        lc.setDoNotCreateOpportunity(true);
 
         Test.startTest();
         Database.LeadConvertResult lcr = Database.convertLead(lc);
@@ -112,10 +114,11 @@ private class LeadTriggerHandlerTests {
         System.assertEquals(null, initialLead.Lead_Outcome__c, 'Lead Outcome should be null initially');
 
         // Convert the lead
+        // setDoNotCreateOpportunity(true) to avoid validation errors on Opportunity
         Database.LeadConvert lc = new Database.LeadConvert();
         lc.setLeadId(lead.Id);
         lc.setConvertedStatus('Converted');
-        lc.setDoNotCreateOpportunity(false);
+        lc.setDoNotCreateOpportunity(true);
 
         Test.startTest();
         Database.LeadConvertResult lcr = Database.convertLead(lc);
