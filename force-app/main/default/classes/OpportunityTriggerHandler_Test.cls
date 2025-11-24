@@ -15,7 +15,8 @@ public class OpportunityTriggerHandler_Test {
             AccountId = testAccount.Id,
             StageName = 'Prospecting',
             CloseDate = Date.today().addDays(30),
-            Business_Segment__c = 'SalesPad'
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
         );
         insert testOpp;
     }
