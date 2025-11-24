@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Outcome_Required_When_Rejected</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status)
+&amp;&amp; CONTAINS(Text(Status),&quot;Rejected&quot;)
+&amp;&amp; NOT(OR(ISPICKVAL(Lead_Outcome__c, &quot;Rejected_Recycle&quot;), ISPICKVAL(Lead_Outcome__c, &quot;Rejected_Disqualified&quot;)))</errorConditionFormula>
+    <errorMessage>Lead Outcome must be set to either &apos;Rejected - Recycle&apos; or &apos;Rejected - Disqualified&apos; when Status is changed to Rejected.</errorMessage>
+</ValidationRule>
