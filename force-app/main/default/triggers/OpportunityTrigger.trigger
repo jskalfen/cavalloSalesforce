@@ -1,4 +1,5 @@
 trigger OpportunityTrigger on Opportunity (before insert, before update, after update) {
+    new OpportunityTriggerHandlerV2().run();
     if (Trigger.isInsert) {
         if (Trigger.isBefore) {
             OpportunityTriggerHandler.onBeforeInsert(Trigger.new);
