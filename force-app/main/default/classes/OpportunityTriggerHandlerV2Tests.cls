@@ -23,10 +23,11 @@ public class OpportunityTriggerHandlerV2Tests {
         );
         insert opp;
 
-        opp.StageName = STAGE_CLOSED_WON;
+        Opportunity oppToUpdate = [SELECT Id, StageName, IsWon FROM Opportunity WHERE Id = :opp.Id];
+        oppToUpdate.StageName = STAGE_CLOSED_WON;
 
         Test.startTest();
-        update opp;
+        update oppToUpdate;
         Test.stopTest();
 
         Account updatedAccount = [SELECT Type FROM Account WHERE Id = :acc.Id];
@@ -51,10 +52,11 @@ public class OpportunityTriggerHandlerV2Tests {
         );
         insert opp;
 
-        opp.StageName = STAGE_CLOSED_WON;
+        Opportunity oppToUpdate = [SELECT Id, StageName, IsWon FROM Opportunity WHERE Id = :opp.Id];
+        oppToUpdate.StageName = STAGE_CLOSED_WON;
 
         Test.startTest();
-        update opp;
+        update oppToUpdate;
         Test.stopTest();
 
         Account updatedAccount = [SELECT Type FROM Account WHERE Id = :acc.Id];
