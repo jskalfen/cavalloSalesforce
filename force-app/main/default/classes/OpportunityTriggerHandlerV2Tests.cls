@@ -19,7 +19,8 @@ public class OpportunityTriggerHandlerV2Tests {
             AccountId = acc.Id,
             StageName = STAGE_QUALIFY,
             CloseDate = Date.today().addDays(30),
-            Business_Segment__c = 'SalesPad'
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
         );
         insert opp;
 
@@ -48,7 +49,8 @@ public class OpportunityTriggerHandlerV2Tests {
             AccountId = acc.Id,
             StageName = STAGE_QUALIFY,
             CloseDate = Date.today().addDays(30),
-            Business_Segment__c = 'SalesPad'
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
         );
         insert opp;
 
