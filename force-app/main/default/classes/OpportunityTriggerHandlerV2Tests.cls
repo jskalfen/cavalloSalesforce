@@ -18,7 +18,8 @@ public class OpportunityTriggerHandlerV2Tests {
             Name = 'Test Opportunity',
             AccountId = acc.Id,
             StageName = STAGE_QUALIFY,
-            CloseDate = Date.today().addDays(30)
+            CloseDate = Date.today().addDays(30),
+            Business_Segment__c = 'SalesPad'
         );
         insert opp;
 
@@ -45,7 +46,8 @@ public class OpportunityTriggerHandlerV2Tests {
             Name = 'Test Opportunity',
             AccountId = acc.Id,
             StageName = STAGE_QUALIFY,
-            CloseDate = Date.today().addDays(30)
+            CloseDate = Date.today().addDays(30),
+            Business_Segment__c = 'SalesPad'
         );
         insert opp;
 
