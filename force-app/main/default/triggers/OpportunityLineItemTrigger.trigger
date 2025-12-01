@@ -1,4 +1,5 @@
-trigger OpportunityLineItemTrigger on OpportunityLineItem (before insert,after insert, after update) {
+trigger OpportunityLineItemTrigger on OpportunityLineItem (before insert, before update, after insert, after update) {
+    new OpportunityLineItemTriggerHandlerV2().run();
     if (Trigger.isInsert) {
         if (Trigger.isAfter) {
             OpportunityLineItemTriggerHandler.onAfterInsert(Trigger.newMap);
