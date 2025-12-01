@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Customer_Discount__c</fullName>
-    <formula>IF( Partner_Payment_Opp_Product__c == 0,  Discount , IF ( Discount = 0, Discount, IF ( Partner_Payment_OP_Bill_through__c = 0 , Discount, IF ( Partner_Payment_OP_Bill_through__c = Discount , 0,
+    <formula>IF( No_Partner_Margin__c = TRUE, 0, IF( Partner_Payment_Opp_Product__c == 0,  Discount , IF ( Discount = 0, Discount, IF ( Partner_Payment_OP_Bill_through__c = 0 , Discount, IF ( Partner_Payment_OP_Bill_through__c = Discount , 0,
 
-((ListPrice *  Quantity )  - ( TotalPrice  * (1 / (1 - Partner_Payment_Opp_Product__c )))) / (ListPrice * Quantity)))))</formula>
+((ListPrice *  Quantity )  - ( TotalPrice  * (1 / (1 - Partner_Payment_Opp_Product__c )))) / (ListPrice * Quantity))))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Customer Discount %</label>
     <precision>18</precision>
