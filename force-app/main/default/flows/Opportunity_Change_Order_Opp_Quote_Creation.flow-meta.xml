@@ -131,7 +131,7 @@
             <assignToReference>CO_Opportunity.CloseDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>CloseDate</elementReference>
+                <elementReference>X14DaysInFuture</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -166,7 +166,7 @@
             <assignToReference>CO_Opportunity.Project_Manager__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Record.Project_Manager__c</elementReference>
+                <elementReference>$User.Id</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -239,7 +239,7 @@
             <assignToReference>CO_Opportunity.CloseDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>CloseDate</elementReference>
+                <elementReference>X14DaysInFuture</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -390,14 +390,21 @@
             <assignToReference>NewCOQuote.PM_Service__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>15</stringValue>
+                <stringValue>None</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCOQuote.Term_Length__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>NewCOQuote.ExpirationDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>CloseDate</elementReference>
+                <elementReference>X14DaysInFuture</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -448,7 +455,14 @@
             <assignToReference>NewCOQuote.PM_Service__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>15</stringValue>
+                <stringValue>None</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCOQuote.Term_Length__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
             </value>
         </assignmentItems>
         <assignmentItems>
