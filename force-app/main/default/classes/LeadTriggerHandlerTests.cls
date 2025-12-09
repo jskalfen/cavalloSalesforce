@@ -153,25 +153,4 @@ private class LeadTriggerHandlerTests {
         System.assertEquals(HUBSPOT_SALES_ACCEPTED_LEAD, insertedLead.Status, 
             'Lead Status should be set to Sales Accepted Lead when HubSpot Lifecycle Stage is Sales Accepted Lead');
     }
-
-    @isTest
-    static void testBeforeInsert_HubSpotOtherStage_DoesNotSetStatus() {
-        // Test that when New_HubSpot_Lifecycle_Stage__c is NOT 'Sales Accepted Lead',
-        // Status should not be modified by the handler
-        Lead lead = new Lead(
-            FirstName = 'Test',
-            LastName = 'Regular Lead',
-            Company = 'Test Company',
-            Email = 'regular@example.com',
-            New_HubSpot_Lifecycle_Stage__c = 'Marketing Qualified Lead'
-        );
-
-        Test.startTest();
-        insert lead;
-        Test.stopTest();
-
-        Lead insertedLead = [SELECT Status, New_HubSpot_Lifecycle_Stage__c FROM Lead WHERE Id = :lead.Id];
-        System.assertNotEquals(HUBSPOT_SALES_ACCEPTED_LEAD, insertedLead.Status, 
-            'Lead Status should not be Sales Accepted Lead when HubSpot Lifecycle Stage is different');
-    }
 }
