@@ -2,11 +2,20 @@ public class LeadTriggerHandler extends TriggerHandler {
 
     // Constants for Lead Outcome picklist values
     private static final String OUTCOME_CONVERTED = 'Converted';
+    // Constants for HubSpot Lifecycle Stage and Lead Status
+    private static final String HUBSPOT_SALES_ACCEPTED_LEAD = 'Sales Accepted Lead';
 
     public override void beforeInsert(List<SObject> newList) {
         List<Lead> leads = (List<Lead>) newList;
         for(Lead lead : leads) {
             handleLeadConversion(lead, null);
+            handleHubSpotLifecycleStage(lead);
+        }
+    }
+
+    private void handleHubSpotLifecycleStage(Lead lead) {
+        if (lead.New_HubSpot_Lifecycle_Stage__c == HUBSPOT_SALES_ACCEPTED_LEAD) {
+            lead.Status = HUBSPOT_SALES_ACCEPTED_LEAD;
         }
     }
 

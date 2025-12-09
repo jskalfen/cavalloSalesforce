@@ -4,6 +4,7 @@ private class LeadTriggerHandlerTests {
     private static final String OUTCOME_CONVERTED = 'Converted';
     private static final String OUTCOME_REJECTED_RECYCLE = 'Rejected_Recycle';
     private static final String OUTCOME_REJECTED_DISQUALIFIED = 'Rejected_Disqualified';
+    private static final String HUBSPOT_SALES_ACCEPTED_LEAD = 'Sales Accepted Lead';
 
     @isTest
     static void testBeforeUpdate_LeadConverted_SetsOutcome() {
@@ -130,5 +131,26 @@ private class LeadTriggerHandlerTests {
         System.assertEquals(true, updatedLead.IsConverted, 'Lead should be converted');
         System.assertEquals(OUTCOME_CONVERTED, updatedLead.Lead_Outcome__c, 
             'Lead Outcome should be set to Converted when IsConverted changes from false to true');
+    }
+
+    @isTest
+    static void testBeforeInsert_HubSpotSalesAcceptedLead_SetsStatus() {
+        // Test that when New_HubSpot_Lifecycle_Stage__c is 'Sales Accepted Lead',
+        // Status should be set to 'Sales Accepted Lead'
+        Lead lead = new Lead(
+            FirstName = 'Test',
+            LastName = 'HubSpot Lead',
+            Company = 'Test Company',
+            Email = 'hubspot@example.com',
+            New_HubSpot_Lifecycle_Stage__c = HUBSPOT_SALES_ACCEPTED_LEAD
+        );
+
+        Test.startTest();
+        insert lead;
+        Test.stopTest();
+
+        Lead insertedLead = [SELECT Status, New_HubSpot_Lifecycle_Stage__c FROM Lead WHERE Id = :lead.Id];
+        System.assertEquals(HUBSPOT_SALES_ACCEPTED_LEAD, insertedLead.Status, 
+            'Lead Status should be set to Sales Accepted Lead when HubSpot Lifecycle Stage is Sales Accepted Lead');
     }
 }
