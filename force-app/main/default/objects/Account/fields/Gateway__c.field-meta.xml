@@ -4,7 +4,7 @@
     <label>Gateway</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>MultiselectPicklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -84,6 +84,11 @@
                 <fullName>EVO exception</fullName>
                 <default>false</default>
                 <label>EVO exception</label>
+            </value>
+            <value>
+                <fullName>Currently Not Interested</fullName>
+                <default>false</default>
+                <label>Currently Not Interested</label>
             </value>
             <value>
                 <fullName>Authorize.net</fullName>

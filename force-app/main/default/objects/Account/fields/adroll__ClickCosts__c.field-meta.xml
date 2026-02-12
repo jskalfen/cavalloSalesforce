@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adroll__ClickCosts__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Costs Incurred for the Clicks</description>
+    <inlineHelpText>Costs Incurred for the Clicks</inlineHelpText>
+    <label>Account Click Costs (Deprecated)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -160,6 +160,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Avalara</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>BPR</fullName>
             <default>false</default>
         </values>
@@ -276,6 +280,14 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Fabtech Event 2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fusionary</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>G2</fullName>
             <default>false</default>
         </values>
@@ -344,6 +356,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Njevity</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Nodus</fullName>
             <default>false</default>
         </values>
@@ -361,6 +377,10 @@
         </values>
         <values>
             <fullName>PMPAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaceJet</fullName>
             <default>false</default>
         </values>
         <values>
@@ -500,6 +520,10 @@
         </values>
         <values>
             <fullName>Cavallo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -718,6 +742,10 @@
     <picklistValues>
         <picklist>Demand_Planning__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Easystock</fullName>
             <default>false</default>
         </values>
@@ -854,6 +882,10 @@
         <picklist>EDI__c</picklist>
         <values>
             <fullName>BSI EDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1343,6 +1375,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>CybersourceSoap</fullName>
             <default>false</default>
         </values>
@@ -1696,6 +1732,10 @@
     <picklistValues>
         <picklist>Job_Costing__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Fieldpoint Field Service</fullName>
             <default>false</default>
         </values>
@@ -1715,11 +1755,46 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Sellbrite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_HubSpot_Lifecycle_Stage__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Accepted Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Qualified Opportunity</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1739,6 +1814,21 @@
         </values>
         <values>
             <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Package_Level__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1865,6 +1955,10 @@
         <picklist>Payments__c</picklist>
         <values>
             <fullName>Blue Moon Credit Card Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2087,6 +2181,10 @@
     <picklistValues>
         <picklist>Shipping__c</picklist>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>FedEx ShipManager</fullName>
             <default>false</default>
         </values>
@@ -2187,6 +2285,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Currently Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
@@ -2236,6 +2338,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Future Churn</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
@@ -2272,6 +2378,10 @@
         </values>
         <values>
             <fullName>Blue Moon Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2664,6 +2774,10 @@
         </values>
         <values>
             <fullName>Commerce V3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently Not Interested</fullName>
             <default>false</default>
         </values>
         <values>

@@ -34,6 +34,12 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Conf - AM Expo 2025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
             <controllingFieldValue>Support</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
             <controllingFieldValue>Professional Services</controllingFieldValue>
@@ -117,9 +123,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
-            <controllingFieldValue>Partner</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
-            <valueName>Conf - AM Expo 2025</valueName>
+            <valueName>ZoomInfo</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Customer</controllingFieldValue>
@@ -137,11 +142,19 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Applied AI for Distributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Blog</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Conf - Accumatica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Conf - acuConnect</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -214,12 +227,20 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Fabtech Event 2025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
             <valueName>G2</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>GPUC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>GR Tech Week</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -247,6 +268,14 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Partner Webinar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>PMPAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Podcast</valueName>
         </valueSettings>
         <valueSettings>
@@ -271,10 +300,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Partner Webinar</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Webinar KwikTag</valueName>
         </valueSettings>
         <valueSettings>
@@ -290,24 +315,12 @@
             <valueName>Website</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>PMPAA</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Applied AI for Distributors</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Conf - acuConnect</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>GR Tech Week</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>Support</controllingFieldValue>
             <valueName>Kayako</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Avalara</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
@@ -316,7 +329,19 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Fusionary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Njevity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
             <valueName>Nodus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>PaceJet</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
@@ -341,10 +366,6 @@
         <valueSettings>
             <controllingFieldValue>SDR</controllingFieldValue>
             <valueName>Twitter</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>SDR</controllingFieldValue>
-            <valueName>ZoomInfo</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>SDR</controllingFieldValue>

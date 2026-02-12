@@ -4,6 +4,6 @@
     <label>Enhancement Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>Date</type>
 </CustomField>

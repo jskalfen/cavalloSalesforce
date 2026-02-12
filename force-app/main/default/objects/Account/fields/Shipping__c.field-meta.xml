@@ -4,7 +4,7 @@
     <label>Shipping</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>MultiselectPicklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -74,6 +74,11 @@
                 <fullName>UPS WorldShip</fullName>
                 <default>false</default>
                 <label>UPS WorldShip</label>
+            </value>
+            <value>
+                <fullName>Currently Not Interested</fullName>
+                <default>false</default>
+                <label>Currently Not Interested</label>
             </value>
         </valueSetDefinition>
     </valueSet>

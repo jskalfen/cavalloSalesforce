@@ -14,6 +14,7 @@
     <columns>ACCOUNT.CREATED_DATE</columns>
     <columns>ACCOUNT.LAST_UPDATE</columns>
     <columns>Hubspot_Lifecycle_Stage__c</columns>
+    <columns>Hubspot_Record_ID__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>ACCOUNT.TYPE</field>
