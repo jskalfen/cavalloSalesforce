@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ABR_Happened_Set__c</fullName>
+    <description>Timestamp of when ABR Happened was first set to true</description>
+    <label>ABR Happened Set</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
+
