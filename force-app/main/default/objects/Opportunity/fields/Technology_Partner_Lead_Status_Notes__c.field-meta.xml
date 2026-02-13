@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Manual_Discount__c</fullName>
-    <label>Manual Discount Percent</label>
-    <precision>7</precision>
+    <fullName>Technology_Partner_Lead_Status_Notes__c</fullName>
+    <externalId>false</externalId>
+    <label>Technology Partner Lead Status Notes</label>
+    <length>255</length>
     <required>false</required>
-    <scale>4</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>Percent</type>
+    <type>Text</type>
+    <unique>false</unique>
 </CustomField>

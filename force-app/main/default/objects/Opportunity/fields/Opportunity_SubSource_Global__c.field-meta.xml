@@ -50,11 +50,19 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Applied AI for Distributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Blog</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Conf - Accumatica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Conf - acuConnect</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -127,12 +135,20 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Fabtech Event 2025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
             <valueName>G2</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>GPUC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>GR Tech Week</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
@@ -171,6 +187,14 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Partner Webinar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>PMPAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Podcast</valueName>
         </valueSettings>
         <valueSettings>
@@ -195,10 +219,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Partner Webinar</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Webinar KwikTag</valueName>
         </valueSettings>
         <valueSettings>
@@ -210,30 +230,28 @@
             <valueName>Webinar SPS</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>PMPAA</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Applied AI for Distributors</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Conf - acuConnect</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>GR Tech Week</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
             <controllingFieldValue>Sales</controllingFieldValue>
             <valueName>Alliance Partner</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Avalara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>Conf - AM Expo 2025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
             <valueName>eCommerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Fusionary</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
@@ -248,7 +266,15 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Njevity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
             <valueName>Nodus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>PaceJet</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
@@ -263,12 +289,6 @@
         <valueSettings>
             <controllingFieldValue>Partner</controllingFieldValue>
             <valueName>Square</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Partner</controllingFieldValue>
-            <controllingFieldValue>Sales</controllingFieldValue>
-            <controllingFieldValue>SDR</controllingFieldValue>
-            <valueName>Conf - AM Expo 2025</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Professional Services</controllingFieldValue>
@@ -329,13 +349,12 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
-            <controllingFieldValue>SDR</controllingFieldValue>
-            <valueName>Respondent</valueName>
+            <valueName>Renewals</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
             <controllingFieldValue>SDR</controllingFieldValue>
-            <valueName>ZoomInfo</valueName>
+            <valueName>Respondent</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
@@ -343,7 +362,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sales</controllingFieldValue>
-            <valueName>Renewals</valueName>
+            <controllingFieldValue>SDR</controllingFieldValue>
+            <valueName>ZoomInfo</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>SDR</controllingFieldValue>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARR_w_Partner_Coupon__c</fullName>
+    <description>ARR after customer discounts + partner payments</description>
+    <label>DEPRECATE ARR w/ Partner Coupon</label>
+    <summarizedField>OpportunityLineItem.Net_ARR_Opp_Product__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -7,13 +7,11 @@
     <columns>OPPORTUNITY.CLOSE_DATE</columns>
     <columns>OPPORTUNITY.STAGE_NAME</columns>
     <columns>OPPORTUNITY.TYPE</columns>
-    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
     <columns>CORE.USERS.FULL_NAME</columns>
     <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
     <columns>OPPORTUNITY.LAST_UPDATE</columns>
     <columns>Product_Line_s__c</columns>
     <columns>OPPORTUNITY.RECORDTYPE</columns>
-    <columns>Direct_v_Partner__c</columns>
     <columns>Existing_GP_or_New_GP__c</columns>
     <columns>Sales_Engineer__c</columns>
     <filterScope>Everything</filterScope>

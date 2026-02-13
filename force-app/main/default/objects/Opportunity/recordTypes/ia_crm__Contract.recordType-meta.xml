@@ -1099,6 +1099,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Business_Segment__c</picklist>
+        <values>
+            <fullName>Profit Max Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesPad for BC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Call_Type__c</picklist>
         <values>
             <fullName>Discovery Call</fullName>
@@ -2027,6 +2042,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Avalara</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>BPR</fullName>
             <default>false</default>
         </values>
@@ -2143,6 +2162,14 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Fabtech Event 2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fusionary</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>G2</fullName>
             <default>false</default>
         </values>
@@ -2211,6 +2238,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Njevity</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Nodus</fullName>
             <default>false</default>
         </values>
@@ -2228,6 +2259,10 @@
         </values>
         <values>
             <fullName>PMPAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaceJet</fullName>
             <default>false</default>
         </values>
         <values>

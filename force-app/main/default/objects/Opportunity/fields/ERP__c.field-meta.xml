@@ -40,6 +40,11 @@
                 <default>false</default>
                 <label>Infor</label>
             </value>
+            <value>
+                <fullName>NetSuite</fullName>
+                <default>false</default>
+                <label>NetSuite</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

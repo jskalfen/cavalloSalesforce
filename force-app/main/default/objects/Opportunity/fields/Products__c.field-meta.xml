@@ -212,6 +212,7 @@
             <controllingFieldValue>Acumatica</controllingFieldValue>
             <controllingFieldValue>Epicor</controllingFieldValue>
             <controllingFieldValue>Infor</controllingFieldValue>
+            <controllingFieldValue>NetSuite</controllingFieldValue>
             <valueName>Profit Analytics - Enterprise</valueName>
         </valueSettings>
         <valueSettings>
@@ -221,6 +222,7 @@
             <controllingFieldValue>Acumatica</controllingFieldValue>
             <controllingFieldValue>Epicor</controllingFieldValue>
             <controllingFieldValue>Infor</controllingFieldValue>
+            <controllingFieldValue>NetSuite</controllingFieldValue>
             <valueName>Profit Analytics - Essentials</valueName>
         </valueSettings>
         <valueSettings>
@@ -230,6 +232,7 @@
             <controllingFieldValue>Acumatica</controllingFieldValue>
             <controllingFieldValue>Epicor</controllingFieldValue>
             <controllingFieldValue>Infor</controllingFieldValue>
+            <controllingFieldValue>NetSuite</controllingFieldValue>
             <valueName>Profit Analytics - Professional</valueName>
         </valueSettings>
         <valueSettings>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Segment_Required_for_NB</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;New_Business&apos;
+&amp;&amp; ISPICKVAL(Business_Segment__c, &apos;&apos;)
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; NOT(ISPICKVAL(StageName, &apos;Discovery&apos;))
+&amp;&amp; NOT(ISPICKVAL(Type, &apos;Expansion - Services only&apos;))</errorConditionFormula>
+    <errorDisplayField>Business_Segment__c</errorDisplayField>
+    <errorMessage>Business Segment is required to save.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebee_Coupon_ARR__c</fullName>
+    <label>Chargebee Coupon ARR</label>
+    <summarizedField>OpportunityLineItem.Chargebee_Coupon_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Coupon_Source__c</field>
+        <operation>equals</operation>
+        <value>Chargebee Coupon</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

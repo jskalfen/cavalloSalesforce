@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adroll__RollWorks_Influenced_Opportunity__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>AND(OR(Account.adroll__Impressions__c&gt;0,Account.adroll__ImpressionCosts__c&gt;0,Account.adroll__Clicks__c&gt;0,Account.adroll__Click_Conversion__c&gt;0,Account.adroll__View_Conversion__c&gt;0),(Account.adroll__LastAdRollTrackingDate__c-DateValue(CreatedDate))&lt;=90)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RollWorks Influenced (Deprecated)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

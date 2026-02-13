@@ -46,6 +46,11 @@
                 <label>Kristina Kaufman</label>
             </value>
             <value>
+                <fullName>Lawrence Lanstra</fullName>
+                <default>false</default>
+                <label>Lawrence Lanstra</label>
+            </value>
+            <value>
                 <fullName>Robert Vaeco</fullName>
                 <default>false</default>
                 <isActive>false</isActive>

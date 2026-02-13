@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Discount_ARR__c</fullName>
+    <label>Manual Discount ARR</label>
+    <summarizedField>OpportunityLineItem.Manual_Partner_Payment_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Coupon_Source__c</field>
+        <operation>equals</operation>
+        <value>Manual Entry</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>
