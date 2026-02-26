@@ -3,4 +3,7 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
         AccountTriggerHandler.handleBeforeInsertAndUpdate(Trigger.new, Trigger.oldMap);
     if(Trigger.isAfter && (Trigger.isInsert || Trigger.isUpdate))
         AccountTriggerHandler.handleAfterInsertAndUpdate(Trigger.newMap, Trigger.oldMap);
+
+    new AccountTriggerHandler2().run();
+
 }
