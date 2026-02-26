@@ -6,10 +6,12 @@ public with sharing class OpportunityTriggerHandler {
    
     public static void onBeforeInsert(List<Opportunity> newList) {
         defaultPricebookId(newList);
+        calculateRenewalEstimatedValue(newList);
     }
     
     public static void onBeforeUpdate(List<Opportunity> newList, Map<Id, Opportunity> oldMap) {
         updateManualDiscount(newList, oldMap);
+        calculateRenewalEstimatedValue(newList);
     }
    
     public static void afterUpdate(Map<Id,Opportunity> newOppMap, Map<Id,Opportunity> oldOppMap) {
@@ -62,6 +64,64 @@ public with sharing class OpportunityTriggerHandler {
         }
     }
    
+    /**
+     * Calculates Estimated Value ARR for Renewal-type opportunities on the New Business record type.
+     * Formula: MAX(0, (Subscription MRR * 12) - ((Year One + Year Two + Year Three) / 3))
+     * The subscription MRR comes from the Chargebee subscription linked to the opportunity.
+     */
+    private static void calculateRenewalEstimatedValue(List<Opportunity> newList) {
+        // Get New Business RecordType Id
+        Id newBusinessRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName()
+            .get('New_Business').getRecordTypeId();
+        
+        // Collect subscription IDs for Renewal-type New Business opportunities
+        Map<Id, List<Opportunity>> subIdToOpps = new Map<Id, List<Opportunity>>();
+        for (Opportunity opp : newList) {
+            if (opp.RecordTypeId == newBusinessRecTypeId && 
+                opp.Type == 'Renewal' && 
+                opp.chargebeeapps__Subscription_Id__c != null &&
+                (opp.Year_One__c != null || opp.Year_Two__c != null || opp.Year_Three__c != null)) {
+                
+                if (!subIdToOpps.containsKey(opp.chargebeeapps__Subscription_Id__c)) {
+                    subIdToOpps.put(opp.chargebeeapps__Subscription_Id__c, new List<Opportunity>());
+                }
+                subIdToOpps.get(opp.chargebeeapps__Subscription_Id__c).add(opp);
+            }
+        }
+        
+        if (subIdToOpps.isEmpty()) {
+            return;
+        }
+        
+        // Query subscription MRR values
+        Map<Id, Decimal> subIdToMrr = new Map<Id, Decimal>();
+        for (chargebeeapps__CB_Subscription__c sub : [
+            SELECT Id, chargebeeapps__MRR__c 
+            FROM chargebeeapps__CB_Subscription__c 
+            WHERE Id IN :subIdToOpps.keySet()
+        ]) {
+            subIdToMrr.put(sub.Id, sub.chargebeeapps__MRR__c != null ? sub.chargebeeapps__MRR__c : 0);
+        }
+        
+        // Calculate and set Estimated Value ARR
+        for (Id subId : subIdToOpps.keySet()) {
+            Decimal mrr = subIdToMrr.containsKey(subId) ? subIdToMrr.get(subId) : 0;
+            Decimal subscriptionArr = mrr * 12;
+            
+            for (Opportunity opp : subIdToOpps.get(subId)) {
+                Decimal yearOne = opp.Year_One__c != null ? opp.Year_One__c : 0;
+                Decimal yearTwo = opp.Year_Two__c != null ? opp.Year_Two__c : 0;
+                Decimal yearThree = opp.Year_Three__c != null ? opp.Year_Three__c : 0;
+                
+                Decimal average = (yearOne + yearTwo + yearThree) / 3;
+                Decimal estimatedValue = subscriptionArr - average;
+                
+                // If negative, set to $0
+                opp.Estimated_Value__c = estimatedValue < 0 ? 0 : estimatedValue;
+            }
+        }
+    }
+    
     private static void defaultPricebookId(List<Opportunity> newList) {
         if (!fa.Default_Pricebook_Id__c) {
             return;
