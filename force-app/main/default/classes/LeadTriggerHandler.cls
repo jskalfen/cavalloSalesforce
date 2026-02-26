@@ -30,6 +30,8 @@ public class LeadTriggerHandler extends TriggerHandler {
     }
 
     public override void afterInsert(List<SObject> newList) {
+        List<Lead> leads = (List<Lead>) newList;
+        LeadAutoConvertService.autoConvertLeads(leads);
     }
 
     public override void afterUpdate(List<SObject> newList, Map<Id, SObject> oldMap) {
