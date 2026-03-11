@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Approval Process Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        h4 {
+            color: #7f8c8d;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #333;
+        }
+        
+        .xml-code {
+            background-color: #fff5f5;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .flow-code {
+            background-color: #f0f8ff;
+            border-left: 4px solid #3498db;
+        }
+        
+        .formula-code {
+            background-color: #f9f9f9;
+            border-left: 4px solid #95a5a6;
+        }
+        
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        
+        .toc ol {
+            margin-bottom: 0;
+        }
+        
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .warning {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .flow-diagram {
+            background-color: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        .status-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .status-box {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .arrow {
+            font-size: 1.5em;
+            color: #7f8c8d;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 40px 0;
+        }
+        
+        @media print {
+            body {
+                font-size: 12px;
+                line-height: 1.4;
+            }
+            
+            h1 {
+                font-size: 24px;
+                page-break-after: avoid;
+            }
+            
+            h2 {
+                font-size: 18px;
+                page-break-after: avoid;
+            }
+            
+            h3 {
+                font-size: 14px;
+                page-break-after: avoid;
+            }
+            
+            pre {
+                page-break-inside: avoid;
+                font-size: 10px;
+            }
+            
+            .toc {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Quote Approval Process Documentation</h1>
+
+    <div style="text-align: center; margin: 20px 0; padding: 15px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px;">
+        <p style="margin: 0; font-weight: 600; color: #495057; font-size: 1.1em;">Prepared by: Rosewater Solutions, LLC</p>
+    </div>
+
+    <hr>
+
+    <h2>Overview</h2>
+    <p>This document provides comprehensive documentation for the Quote Approval process in Salesforce, beginning with the Submit for Approval standard button on quotes and covering all related flows, validation rules, and automation.</p>
+
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#process-overview">Process Overview</a></li>
+            <li><a href="#submit-for-approval-button">Submit for Approval Button</a></li>
+            <li><a href="#quote-status-values">Quote Status Values</a></li>
+            <li><a href="#approval-process-flow">Approval Process Flow</a></li>
+            <li><a href="#related-flows">Related Flows</a></li>
+            <li><a href="#validation-rules">Validation Rules</a></li>
+            <li><a href="#fields-and-configuration">Fields and Configuration</a></li>
+            <li><a href="#process-steps-and-history">Process Steps and History</a></li>
+            <li><a href="#auto-approval-logic">Auto-Approval Logic</a></li>
+            <li><a href="#integration-points">Integration Points</a></li>
+            <li><a href="#troubleshooting-guide">Troubleshooting Guide</a></li>
+            <li><a href="#technical-implementation-details">Technical Implementation Details</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <h2 id="process-overview">Process Overview</h2>
+    <p>The Quote Approval process is a multi-step workflow that manages quote approvals based on discount thresholds, partner margins, and business rules. The process includes:</p>
+    
+    <ul>
+        <li><strong>Manual Submission</strong>: Users can manually submit quotes for approval using the standard "Submit" button</li>
+        <li><strong>Automatic Re-submission</strong>: Quotes are automatically re-submitted when discount/term changes exceed thresholds</li>
+        <li><strong>Auto-Approval</strong>: Some quotes are automatically approved based on partner margin alignment</li>
+        <li><strong>Status Management</strong>: Quote status is automatically updated based on approval outcomes</li>
+        <li><strong>Opportunity Integration</strong>: Opportunity records are updated to reflect quote approval status</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="submit-for-approval-button">Submit for Approval Button</h2>
+
+    <h3>Button Configuration</h3>
+    <p>The standard "Submit" button is configured in the Quote record page layout and flexipage:</p>
+    
+    <p><strong>Location</strong>: <code>force-app/main/default/flexipages/Quote_Record_Page_Default.flexipage-meta.xml</code></p>
+
+    <pre class="xml-code"><code>&lt;valueListItems&gt;
+    &lt;value&gt;Submit&lt;/value&gt;
+    &lt;visibilityRule&gt;
+        &lt;criteria&gt;
+            &lt;leftValue&gt;{!Record.Status}&lt;/leftValue&gt;
+            &lt;operator&gt;NE&lt;/operator&gt;
+            &lt;rightValue&gt;Approved&lt;/rightValue&gt;
+        &lt;/criteria&gt;
+    &lt;/visibilityRule&gt;
+&lt;/valueListItems&gt;</code></pre>
+
+    <div class="info">
+        <p><strong>Visibility Rules</strong>:</p>
+        <ul>
+            <li>The Submit button is visible when Quote Status ≠ "Approved"</li>
+            <li>Hidden for already approved quotes to prevent re-submission</li>
+        </ul>
+    </div>
+
+    <h3>Button Behavior</h3>
+    <p>When clicked, the Submit button:</p>
+    <ol>
+        <li>Initiates the standard Salesforce approval process</li>
+        <li>Triggers the <code>GP_Discount_Approval_Process_Updated</code> approval process</li>
+        <li>Changes quote status to "In Review"</li>
+        <li>Creates approval history records (ProcessSteps)</li>
+    </ol>
+
+    <hr>
+
+    <h2 id="quote-status-values">Quote Status Values</h2>
+    <p>The Quote object supports the following status values across different record types:</p>
+
+    <h3>Available Status Values</h3>
+    <ul>
+        <li><strong>Draft</strong> (default)</li>
+        <li><strong>Needs Review</strong></li>
+        <li><strong>In Review</strong></li>
+        <li><strong>Approved</strong></li>
+        <li><strong>Approved for Partner Margin</strong></li>
+        <li><strong>Rejected</strong></li>
+        <li><strong>Denied</strong></li>
+        <li><strong>Presented</strong></li>
+        <li><strong>Accepted</strong></li>
+    </ul>
+
+    <h3>Status Transitions</h3>
+    <div style="background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 8px; padding: 30px; margin: 20px 0;">
+        
+        <!-- Main Approval Flow -->
+        <div style="margin-bottom: 25px;">
+            <h4 style="color: #2980b9; margin-bottom: 15px; font-size: 1.1em;">Primary Approval Flow</h4>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <div style="background: linear-gradient(135deg, #6c757d, #495057); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Draft</div>
+                <div style="font-size: 1.8em; color: #28a745;">→</div>
+                <div style="background: linear-gradient(135deg, #ffc107, #e0a800); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 120px; text-align: center;">Needs Review</div>
+                <div style="font-size: 1.8em; color: #28a745;">→</div>
+                <div style="background: linear-gradient(135deg, #fd7e14, #e8590c); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">In Review</div>
+                <div style="font-size: 1.8em; color: #28a745;">→</div>
+                <div style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Approved</div>
+            </div>
+        </div>
+
+        <!-- Rejection Path -->
+        <div style="margin-bottom: 25px;">
+            <h4 style="color: #dc3545; margin-bottom: 15px; font-size: 1.1em;">Rejection Path</h4>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <div style="background: linear-gradient(135deg, #fd7e14, #e8590c); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">In Review</div>
+                <div style="font-size: 1.8em; color: #dc3545;">→</div>
+                <div style="background: linear-gradient(135deg, #dc3545, #c82333); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 140px; text-align: center;">Rejected / Denied</div>
+            </div>
+        </div>
+
+        <!-- Post-Approval Flow -->
+        <div style="margin-bottom: 25px;">
+            <h4 style="color: #17a2b8; margin-bottom: 15px; font-size: 1.1em;">Post-Approval Flow</h4>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <div style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Approved</div>
+                <div style="font-size: 1.8em; color: #17a2b8;">→</div>
+                <div style="background: linear-gradient(135deg, #17a2b8, #138496); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Presented</div>
+                <div style="font-size: 1.8em; color: #17a2b8;">→</div>
+                <div style="background: linear-gradient(135deg, #6f42c1, #5a32a3); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Accepted</div>
+            </div>
+        </div>
+
+        <!-- Modification Reset -->
+        <div style="margin-bottom: 10px;">
+            <h4 style="color: #6c757d; margin-bottom: 15px; font-size: 1.1em;">Modification Reset</h4>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <div style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Approved</div>
+                <div style="font-size: 1.8em; color: #6c757d;">→</div>
+                <div style="background: linear-gradient(135deg, #6c757d, #495057); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 0.9em; min-width: 100px; text-align: center;">Draft</div>
+                <div style="font-size: 0.8em; color: #6c757d; font-style: italic; margin-left: 10px;">(if discount/terms modified)</div>
+            </div>
+        </div>
+
+        <!-- Alternative Statuses -->
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6;">
+            <h4 style="color: #6c757d; margin-bottom: 15px; font-size: 1.1em;">Additional Status Options</h4>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                <div style="background: linear-gradient(135deg, #20c997, #17a085); color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 0.85em; text-align: center;">Approved for Partner Margin</div>
+            </div>
+            <p style="text-align: center; font-size: 0.9em; color: #6c757d; margin-top: 10px; font-style: italic;">
+                Special approval status for partner-related quotes
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 id="approval-process-flow">Approval Process Flow</h2>
+
+    <p>The Quote approval system consists of multiple approval processes that handle different scenarios based on opportunity record types and user roles. Here are the active approval processes:</p>
+
+    <h3>1. Approval Process for Account Executives (Active)</h3>
+    <div class="info">
+        <p><strong>File</strong>: <code>Quote.Approval_Process_for_Account_Executives.approvalProcess-meta.xml</code></p>
+        <p><strong>Process Order</strong>: 2</p>
+        <p><strong>Status</strong>: Active</p>
+    </div>
+
+    <p><strong>Entry Criteria</strong>:</p>
+    <ul>
+        <li>Opportunity Record Type = "New Business"</li>
+    </ul>
+
+    <p><strong>Allowed Submitters</strong>:</p>
+    <ul>
+        <li>Account Executive role</li>
+    </ul>
+
+    <p><strong>Approval Steps</strong>:</p>
+
+    <h4>Level 1 GP Approval</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Approver</td><td>jesse.clem@cavallo.com</td></tr>
+        <tr><td>Entry Criteria</td><td>(Discount > 10% OR Is_Discount_Forever = True OR (Term_Length < 3 AND Type = "New Logo")) AND Auto_Approved = False</td></tr>
+        <tr><td>If Criteria Not Met</td><td>Auto-approve record</td></tr>
+        <tr><td>Delegation</td><td>Allowed</td></tr>
+    </table>
+
+    <h4>Level 2 GP Approval</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Approver</td><td>john.carrier@cavallo.com</td></tr>
+        <tr><td>Entry Criteria</td><td>Discount > 20% AND Auto_Approved = False</td></tr>
+        <tr><td>Approval Method</td><td>Unanimous</td></tr>
+        <tr><td>Delegation</td><td>Allowed</td></tr>
+    </table>
+
+    <h3>2. Approval Process for Account Managers (Active)</h3>
+    <div class="info">
+        <p><strong>File</strong>: <code>Quote.Approval_Process_for_Account_Managers.approvalProcess-meta.xml</code></p>
+        <p><strong>Process Order</strong>: 1</p>
+        <p><strong>Status</strong>: Active</p>
+    </div>
+
+    <p><strong>Entry Criteria</strong>:</p>
+    <ul>
+        <li>Opportunity Record Type = "New Business"</li>
+    </ul>
+
+    <p><strong>Allowed Submitters</strong>:</p>
+    <ul>
+        <li>Account Manager role</li>
+        <li>Project Manager role</li>
+    </ul>
+
+    <p><strong>Approval Steps</strong>:</p>
+
+    <h4>Level 1 GP Approval</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Approver</td><td>jesse.clem@cavallo.com</td></tr>
+        <tr><td>Entry Criteria</td><td>((Discount > 5% OR Is_Discount_Forever = True OR Discount_Term_Length > 1) AND Auto_Approved = False) AND Opportunity.Type ≠ "Expansion - Services only"</td></tr>
+        <tr><td>If Criteria Not Met</td><td>Auto-approve record</td></tr>
+        <tr><td>Delegation</td><td>Allowed</td></tr>
+    </table>
+
+    <h4>Level 2 GP Approval</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Approver</td><td>john.carrier@cavallo.com</td></tr>
+        <tr><td>Entry Criteria</td><td>Discount > 30% AND Auto_Approved = False</td></tr>
+        <tr><td>Approval Method</td><td>Unanimous</td></tr>
+        <tr><td>Delegation</td><td>Allowed</td></tr>
+    </table>
+
+    <h3>3. GP Discount Approval Process Updated (Inactive)</h3>
+    <div class="warning">
+        <p><strong>File</strong>: <code>Quote.GP_Discount_Approval_Process_Updated.approvalProcess-meta.xml</code></p>
+        <p><strong>Process Order</strong>: 1</p>
+        <p><strong>Status</strong>: Inactive (Referenced in flows but not active)</p>
+    </div>
+
+    <p>This process is referenced in the automation flows but is currently inactive. It contains similar logic to the active processes.</p>
+
+    <h3>4. BC Discount Approval Process Updated (Inactive)</h3>
+    <div class="warning">
+        <p><strong>File</strong>: <code>Quote.BC_Discount_Approval_Process_Updated.approvalProcess-meta.xml</code></p>
+        <p><strong>Status</strong>: Inactive</p>
+        <p><strong>Entry Criteria</strong>: Opportunity Record Type = "Business Central"</p>
+    </div>
+
+    <h3>Approval Process Configuration Details</h3>
+
+    <h4>Common Configuration Across All Processes</h4>
+
+    <p><strong>Approval Page Fields</strong> (displayed during approval):</p>
+    <ul>
+        <li>Name</li>
+        <li>Quote Number</li>
+        <li>Account</li>
+        <li>Opportunity</li>
+        <li>Discount Term Length</li>
+        <li>Discount %</li>
+        <li>Is Discount Forever</li>
+        <li>Grand Total</li>
+        <li>Subtotal</li>
+    </ul>
+
+    <p><strong>Email Templates</strong>:</p>
+    <ul>
+        <li>GP processes: <code>GP_Discount_Approval_Request</code></li>
+        <li>BC processes: <code>BC_Discount_Approval_Request</code></li>
+    </ul>
+
+    <div class="success">
+        <p><strong>Actions Triggered</strong>:</p>
+        <p><strong>Initial Submission Actions</strong>:</p>
+        <ul>
+            <li>Email notification: <code>BC_Submitted_For_Approval_Notification</code></li>
+            <li>Field update: <code>Initial_Submission_Status_Update</code> (sets status to "In Review")</li>
+        </ul>
+
+        <p><strong>Final Approval Actions</strong>:</p>
+        <ul>
+            <li>Email notification: <code>BC_Quote_Approved_Notification</code></li>
+            <li>Field update: <code>Status_Approved</code> (sets status to "Approved")</li>
+        </ul>
+
+        <p><strong>Final Rejection Actions</strong>:</p>
+        <ul>
+            <li>Email notification: <code>BC_Quote_Rejected_Notification</code></li>
+            <li>Field update: <code>Status_Rejected</code> (sets status to "Rejected")</li>
+        </ul>
+    </div>
+
+    <p><strong>Security Settings</strong>:</p>
+    <ul>
+        <li>Record editability during approval: Admin Only</li>
+        <li>Mobile device access: Enabled</li>
+        <li>Approval history: Visible</li>
+        <li>Record lock after final approval: False</li>
+        <li>Record lock after final rejection: False</li>
+    </ul>
+
+    <h4>Auto-Approval Logic in Processes</h4>
+    <p>All approval processes include logic to automatically approve quotes when:</p>
+    <ul>
+        <li><code>Auto_Approved__c = True</code> (set by Quote Before Update flow)</li>
+        <li>Criteria are not met for manual approval steps</li>
+    </ul>
+    <p>This creates a seamless integration between the flow-based auto-approval logic and the formal approval processes.</p>
+
+    <h4>Process Selection Logic</h4>
+    <p>When a quote is submitted for approval, Salesforce evaluates the active approval processes in order of their <code>processOrder</code>:</p>
+    <ol>
+        <li><strong>Account Managers Process</strong> (Order 1): Triggered for Account Manager and Project Manager roles</li>
+        <li><strong>Account Executives Process</strong> (Order 2): Triggered for Account Executive role</li>
+    </ol>
+
+    <p>Both processes have the same entry criteria (<code>Opportunity Record Type = "New Business"</code>), but different allowed submitters ensure the correct process is used based on the user's role.</p>
+
+    <div class="highlight">
+        <p><strong>Key Differences Between Processes</strong>:</p>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Account Managers</th>
+                <th>Account Executives</th>
+            </tr>
+            <tr>
+                <td><strong>Level 1 Threshold</strong></td>
+                <td>Discount > 5%</td>
+                <td>Discount > 10%</td>
+            </tr>
+            <tr>
+                <td><strong>Level 2 Threshold</strong></td>
+                <td>Discount > 30%</td>
+                <td>Discount > 20%</td>
+            </tr>
+            <tr>
+                <td><strong>Special Conditions</strong></td>
+                <td>Excludes "Expansion - Services only"</td>
+                <td>Includes Term Length < 3 for "New Logo"</td>
+            </tr>
+            <tr>
+                <td><strong>Allowed Submitters</strong></td>
+                <td>Account Manager, Project Manager roles</td>
+                <td>Account Executive role</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <h2 id="related-flows">Related Flows</h2>
+
+    <h3>1. Quote Submit For Approval On Discount Increase</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/flows/Quote_Submit_For_Approval_On_Discount_Increase.flow-meta.xml</code></p>
+    <p><strong>Trigger</strong>: Record-triggered flow (After Save) on Quote updates</p>
+
+    <div class="info">
+        <p><strong>Conditions</strong>:</p>
+        <ul>
+            <li>Quote Status = "Approved" OR "In Review"</li>
+            <li>Quote Status has changed</li>
+            <li>Record Type = "New Business"</li>
+        </ul>
+    </div>
+
+    <p><strong>Logic Flow</strong>:</p>
+    <pre class="flow-code"><code>1. Check Record Type (New Business)
+2. Lookup Partner Margin record
+3. Check if Partner Billing Type = "Bill through Partner"
+4. If yes, lookup CB Opportunity Coupon
+5. Compare CB Opportunity Discount with Partner Margin Discount
+6. Check if Discount/Term increased:
+   - Discount > 10% AND increased from prior value
+   - Discount Term Length > 0 AND increased
+   - Is Discount Forever changed from false to true
+7. If conditions met, submit for approval via GP_Approval_Process</code></pre>
+
+    <div class="success">
+        <p><strong>Key Decision Points</strong>:</p>
+        <ul>
+            <li><strong>Record Type Check</strong>: Only processes "New Business" opportunities</li>
+            <li><strong>Partner Billing Check</strong>: Special handling for "Bill through Partner" scenarios</li>
+            <li><strong>Discount Threshold</strong>: Automatic submission when discount > 10% and increased</li>
+            <li><strong>Term Changes</strong>: Monitors discount term length and "forever" discount changes</li>
+        </ul>
+    </div>
+
+    <p><strong>Approval Submission</strong>:</p>
+    <pre class="xml-code"><code>&lt;actionName&gt;submit&lt;/actionName&gt;
+&lt;actionType&gt;submit&lt;/actionType&gt;
+&lt;inputParameters&gt;
+    &lt;name&gt;processDefinitionNameOrId&lt;/name&gt;
+    &lt;value&gt;GP_Discount_Approval_Process_Updated&lt;/value&gt;
+&lt;/inputParameters&gt;
+&lt;inputParameters&gt;
+    &lt;name&gt;comment&lt;/name&gt;
+    &lt;value&gt;This quote is submitted for approval as discount or term is increased.&lt;/value&gt;
+&lt;/inputParameters&gt;</code></pre>
+
+    <div class="warning">
+        <p><strong>Note</strong>: The flow references <code>GP_Discount_Approval_Process_Updated</code>, but this process is currently inactive. The active processes are:</p>
+        <ul>
+            <li><code>Approval_Process_for_Account_Executives</code> (Process Order 2)</li>
+            <li><code>Approval_Process_for_Account_Managers</code> (Process Order 1)</li>
+        </ul>
+        <p>The system will use the active process with the lowest process order that matches the entry criteria.</p>
+    </div>
+
+    <h3>2. Quote Before Update</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/flows/Quote_Before_Update.flow-meta.xml</code></p>
+    <p><strong>Trigger</strong>: Record-triggered flow (Before Save) on Quote updates</p>
+    <p><strong>Purpose</strong>: Auto-approval logic and status management</p>
+
+    <p><strong>Logic Flow</strong>:</p>
+    <pre class="flow-code"><code>1. Check Opportunity Record Type (New Business)
+2. Lookup Partner Margin record
+3. Check Partner Billing Type = "Bill through Partner"
+4. If yes, lookup CB Opportunity Coupon
+5. Compare discounts:
+   - CB Opportunity Discount = Partner Margin Y1 Discount
+   - CB Opportunity Discount = Quote Discount
+6. Set Auto_Approved__c = true if conditions match
+7. Check if approved quote was modified:
+   - Status = "Approved" AND
+   - (Discount changed OR Is_Discount_Forever changed OR Discount_Term_Length changed)
+8. If modified after approval, reset Status to "Draft"</code></pre>
+
+    <div class="highlight">
+        <p><strong>Auto-Approval Criteria</strong>:</p>
+        <ul>
+            <li>Partner billing through partner</li>
+            <li>CB Opportunity discount matches both Partner Margin and Quote discount</li>
+            <li>Ensures alignment across all discount values</li>
+        </ul>
+    </div>
+
+    <h3>3. Quote After Update</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/flows/Quote_After_Update.flow-meta.xml</code></p>
+    <p><strong>Trigger</strong>: Record-triggered flow (After Save) on Quote updates</p>
+    <p><strong>Purpose</strong>: Update related Opportunity when quote approval status changes</p>
+
+    <p><strong>Logic Flow</strong>:</p>
+    <pre class="flow-code"><code>1. Check if Quote Status changed
+2. If Status contains "Approved":
+   - Update Opportunity.Is_Quote_Approved__c = true
+3. If Status does not contain "Approved":
+   - Update Opportunity.Is_Quote_Approved__c = false</code></pre>
+
+    <h3>4. Opportunity Update Is Quote Approved</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/flows/Opportunity_Update_Is_Quote_Approved.flow-meta.xml</code></p>
+    <p><strong>Purpose</strong>: Maintains quote approval status on Opportunity records</p>
+    <p><strong>Logic</strong>: Updates <code>Is_Quote_Approved__c</code> field based on related approved quotes</p>
+
+    <hr>
+
+    <h2 id="validation-rules">Validation Rules</h2>
+
+    <h3>1. Quote Status Change Validation</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/objects/Quote/validationRules/Quote_Status_Change_Validation.validationRule-meta.xml</code></p>
+    <p><strong>Rule</strong>: Prevents status changes until quote is approved</p>
+
+    <div class="warning">
+        <p><strong>Conditions</strong>:</p>
+        <ul>
+            <li>Opportunity Record Type = "Cloud" OR "Business Central"</li>
+            <li>Status is changed</li>
+            <li>Prior Status = "Draft", "Needs Review", or "In Review"</li>
+        </ul>
+        <p><strong>Error Message</strong>: "You cannot change the status until the Quote is Approved"</p>
+    </div>
+
+    <p><strong>Formula</strong>:</p>
+    <pre class="formula-code"><code>AND(
+    OR(Opportunity.RecordType.DeveloperName = 'Cloud', Opportunity.RecordType.DeveloperName = 'Business Central'),
+    ISCHANGED(Status),
+    OR(
+        (TEXT(PRIORVALUE(Status)) = "Draft"),
+        (TEXT(PRIORVALUE(Status)) = "Needs Review"),
+        (TEXT(PRIORVALUE(Status)) = "In Review")
+    )
+)</code></pre>
+
+    <h3>2. Quote Approved Validation (Opportunity)</h3>
+    <p><strong>File</strong>: <code>force-app/main/default/objects/Opportunity/validationRules/Quote_Approved_Validation.validationRule-meta.xml</code></p>
+    <p><strong>Rule</strong>: Prevents Opportunity closure without approved quote</p>
+
+    <div class="warning">
+        <p><strong>Conditions</strong>:</p>
+        <ul>
+            <li>Stage Name changed to "Closed Won"</li>
+            <li>Is_Quote_Approved__c = false</li>
+            <li>Record Type = "New Business"</li>
+        </ul>
+        <p><strong>Error Message</strong>: "You cannot update the stage beyond Contractual until there is a synced and approved Quote."</p>
+    </div>
+
+    <hr>
+
+    <h2 id="fields-and-configuration">Fields and Configuration</h2>
+
+    <h3>Quote Object Fields</h3>
+
+    <h4>Auto_Approved__c</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Type</td><td>Checkbox</td></tr>
+        <tr><td>Default</td><td>false</td></tr>
+        <tr><td>Description</td><td>Indicates if the quote will be automatically approved in an approval process</td></tr>
+        <tr><td>History Tracking</td><td>Enabled</td></tr>
+    </table>
+
+    <h4>Status</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Type</td><td>Picklist</td></tr>
+        <tr><td>History Tracking</td><td>Enabled</td></tr>
+        <tr><td>Values</td><td>Draft, Needs Review, In Review, Approved, Approved for Partner Margin, Rejected, Denied, Presented, Accepted</td></tr>
+    </table>
+
+    <h3>Opportunity Object Fields</h3>
+
+    <h4>Is_Quote_Approved__c</h4>
+    <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Type</td><td>Checkbox</td></tr>
+        <tr><td>Default</td><td>false</td></tr>
+        <tr><td>Description</td><td>Used to check if related Quote is Approved</td></tr>
+        <tr><td>Updated By</td><td>Quote After Update flow</td></tr>
+    </table>
+
+    <hr>
+
+    <h2 id="process-steps-and-history">Process Steps and History</h2>
+
+    <h3>ProcessSteps Related List</h3>
+    <p>The Quote record page includes a "ProcessSteps" related list that shows:</p>
+    <ul>
+        <li>Approval history</li>
+        <li>Comments from approvers</li>
+        <li>Approval/rejection timestamps</li>
+        <li>Current approval status</li>
+    </ul>
+
+    <p><strong>Configuration</strong>: Located in the Quote Record Page sidebar</p>
+    <pre class="xml-code"><code>&lt;relatedListApiName&gt;ProcessSteps&lt;/relatedListApiName&gt;</code></pre>
+
+    <h3>History Tracking</h3>
+    <p>Both Quote Status and Auto_Approved__c fields have history tracking enabled, providing:</p>
+    <ul>
+        <li>Field change audit trail</li>
+        <li>User who made changes</li>
+        <li>Timestamps of changes</li>
+        <li>Previous and new values</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="auto-approval-logic">Auto-Approval Logic</h2>
+
+    <h3>Conditions for Auto-Approval</h3>
+    <p>A quote is automatically approved when ALL conditions are met:</p>
+
+    <div class="success">
+        <ol>
+            <li><strong>Opportunity Record Type</strong>: "New Business"</li>
+            <li><strong>Partner Billing Type</strong>: "Bill through Partner"</li>
+            <li><strong>Discount Alignment</strong>:
+                <ul>
+                    <li>CB Opportunity Coupon Discount = Partner Margin Y1 Discount</li>
+                    <li>CB Opportunity Coupon Discount = Quote Discount</li>
+                </ul>
+            </li>
+            <li><strong>Partner Margin Exists</strong>: Valid Partner Margin record found</li>
+        </ol>
+    </div>
+
+    <h3>Auto-Approval Process</h3>
+    <ol>
+        <li><strong>Before Save Flow</strong>: Sets <code>Auto_Approved__c = true</code> when conditions are met</li>
+        <li><strong>Approval Process</strong>: Recognizes auto-approved quotes and fast-tracks them</li>
+        <li><strong>Status Update</strong>: Quote moves directly to "Approved" status</li>
+        <li><strong>Opportunity Update</strong>: <code>Is_Quote_Approved__c</code> set to true</li>
+    </ol>
+
+    <hr>
+
+    <h2 id="integration-points">Integration Points</h2>
+
+    <h3>Partner Margin Integration</h3>
+    <p>The approval process integrates with Partner Margin records:</p>
+    <ul>
+        <li><strong>Lookup</strong>: Based on Opportunity.Partner__c</li>
+        <li><strong>Validation</strong>: Compares discount values for consistency</li>
+        <li><strong>Billing Type</strong>: Special handling for "Bill through Partner"</li>
+    </ul>
+
+    <h3>ChargeeBee Integration</h3>
+    <p>Integration with ChargeeBee for discount validation:</p>
+    <ul>
+        <li><strong>CB Opportunity Coupon</strong>: Lookup based on Opportunity ID</li>
+        <li><strong>Discount Comparison</strong>: Ensures alignment with CB discount values</li>
+        <li><strong>Product Validation</strong>: Checks product codes and quantities</li>
+    </ul>
+
+    <h3>DocuSign Integration</h3>
+    <p>Quote approval status affects DocuSign workflow:</p>
+    <ul>
+        <li><strong>Status Dependency</strong>: DocuSign sending may require approved quotes</li>
+        <li><strong>Component Visibility</strong>: DocuSign component shows based on user permissions</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="troubleshooting-guide">Troubleshooting Guide</h2>
+
+    <h3>Common Issues</h3>
+
+    <div class="warning">
+        <h4>1. Submit Button Not Visible</h4>
+        <ul>
+            <li>Check Quote Status (hidden if already "Approved")</li>
+            <li>Verify user permissions for approval processes</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <h4>2. Auto-Approval Not Working</h4>
+        <ul>
+            <li>Verify Partner Margin record exists</li>
+            <li>Check discount value alignment</li>
+            <li>Confirm Partner Billing Type = "Bill through Partner"</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <h4>3. Quote Stuck in "In Review"</h4>
+        <ul>
+            <li>Check approval process assignment rules</li>
+            <li>Verify approvers are active users</li>
+            <li>Review approval process criteria</li>
+        </ul>
+    </div>
+
+    <div class="warning">
+        <h4>4. Status Validation Errors</h4>
+        <ul>
+            <li>Ensure quote is approved before changing status</li>
+            <li>Check record type restrictions</li>
+            <li>Verify user has appropriate permissions</li>
+        </ul>
+    </div>
+
+    <h3>Monitoring and Maintenance</h3>
+    <ol>
+        <li><strong>Flow Monitoring</strong>: Monitor flow execution in Setup > Process Automation > Flow</li>
+        <li><strong>Approval Process Health</strong>: Review pending approvals regularly</li>
+        <li><strong>Field History</strong>: Use Quote History related list for audit trails</li>
+        <li><strong>Process Steps</strong>: Monitor approval bottlenecks via ProcessSteps</li>
+    </ol>
+
+    <hr>
+
+    <h2 id="technical-implementation-details">Technical Implementation Details</h2>
+
+    <h3>Flow Execution Order</h3>
+    <ol>
+        <li><strong>Before Save</strong>: Quote Before Update flow</li>
+        <li><strong>After Save</strong>: Quote Submit For Approval On Discount Increase flow</li>
+        <li><strong>After Save</strong>: Quote After Update flow</li>
+        <li><strong>Approval Process</strong>: GP_Discount_Approval_Process_Updated</li>
+    </ol>
+
+    <h3>Performance Considerations</h3>
+    <ul>
+        <li>Flows use efficient SOQL queries with proper filtering</li>
+        <li>Lookup operations are optimized with getFirstRecordOnly</li>
+        <li>Bulk processing considerations for data loads</li>
+    </ul>
+
+    <h3>Security and Permissions</h3>
+    <ul>
+        <li>Approval processes respect user permissions</li>
+        <li>Field-level security applies to approval fields</li>
+        <li>Record-level access controls approval visibility</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>The Quote Approval process is a comprehensive system that handles both manual and automatic approval workflows. It integrates with partner margins, ChargeeBee discounts, and opportunity management to ensure consistent and accurate quote approvals across the organization.</p>
+
+    <div class="success">
+        <p><strong>Key benefits</strong>:</p>
+        <ul>
+            <li><strong>Automated Processing</strong>: Reduces manual effort through intelligent automation</li>
+            <li><strong>Consistency</strong>: Ensures discount alignment across systems</li>
+            <li><strong>Audit Trail</strong>: Comprehensive history tracking for compliance</li>
+            <li><strong>Integration</strong>: Seamless connection with partner and billing systems</li>
+            <li><strong>Flexibility</strong>: Supports various approval scenarios and business rules</li>
+        </ul>
+    </div>
+
+    <p>For additional support or modifications to the approval process, consult with your Salesforce administrator or development team.</p>
+</body>
+</html>

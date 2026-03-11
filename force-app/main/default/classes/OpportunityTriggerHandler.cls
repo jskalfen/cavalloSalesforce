@@ -6,12 +6,11 @@ public with sharing class OpportunityTriggerHandler {
    
     public static void onBeforeInsert(List<Opportunity> newList) {
         defaultPricebookId(newList);
-        calculateRenewalEstimatedValue(newList);
+        //autoPopulateSalesEngineer(newList);
     }
     
     public static void onBeforeUpdate(List<Opportunity> newList, Map<Id, Opportunity> oldMap) {
         updateManualDiscount(newList, oldMap);
-        calculateRenewalEstimatedValue(newList);
     }
    
     public static void afterUpdate(Map<Id,Opportunity> newOppMap, Map<Id,Opportunity> oldOppMap) {
@@ -65,63 +64,11 @@ public with sharing class OpportunityTriggerHandler {
     }
    
     /**
-     * Calculates Estimated Value ARR for Renewal-type opportunities on the New Business record type.
-     * Formula: MAX(0, (Subscription MRR * 12) - ((Year One + Year Two + Year Three) / 3))
-     * The subscription MRR comes from the Chargebee subscription linked to the opportunity.
+     * Auto-populates Rob Schlatzer as Sales Engineer for specific opportunity criteria:
+     * - Record Type = New Business
+     * - Type != 'Expansion - Services only' AND Type != 'Renewal'
+     * - Business_Segment__c = 'SalesPad for BC' OR 'Profit Max Platform'
      */
-    private static void calculateRenewalEstimatedValue(List<Opportunity> newList) {
-        // Get New Business RecordType Id
-        Id newBusinessRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName()
-            .get('New_Business').getRecordTypeId();
-        
-        // Collect subscription IDs for Renewal-type New Business opportunities
-        Map<Id, List<Opportunity>> subIdToOpps = new Map<Id, List<Opportunity>>();
-        for (Opportunity opp : newList) {
-            if (opp.RecordTypeId == newBusinessRecTypeId && 
-                opp.Type == 'Renewal' && 
-                opp.chargebeeapps__Subscription_Id__c != null &&
-                (opp.Year_One__c != null || opp.Year_Two__c != null || opp.Year_Three__c != null)) {
-                
-                if (!subIdToOpps.containsKey(opp.chargebeeapps__Subscription_Id__c)) {
-                    subIdToOpps.put(opp.chargebeeapps__Subscription_Id__c, new List<Opportunity>());
-                }
-                subIdToOpps.get(opp.chargebeeapps__Subscription_Id__c).add(opp);
-            }
-        }
-        
-        if (subIdToOpps.isEmpty()) {
-            return;
-        }
-        
-        // Query subscription MRR values
-        Map<Id, Decimal> subIdToMrr = new Map<Id, Decimal>();
-        for (chargebeeapps__CB_Subscription__c sub : [
-            SELECT Id, chargebeeapps__MRR__c 
-            FROM chargebeeapps__CB_Subscription__c 
-            WHERE Id IN :subIdToOpps.keySet()
-        ]) {
-            subIdToMrr.put(sub.Id, sub.chargebeeapps__MRR__c != null ? sub.chargebeeapps__MRR__c : 0);
-        }
-        
-        // Calculate and set Estimated Value ARR
-        for (Id subId : subIdToOpps.keySet()) {
-            Decimal mrr = subIdToMrr.containsKey(subId) ? subIdToMrr.get(subId) : 0;
-            Decimal subscriptionArr = mrr * 12;
-            
-            for (Opportunity opp : subIdToOpps.get(subId)) {
-                Decimal yearOne = opp.Year_One__c != null ? opp.Year_One__c : 0;
-                Decimal yearTwo = opp.Year_Two__c != null ? opp.Year_Two__c : 0;
-                Decimal yearThree = opp.Year_Three__c != null ? opp.Year_Three__c : 0;
-                
-                Decimal average = (yearOne + yearTwo + yearThree) / 3;
-                Decimal estimatedValue = subscriptionArr - average;
-                
-                // If negative, set to $0
-                opp.Estimated_Value__c = estimatedValue < 0 ? 0 : estimatedValue;
-            }
-        }
-    }
-    
     private static void defaultPricebookId(List<Opportunity> newList) {
         if (!fa.Default_Pricebook_Id__c) {
             return;
@@ -161,20 +108,14 @@ public with sharing class OpportunityTriggerHandler {
             // Check if the chargebeeapps__Manual_Discount__c field has changed
             if (opp.chargebeeapps__Manual_Discount__c != oldOpp.chargebeeapps__Manual_Discount__c && 
                 opp.chargebeeapps__Manual_Discount__c != null) {
-                
-                try {
                     // Parse the JSON and extract the discount percentage
-                    Decimal discountPercentage = parseManualDiscountPercentage(opp.chargebeeapps__Manual_Discount__c);
-                    if (discountPercentage != null) {
-                        opp.Manual_Discount__c = discountPercentage;
-                    }
-                    Decimal discountAmount = parseManualDiscountAmount(opp.chargebeeapps__Manual_Discount__c);
-                    if (discountAmount != null) {
-                        opp.Manual_Discount_Fixed__c = discountAmount;
-                    }
-                } catch (Exception e) {
-                    System.debug('Error parsing manual discount JSON: ' + e.getMessage());
-                    // Don't throw exception to avoid breaking the trigger
+                Decimal discountPercentage = parseManualDiscountPercentage(opp.chargebeeapps__Manual_Discount__c);
+                if (discountPercentage != null) {
+                    opp.Manual_Discount__c = discountPercentage;
+                }
+                Decimal discountAmount = parseManualDiscountAmount(opp.chargebeeapps__Manual_Discount__c);
+                if (discountAmount != null) {
+                    opp.Manual_Discount_Fixed__c = discountAmount;
                 }
             }
         }
