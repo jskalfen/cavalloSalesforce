@@ -25,13 +25,16 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
 
     public override void beforeUpdate(List<SObject> newList, Map<Id, SObject> oldMap) {
         List<Opportunity> opportunities = (List<Opportunity>) newList;
+        Map<Id, Opportunity> oldOpportunitiesMap = (Map<Id, Opportunity>) oldMap;
 
         Id newBusinessRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName()
             .get(RECORD_TYPE_NEW_BUSINESS).getRecordTypeId();
 
         List<Opportunity> renewalOpps = new List<Opportunity>();
         for (Opportunity opp : opportunities) {
-            if (isEligibleForRenewalEstimatedValue(opp, newBusinessRecTypeId)) {
+            Opportunity oldOpp = oldOpportunitiesMap.get(opp.Id);
+            if (isEligibleForRenewalEstimatedValue(opp, newBusinessRecTypeId) &&
+                hasRelevantFieldChangedForRenewalEstimate(opp, oldOpp)) {
                 renewalOpps.add(opp);
             }
         }
@@ -94,6 +97,18 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
             opp.Type == OPPORTUNITY_TYPE_RENEWAL &&
             opp.chargebeeapps__Subscription_Id__c != null &&
             (opp.Year_One__c != null || opp.Year_Two__c != null || opp.Year_Three__c != null);
+    }
+
+    private Boolean hasRelevantFieldChangedForRenewalEstimate(Opportunity opp, Opportunity oldOpp) {
+        if (oldOpp == null) {
+            return true;
+        }
+        return opp.RecordTypeId != oldOpp.RecordTypeId ||
+            opp.Type != oldOpp.Type ||
+            opp.chargebeeapps__Subscription_Id__c != oldOpp.chargebeeapps__Subscription_Id__c ||
+            opp.Year_One__c != oldOpp.Year_One__c ||
+            opp.Year_Two__c != oldOpp.Year_Two__c ||
+            opp.Year_Three__c != oldOpp.Year_Three__c;
     }
 
     /**
