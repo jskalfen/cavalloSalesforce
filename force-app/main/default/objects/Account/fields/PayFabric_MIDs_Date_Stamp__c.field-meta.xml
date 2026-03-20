@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayFabric_MIDs_Date_Stamp__c</fullName>
+    <inlineHelpText>Last time PayFabric MIDs was changed. For reporting; omit from page layouts if desired.</inlineHelpText>
+    <label>PayFabric MIDs Date Stamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
