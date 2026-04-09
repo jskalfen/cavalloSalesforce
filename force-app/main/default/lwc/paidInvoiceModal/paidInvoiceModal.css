@@ -1,0 +1,32 @@
+.spinner-container {
+    min-height: 100px;
+}
+
+.table-scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border-top: 1px solid #e5e5e5;
+}
+
+.table-scroll-container thead th {
+    position: sticky;
+    top: 0;
+    background: #fafaf9;
+    z-index: 1;
+}
+
+.checkbox-col {
+    width: 5rem;
+    text-align: center;
+}
+
+.badge-paid {
+    --sds-c-badge-color-background: #def4de;
+    --sds-c-badge-text-color: #2e844a;
+    font-weight: 600;
+}
+
+.badge-count {
+    --sds-c-badge-color-background: #0176d3;
+    --sds-c-badge-text-color: #ffffff;
+}

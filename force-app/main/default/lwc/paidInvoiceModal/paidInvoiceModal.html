@@ -1,0 +1,144 @@
+<template>
+    <lightning-card title="Paid Invoices — Pending Review" icon-name="standard:record">
+
+        <div class="slds-p-horizontal_medium">
+            <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center slds-m-bottom_small">
+                <div>
+                    <template lwc:if={totalCount}>
+                        <lightning-badge label={countLabel} class="badge-count"></lightning-badge>
+                    </template>
+                </div>
+                <lightning-button-group>
+                    <lightning-button
+                        label="Last Month"
+                        variant={lastMonthVariant}
+                        onclick={handleFilterChange}
+                        data-filter="LAST_MONTH"
+                    ></lightning-button>
+                    <lightning-button
+                        label="This Month"
+                        variant={thisMonthVariant}
+                        onclick={handleFilterChange}
+                        data-filter="THIS_MONTH"
+                    ></lightning-button>
+                    <lightning-button
+                        label="This Quarter"
+                        variant={thisQuarterVariant}
+                        onclick={handleFilterChange}
+                        data-filter="THIS_QUARTER"
+                    ></lightning-button>
+                </lightning-button-group>
+            </div>
+            <template lwc:if={isLoading}>
+                <div class="slds-is-relative spinner-container">
+                    <lightning-spinner alternative-text="Loading invoices" size="medium"></lightning-spinner>
+                </div>
+            </template>
+
+            <template lwc:if={errorMessage}>
+                <div class="slds-notify slds-notify_alert slds-alert_warning slds-m-bottom_small" role="alert">
+                    <span class="slds-assistive-text">Warning</span>
+                    <p>{errorMessage}</p>
+                </div>
+            </template>
+
+            <template lwc:if={hasInvoices}>
+                <div class="table-scroll-container">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <template lwc:if={isAdmin}>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Account Owner">Account Owner</div>
+                                    </th>
+                                </template>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Account Name">Account Name</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Invoice">Invoice</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Status">Status</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Paid On">Paid On</div>
+                                </th>
+                                <template lwc:if={showCheckboxColumn}>
+                                    <th class="checkbox-col" scope="col">
+                                        <div class="slds-truncate" title="Reviewed">Reviewed</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={invoices} for:item="inv">
+                                <tr key={inv.invoiceId} class="slds-hint-parent">
+                                    <template lwc:if={isAdmin}>
+                                        <td data-label="Account Owner">
+                                            <div class="slds-truncate">{inv.accountOwnerName}</div>
+                                        </td>
+                                    </template>
+                                    <td data-label="Account Name">
+                                        <div class="slds-truncate">
+                                            <a href={inv.accountUrl}
+                                               data-id={inv.accountId}
+                                               data-object="Account"
+                                               onclick={handleNavigateToRecord}>{inv.accountName}</a>
+                                        </div>
+                                    </td>
+                                    <td data-label="Invoice">
+                                        <div class="slds-truncate">
+                                            <a href={inv.invoiceUrl}
+                                               data-id={inv.invoiceId}
+                                               onclick={handleNavigateToRecord}>{inv.invoiceName}</a>
+                                        </div>
+                                    </td>
+                                    <td data-label="Status">
+                                        <lightning-badge label="Paid" class="badge-paid"></lightning-badge>
+                                    </td>
+                                    <td data-label="Paid On">
+                                        <div class="slds-truncate">
+                                            <lightning-formatted-date-time
+                                                value={inv.paidOn}
+                                                year="numeric"
+                                                month="short"
+                                                day="2-digit"
+                                            ></lightning-formatted-date-time>
+                                        </div>
+                                    </td>
+                                    <template lwc:if={showCheckboxColumn}>
+                                        <td data-label="Reviewed" class="checkbox-col">
+                                            <lightning-input
+                                                type="checkbox"
+                                                data-id={inv.invoiceId}
+                                                checked={inv.checkedInvoice}
+                                                onchange={handleCheckboxChange}
+                                                label="Reviewed"
+                                                variant="label-hidden"
+                                                disabled={inv.isSaving}
+                                            ></lightning-input>
+                                        </td>
+                                    </template>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <template lwc:if={showEmptyState}>
+                <div class="slds-illustration slds-illustration_small slds-p-vertical_large">
+                    <div class="slds-text-longform">
+                        <h3 class="slds-text-heading_medium slds-text-color_weak slds-align_absolute-center">
+                            All caught up!
+                        </h3>
+                        <p class="slds-text-body_regular slds-text-color_weak slds-align_absolute-center">
+                            No paid invoices pending review for this period.
+                        </p>
+                    </div>
+                </div>
+            </template>
+            </div>
+    </lightning-card>
+</template>
