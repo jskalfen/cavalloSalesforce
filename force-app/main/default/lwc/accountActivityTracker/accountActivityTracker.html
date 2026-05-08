@@ -27,6 +27,12 @@
                         onclick={handleFilterChange}
                         data-filter="90"
                     ></lightning-button>
+                    <lightning-button
+                        label="Never"
+                        variant={neverVariant}
+                        onclick={handleFilterChange}
+                        data-filter="NEVER"
+                    ></lightning-button>
                 </lightning-button-group>
             </div>
             <template lwc:if={hasUserOptions}>

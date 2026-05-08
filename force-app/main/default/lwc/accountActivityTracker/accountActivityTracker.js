@@ -67,6 +67,10 @@ export default class AccountActivityTracker extends NavigationMixin(LightningEle
         return this.selectedFilter === "90" ? "brand" : "neutral";
     }
 
+    get neverVariant() {
+        return this.selectedFilter === "NEVER" ? "brand" : "neutral";
+    }
+
     handleFilterChange(event) {
         const filter = event.target.dataset.filter;
         if (filter && filter !== this.selectedFilter) {

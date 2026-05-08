@@ -48,39 +48,46 @@ public with sharing class AccountActivityTrackerController {
             result.trackedUsers = getTrackedUserOptions(trackedUserIds);
         }
 
-        List<Account> staleAccounts;
-
+        Set<Id> ownerIds;
         if (isAdmin) {
-            Set<Id> filterIds = trackedUserIds;
+            ownerIds = trackedUserIds;
             if (String.isNotBlank(userFilter) && userFilter != 'ALL') {
                 try {
-                    filterIds = new Set<Id>{ (Id) userFilter };
+                    ownerIds = new Set<Id>{ (Id) userFilter };
                 } catch (Exception e) {
-                    filterIds = trackedUserIds;
+                    ownerIds = trackedUserIds;
                 }
             }
+        } else {
+            ownerIds = new Set<Id>{ UserInfo.getUserId() };
+        }
+
+        Boolean isNeverTab = dayFilter == 'NEVER';
+        List<Account> staleAccounts;
+
+        if (isNeverTab) {
             staleAccounts = [
                 SELECT Id, Name, Owner.Name,
                        Last_Human_Contact__c, Last_Human_Contact_By__r.Name,
                        Days_Since_Last_Human_Contact__c
                 FROM Account
-                WHERE OwnerId IN :filterIds
-                  AND (Last_Human_Contact__c = null
-                       OR Days_Since_Last_Human_Contact__c >= :threshold)
-                ORDER BY Days_Since_Last_Human_Contact__c DESC NULLS FIRST
+                WHERE OwnerId IN :ownerIds
+                  AND ARR__c > 0
+                  AND Last_Human_Contact__c = null
+                ORDER BY Name ASC
                 LIMIT 500
             ];
         } else {
-            Id currentUserId = UserInfo.getUserId();
             staleAccounts = [
                 SELECT Id, Name, Owner.Name,
                        Last_Human_Contact__c, Last_Human_Contact_By__r.Name,
                        Days_Since_Last_Human_Contact__c
                 FROM Account
-                WHERE OwnerId = :currentUserId
-                  AND (Last_Human_Contact__c = null
-                       OR Days_Since_Last_Human_Contact__c >= :threshold)
-                ORDER BY Days_Since_Last_Human_Contact__c DESC NULLS FIRST
+                WHERE OwnerId IN :ownerIds
+                  AND ARR__c > 0
+                  AND Last_Human_Contact__c != null
+                  AND Days_Since_Last_Human_Contact__c >= :threshold
+                ORDER BY Days_Since_Last_Human_Contact__c DESC
                 LIMIT 500
             ];
         }

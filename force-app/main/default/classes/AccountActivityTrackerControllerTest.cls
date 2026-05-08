@@ -3,6 +3,8 @@ private class AccountActivityTrackerControllerTest {
 
     @TestSetup
     static void setupTestData() {
+        // ARR__c is a rollup summary formula so it defaults to 0 in tests.
+        // These tests verify method execution, query structure, and wrapper population.
         List<Account> accounts = new List<Account>();
 
         accounts.add(new Account(
@@ -61,6 +63,19 @@ private class AccountActivityTrackerControllerTest {
         Test.startTest();
         AccountActivityTrackerController.ActivityResult result =
             AccountActivityTrackerController.getStaleAccounts('90', 'ALL');
+        Test.stopTest();
+
+        System.assertNotEquals(null, result, 'Result should not be null');
+        System.assertNotEquals(null, result.accounts, 'Accounts list should not be null');
+    }
+
+    @IsTest
+    static void testGetStaleAccountsNeverTab() {
+        EACActivityService.trackedUserIdsCache = new Set<Id>{ UserInfo.getUserId() };
+
+        Test.startTest();
+        AccountActivityTrackerController.ActivityResult result =
+            AccountActivityTrackerController.getStaleAccounts('NEVER', 'ALL');
         Test.stopTest();
 
         System.assertNotEquals(null, result, 'Result should not be null');
