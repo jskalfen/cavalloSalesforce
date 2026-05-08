@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Human_Contact__c</fullName>
+    <description>Timestamp of the most recent qualifying EAC email or call activity from a tracked user, excluding invoice-related activity.</description>
+    <label>Last Human Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
