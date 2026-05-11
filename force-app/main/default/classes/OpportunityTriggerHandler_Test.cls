@@ -837,4 +837,99 @@ public class OpportunityTriggerHandler_Test {
         System.assertEquals(9000, result.Estimated_Value__c,
             'Estimated Value should be recalculated on update when year values change');
     }
+
+    // ── Before Update: Closed - Auto Renew → Close Date ─────────────────────
+
+    @isTest
+    static void testClosedAutoRenew_SetsCloseDateToCurrentTermEndDate() {
+        Account acc = createAccount();
+        Date termEndDate = Date.today().addDays(60);
+        chargebeeapps__CB_Subscription__c sub = new chargebeeapps__CB_Subscription__c(
+            chargebeeapps__Company__c = acc.Id,
+            chargebeeapps__MRR__c = 500,
+            chargebeeapps__Current_Term_End__c = termEndDate
+        );
+        insert sub;
+
+        Opportunity opp = new Opportunity(
+            Name = 'Auto Renew Test',
+            AccountId = acc.Id,
+            StageName = STAGE_QUALIFY,
+            CloseDate = Date.today().addDays(30),
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
+        );
+        insert opp;
+
+        Opportunity oppToUpdate = [SELECT Id, StageName FROM Opportunity WHERE Id = :opp.Id];
+        oppToUpdate.StageName = 'Closed - Auto Renew';
+
+        Test.startTest();
+        update oppToUpdate;
+        Test.stopTest();
+
+        Opportunity result = [SELECT CloseDate FROM Opportunity WHERE Id = :opp.Id];
+        System.assertEquals(termEndDate, result.CloseDate,
+            'Close Date should be set to Account Current Term End Date when opp is marked Closed - Auto Renew');
+    }
+
+    @isTest
+    static void testClosedAutoRenew_CloseDateAfterTermEnd_UsesToday() {
+        Account acc = createAccount();
+        Date termEndDate = Date.today().addDays(-10);
+        chargebeeapps__CB_Subscription__c sub = new chargebeeapps__CB_Subscription__c(
+            chargebeeapps__Company__c = acc.Id,
+            chargebeeapps__MRR__c = 500,
+            chargebeeapps__Current_Term_End__c = termEndDate
+        );
+        insert sub;
+
+        Opportunity opp = new Opportunity(
+            Name = 'Auto Renew Past Term Test',
+            AccountId = acc.Id,
+            StageName = STAGE_QUALIFY,
+            CloseDate = Date.today().addDays(5),
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
+        );
+        insert opp;
+
+        Opportunity oppToUpdate = [SELECT Id, StageName FROM Opportunity WHERE Id = :opp.Id];
+        oppToUpdate.StageName = 'Closed - Auto Renew';
+
+        Test.startTest();
+        update oppToUpdate;
+        Test.stopTest();
+
+        Opportunity result = [SELECT CloseDate FROM Opportunity WHERE Id = :opp.Id];
+        System.assertEquals(Date.today(), result.CloseDate,
+            'Close Date should be today when existing Close Date is after Current Term End Date');
+    }
+
+    @isTest
+    static void testClosedAutoRenew_NoTermEndDate_CloseDateUnchanged() {
+        Account acc = createAccount();
+
+        Date originalCloseDate = Date.today().addDays(30);
+        Opportunity opp = new Opportunity(
+            Name = 'Auto Renew No Term Test',
+            AccountId = acc.Id,
+            StageName = STAGE_QUALIFY,
+            CloseDate = originalCloseDate,
+            Business_Segment__c = 'SalesPad',
+            Is_Quote_Approved__c = true
+        );
+        insert opp;
+
+        Opportunity oppToUpdate = [SELECT Id, StageName FROM Opportunity WHERE Id = :opp.Id];
+        oppToUpdate.StageName = 'Closed - Auto Renew';
+
+        Test.startTest();
+        update oppToUpdate;
+        Test.stopTest();
+
+        Opportunity result = [SELECT CloseDate FROM Opportunity WHERE Id = :opp.Id];
+        System.assertNotEquals(null, result.CloseDate,
+            'Close Date should still be populated when Account has no Current Term End Date');
+    }
 }

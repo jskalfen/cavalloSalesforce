@@ -2,6 +2,7 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
 
     private static final String ACCOUNT_TYPE_CLIENT = 'Client';
     private static final String STAGE_CLOSED_WON = 'Closed Won';
+    private static final String STAGE_CLOSED_AUTO_RENEW = 'Closed - Auto Renew';
     private static final String RECORD_TYPE_NEW_BUSINESS = 'New_Business';
     private static final String OPPORTUNITY_TYPE_RENEWAL = 'Renewal';
 
@@ -31,16 +32,25 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
             .get(RECORD_TYPE_NEW_BUSINESS).getRecordTypeId();
 
         List<Opportunity> renewalOpps = new List<Opportunity>();
+        List<Opportunity> autoRenewOpps = new List<Opportunity>();
+
         for (Opportunity opp : opportunities) {
             Opportunity oldOpp = oldOpportunitiesMap.get(opp.Id);
             if (isEligibleForRenewalEstimatedValue(opp, newBusinessRecTypeId) &&
                 hasRelevantFieldChangedForRenewalEstimate(opp, oldOpp)) {
                 renewalOpps.add(opp);
             }
+            if (isTransitioningToClosedAutoRenew(opp, oldOpp)) {
+                autoRenewOpps.add(opp);
+            }
         }
 
         if (!renewalOpps.isEmpty()) {
             calculateRenewalEstimatedValue(renewalOpps);
+        }
+
+        if (!autoRenewOpps.isEmpty()) {
+            setCloseDateForAutoRenew(autoRenewOpps);
         }
     }
 
@@ -109,6 +119,39 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
             opp.Year_One__c != oldOpp.Year_One__c ||
             opp.Year_Two__c != oldOpp.Year_Two__c ||
             opp.Year_Three__c != oldOpp.Year_Three__c;
+    }
+
+    private Boolean isTransitioningToClosedAutoRenew(Opportunity opp, Opportunity oldOpp) {
+        return opp.StageName == STAGE_CLOSED_AUTO_RENEW &&
+            oldOpp.StageName != STAGE_CLOSED_AUTO_RENEW;
+    }
+
+    private void setCloseDateForAutoRenew(List<Opportunity> opps) {
+        Set<Id> accountIds = new Set<Id>();
+        for (Opportunity opp : opps) {
+            if (opp.AccountId != null) {
+                accountIds.add(opp.AccountId);
+            }
+        }
+
+        Map<Id, Account> accountMap = new Map<Id, Account>([
+            SELECT Id, Current_Term_End_Date__c
+            FROM Account
+            WHERE Id IN :accountIds
+        ]);
+
+        for (Opportunity opp : opps) {
+            Account acc = accountMap.get(opp.AccountId);
+            if (acc == null || acc.Current_Term_End_Date__c == null) {
+                continue;
+            }
+            Date termEndDate = acc.Current_Term_End_Date__c.dateGmt();
+            if (opp.CloseDate > termEndDate) {
+                opp.CloseDate = Date.today();
+            } else {
+                opp.CloseDate = termEndDate;
+            }
+        }
     }
 
     /**
