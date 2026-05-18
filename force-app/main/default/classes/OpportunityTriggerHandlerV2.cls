@@ -145,7 +145,7 @@ public class OpportunityTriggerHandlerV2 extends TriggerHandler {
             if (acc == null || acc.Current_Term_End_Date__c == null) {
                 continue;
             }
-            Date termEndDate = acc.Current_Term_End_Date__c.dateGmt();
+            Date termEndDate = acc.Current_Term_End_Date__c.dateGmt().addDays(-1);
             if (opp.CloseDate > termEndDate) {
                 opp.CloseDate = Date.today();
             } else {

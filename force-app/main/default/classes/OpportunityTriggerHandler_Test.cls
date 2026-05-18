@@ -843,11 +843,11 @@ public class OpportunityTriggerHandler_Test {
     @isTest
     static void testClosedAutoRenew_SetsCloseDateToCurrentTermEndDate() {
         Account acc = createAccount();
-        Date termEndDate = Date.today().addDays(60);
+        Date chargebeeTermEnd = Date.today().addDays(60);
         chargebeeapps__CB_Subscription__c sub = new chargebeeapps__CB_Subscription__c(
             chargebeeapps__Company__c = acc.Id,
             chargebeeapps__MRR__c = 500,
-            chargebeeapps__Current_Term_End__c = termEndDate
+            chargebeeapps__Current_Term_End__c = chargebeeTermEnd
         );
         insert sub;
 
@@ -868,9 +868,10 @@ public class OpportunityTriggerHandler_Test {
         update oppToUpdate;
         Test.stopTest();
 
+        Date expectedCloseDate = chargebeeTermEnd.addDays(-1);
         Opportunity result = [SELECT CloseDate FROM Opportunity WHERE Id = :opp.Id];
-        System.assertEquals(termEndDate, result.CloseDate,
-            'Close Date should be set to Account Current Term End Date when opp is marked Closed - Auto Renew');
+        System.assertEquals(expectedCloseDate, result.CloseDate,
+            'Close Date should be the last day of the current term (one day before Chargebee term end)');
     }
 
     @isTest
